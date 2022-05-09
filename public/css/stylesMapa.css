@@ -1,0 +1,216 @@
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 19.6%;
+  right: 0;
+  z-index: -1;
+}
+
+.titulo {
+  background: linear-gradient(180deg, rgba(117, 196, 199, 1) 0%, rgba(86, 163, 166, 1) 100%);
+  border-top-right-radius: 3% 20px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 170px;
+}
+
+.menuNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-top-right-radius: 3% 20px;
+  border-bottom-right-radius: 3% 20px;
+  background: #fff;
+  filter: drop-shadow(-5px 0px 6px #000);
+  overflow-x: hidden;
+  overflow-y: auto;
+  direction: rtl;
+  min-width: 200px;
+}
+
+.container {
+  direction: ltr;
+  margin: 10px;
+  overflow-x: hidden;
+  background: white;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  /* create nested flex container */
+  flex-wrap: wrap;
+  /* enable flex items to wrap */
+  justify-content: center;
+}
+
+/*CSS da barra de pesquisa---------------------------------------*/
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #56A3A6;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #56A3A6;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #56A3A6;
+  background: #56A3A6;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Mudar o tamanho da barra de pesquisa:*/
+.wrap {
+  width: 80%;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*CSS da lista de doenças---------------------------------------*/
+.containerList {
+  max-width: 350px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+
+ul.ks-cboxtags li {
+  display: list-item;
+}
+
+ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px solid rgba(139, 139, 139, .3);
+  color: #adadad;
+  border-radius: 25px;
+  width: 90%;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+  overflow-x: hidden;
+}
+
+ul.ks-cboxtags li label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+  content: "\f00c";
+  transform: rotate(-360deg);
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+  border: 2px solid #56A3A6;
+  background-color: #56A3A6;
+  color: #fff;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+  border: 2px solid #56A3A6;
+}
+
+/*CSS do botão de Login---------------------------------------*/
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+button.outline {
+  position: relative;
+  z-index: 3;
+  background: transparent;
+  color: #56A3A6;
+  font-size: 14px;
+  border-color: #56A3A6;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 22px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+button.outline a {
+  text-decoration: none;
+}
+
+button.outline:hover {
+  color: white;
+  background: #56A3A6;
+  border-color: white;
+  transition: all 0.2s linear;
+}
+
+button.outline:active {
+  border-radius: 22px;
+}
