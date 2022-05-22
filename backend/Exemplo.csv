@@ -1,0 +1,465 @@
+UF,Municipio,IBGE,IBGE7,UF,Município,latitude,longitude,Região,População 2010,Porte,BOTULISMO,LEISHMANIOSE VISCERAL,LEISHMANIOSE TEGUMENTAR,FEBRE AMARELA,DENGUE,HEPATITE VIRAL,FEBRE MACULOSA,LEPTOSPIROSE,DOENÇA DE CHAGAS,PICADAS DE COBRAS,ZIKA VÍRUS,FEBRE TIFÓIDE,HANTAVIROSE,MENINGITE,RAIVA
+GO,Abadia de Goiás,520005,5200050,GO,Abadia de Goiás,"-16,7573","-49,4412",Região Centro-Oeste,6876,Pequeno I,0,0,0,0,14,2,0,0,0,0,1,0,0,0,0
+MG,Abadia Dos Dourados,310010,3100104,MG,Abadia Dos Dourados,"-18,4831","-47,3916",Região Sudeste,6704,Pequeno I,0,0,1,0,12,6,0,1,0,31,0,0,0,0,0
+GO,Abadiânia,520010,5200100,GO,Abadiânia,"-16,197","-48,7057",Região Centro-Oeste,15757,Pequeno I,0,0,0,0,122,0,0,0,0,0,2,0,0,0,0
+MG,Abaeté,310020,3100203,MG,Abaeté,"-19,1551","-45,4444",Região Sudeste,22690,Pequeno II,0,0,3,0,34,4,0,0,0,112,15,0,0,0,0
+PA,Abaetetuba,150010,1500107,PA,Abaetetuba,"-1,72183","-48,8788",Região Norte,141100,Grande,0,4,3,0,43,46,0,9,83,92,7,1,0,0,0
+CE,Abaiara,230010,2300101,CE,Abaiara,"-7,34588","-39,0416",Região Nordeste,10496,Pequeno I,0,0,0,0,99,1,0,0,0,0,0,0,0,0,0
+BA,Abaíra,290010,2900108,BA,Abaíra,"-13,2488","-41,6619",Região Nordeste,8316,Pequeno I,0,0,0,0,0,0,0,0,0,63,0,0,0,0,0
+BA,Abaré,290020,2900207,BA,Abaré,"-8,72073","-39,1162",Região Nordeste,17064,Pequeno I,0,0,1,0,310,0,0,0,0,56,3,0,0,0,0
+PR,Abatiá,410010,4100103,PR,Abatiá,"-23,3049","-50,3133",Região Sul,7764,Pequeno I,0,0,0,0,13,1,0,0,0,19,0,0,0,0,0
+SC,Abdon Batista,420005,4200051,SC,Abdon Batista,"-27,6126","-51,0233",Região Sul,2653,Pequeno I,0,0,0,0,0,2,0,0,0,11,0,0,0,0,0
+PA,Abel Figueiredo,150013,1500131,PA,Abel Figueiredo,"-4,95333","-48,3933",Região Norte,6780,Pequeno I,0,0,6,0,1,4,0,0,0,14,0,0,0,0,0
+SC,Abelardo Luz,420010,4200101,SC,Abelardo Luz,"-26,5716","-52,3229",Região Sul,17100,Pequeno I,0,0,0,0,19,15,0,0,0,37,3,0,0,0,0
+MG,Abre Campo,310030,3100302,MG,Abre Campo,"-20,2996","-42,4743",Região Sudeste,13311,Pequeno I,0,0,2,0,12,0,0,0,0,177,0,0,0,0,0
+PE,Abreu e Lima,260005,2600054,PE,Abreu e Lima,"-7,90072","-34,8984",Região Nordeste,94429,Médio,0,0,2,0,27,1,0,0,0,19,8,0,0,0,0
+TO,Abreulândia,170025,1700251,TO,Abreulândia,"-9,62101","-49,1518",Região Norte,2391,Pequeno I,0,1,2,0,0,0,0,0,0,24,1,0,0,0,0
+MG,Acaiaca,310040,3100401,MG,Acaiaca,"-20,362458","-43,1439",Região Sudeste,3920,Pequeno I,0,0,1,0,84,1,0,0,0,10,0,0,0,0,0
+MA,Açailândia,210005,2100055,MA,Açailândia,"-4,94714","-47,5004",Região Nordeste,104047,Grande,0,14,75,0,0,6,0,0,0,149,8,0,0,0,0
+BA,Acajutiba,290030,2900306,BA,Acajutiba,"-11,6575","-38,0197",Região Nordeste,14653,Pequeno I,0,0,0,0,40,2,0,0,0,3,5,0,0,0,0
+PA,Acará,150020,1500206,PA,Acará,"-1,95383","-48,1985",Região Norte,53569,Médio,0,3,8,0,2,0,0,0,1,52,7,0,0,0,0
+CE,Acarapé,230015,2300150,CE,Acarapé,"-4,22083","-38,7055",Região Nordeste,15338,Pequeno I,0,0,0,0,0,8,0,0,0,5,0,0,0,1,0
+CE,Acaraú,230020,2300200,CE,Acaraú,"-2,88769","-40,1183",Região Nordeste,57551,Médio,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0
+RN,Acari,240010,2400109,RN,Acari,"-6,4282","-36,6347",Região Nordeste,11035,Pequeno I,0,0,0,0,11,0,0,0,0,0,3,0,0,0,0
+PI,Acauã,220005,2200053,PI,Acauã,"-8,21954","-41,0831",Região Nordeste,6749,Pequeno I,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0
+RS,Aceguá,430003,4300034,RS,Aceguá,"-31,8665","-54,1615",Região Sul,4394,Pequeno I,0,0,0,0,1,1,0,0,0,13,0,0,0,0,0
+CE,Acopiara,230030,2300309,CE,Acopiara,"-6,08911","-39,448395",Região Nordeste,51160,Médio,0,1,0,0,35,1,0,0,0,0,24,0,0,0,0
+MT,Acorizal,510010,5100102,MT,Acorizal,"-15,194","-56,3632",Região Centro-Oeste,5516,Pequeno I,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0
+AC,Acrelândia,120001,1200013,AC,Acrelândia,"-9,82581","-66,8972",Região Norte,12538,Pequeno I,0,0,15,0,32,13,0,2,0,32,2,0,0,0,0
+GO,Acreúna,520013,5200134,GO,Acreúna,"-17,396443","-50,3749",Região Centro-Oeste,20279,Pequeno II,0,0,0,0,124,2,0,0,0,14,0,0,0,0,0
+RN,Açu,240020,2400208,RN,Açu,"-5,58362","-36,914",Região Nordeste,53227,Médio,0,0,0,0,528,4,0,2,0,135,115,0,0,0,0
+MG,Açucena,310050,3100500,MG,Açucena,"-19,0671","-42,5419",Região Sudeste,10276,Pequeno I,0,0,0,0,123,1,0,0,0,21,11,0,0,0,0
+SP,Adamantina,350010,3500105,SP,Adamantina,"-21,682","-51,0737",Região Sudeste,33797,Pequeno II,0,1,2,0,1060,19,0,2,0,60,4,0,1,1,0
+GO,Adelândia,520015,5200159,GO,Adelândia,"-16,4127","-50,1657",Região Centro-Oeste,2477,Pequeno I,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0
+SP,Adolfo,350020,3500204,SP,Adolfo,"-21,2325","-49,6451",Região Sudeste,3557,Pequeno I,0,0,0,0,8,1,0,0,0,3,6,0,0,0,0
+PR,Adrianópolis,410020,4100202,PR,Adrianópolis,"-24,6606","-48,9922",Região Sul,6376,Pequeno I,0,0,14,0,0,1,0,0,0,3,0,0,0,0,0
+BA,Adustina,290035,2900355,BA,Adustina,"-10,5437","-38,1113",Região Nordeste,15702,Pequeno I,0,0,0,0,25,1,0,0,0,33,3,0,0,0,0
+PE,Afogados da Ingazeira,260010,2600104,PE,Afogados da Ingazeira,"-7,74312","-37,631",Região Nordeste,35088,Pequeno II,0,1,0,0,283,1,0,1,0,320,0,0,0,0,0
+RN,Afonso Bezerra,240030,2400307,RN,Afonso Bezerra,"-5,49229","-36,5075",Região Nordeste,10844,Pequeno I,0,0,0,0,7,0,0,0,0,13,2,0,0,0,0
+ES,Afonso Cláudio,320010,3200102,ES,Afonso Cláudio,"-20,0778","-41,1261",Região Sudeste,31091,Pequeno II,0,0,29,0,0,8,1,14,0,0,221,0,0,0,0
+MA,Afonso Cunha,210010,2100105,MA,Afonso Cunha,"-4,13631","-43,3275",Região Nordeste,5905,Pequeno I,0,0,0,0,0,0,0,0,0,84,2,0,0,0,0
+PE,Afrânio,260020,2600203,PE,Afrânio,"-8,51136","-41,0095",Região Nordeste,17586,Pequeno I,0,0,0,0,524,0,0,0,0,61,16,0,0,0,0
+PA,Afuá,150030,1500305,PA,Afuá,"-0,154874","-50,3861",Região Norte,35042,Pequeno II,0,0,0,0,0,28,0,0,6,89,19,0,0,0,0
+PE,Agrestina,260030,2600302,PE,Agrestina,"-8,45966","-35,9447",Região Nordeste,22679,Pequeno II,0,0,0,0,14,0,0,2,0,4,3,0,0,0,0
+PI,Agricolândia,220010,2200103,PI,Agricolândia,"-5,79676","-42,6664",Região Nordeste,5098,Pequeno I,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+SC,Agrolândia,420020,4200200,SC,Agrolândia,"-27,4087","-49,822",Região Sul,9323,Pequeno I,0,0,0,0,0,1,0,0,0,19,0,0,0,0,0
+SC,Agronômica,420030,4200309,SC,Agronômica,"-27,2662","-49,708",Região Sul,4904,Pequeno I,0,0,0,0,0,3,0,2,0,10,0,0,0,0,0
+PA,Água Azul do Norte,150034,1500347,PA,Água Azul do Norte,"-6,79053","-50,4791",Região Norte,25057,Pequeno II,0,0,8,0,4,0,0,0,0,11,13,0,0,0,0
+MG,Água Boa,310060,3100609,MG,Água Boa,"-17,9914","-42,3806",Região Sudeste,15195,Pequeno I,0,0,0,0,25,0,0,0,0,31,1,0,0,0,0
+MT,Água Boa,510020,5100201,MT,Água Boa,"-14,051","-52,1601",Região Centro-Oeste,20856,Pequeno II,0,0,27,0,36,7,0,0,0,93,17,0,0,2,0
+PI,Água Branca,220020,2200202,PI,Água Branca,"-5,88856","-42,637",Região Nordeste,16451,Pequeno I,0,0,0,0,12,0,0,0,0,1,0,0,0,0,0
+PB,Água Branca,250010,2500106,PB,Água Branca,"-7,51144","-37,6357",Região Nordeste,9449,Pequeno I,0,0,0,0,8,0,0,0,0,35,3,0,0,0,0
+AL,Água Branca,270010,2700102,AL,Água Branca,"-9,262","-37,938",Região Nordeste,19377,Pequeno I,0,1,0,0,2,3,0,0,0,55,5,0,0,0,0
+MS,Água Clara,500020,5000203,MS,Água Clara,"-20,4452","-52,879",Região Centro-Oeste,14424,Pequeno I,0,0,0,0,181,2,0,0,0,39,1,0,0,0,0
+MG,Água Comprida,310070,3100708,MG,Água Comprida,"-20,0576","-48,1069",Região Sudeste,2025,Pequeno I,0,0,0,0,11,0,0,0,0,36,2,0,0,0,0
+SC,Água Doce,420040,4200408,SC,Água Doce,"-26,9985","-51,5528",Região Sul,6961,Pequeno I,0,0,0,0,1,2,0,0,0,18,0,0,0,0,0
+MA,Água Doce do Maranhão,210015,2100154,MA,Água Doce do Maranhão,"-2,84048","-42,1189",Região Nordeste,11581,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ES,Água Doce do Norte,320016,3200169,ES,Água Doce do Norte,"-18,5482","-40,9854",Região Sudeste,11771,Pequeno I,0,0,0,0,0,2,0,0,0,0,2,0,0,0,0
+BA,Água Fria,290040,2900405,BA,Água Fria,"-11,8618","-38,7639",Região Nordeste,15731,Pequeno I,0,0,0,0,99,2,0,0,0,90,3,0,0,0,0
+GO,Água Fria de Goiás,520017,5200175,GO,Água Fria de Goiás,"-14,9778","-47,7823",Região Centro-Oeste,5090,Pequeno I,0,0,1,0,14,0,0,0,0,10,0,0,0,0,0
+GO,Água Limpa,520020,5200209,GO,Água Limpa,"-18,0771","-48,7603",Região Centro-Oeste,2013,Pequeno I,0,0,0,0,22,0,0,0,0,15,0,0,0,0,0
+RN,Água Nova,240040,2400406,RN,Água Nova,"-6,20351","-38,2941",Região Nordeste,2980,Pequeno I,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+PE,Água Preta,260040,2600401,PE,Água Preta,"-8,70609","-35,5263",Região Nordeste,33095,Pequeno II,0,0,1,0,8,2,0,2,0,119,1,0,0,0,0
+RS,Água Santa,430005,4300059,RS,Água Santa,"-28,1672","-52,031",Região Sul,3722,Pequeno I,0,0,0,0,0,2,0,0,0,10,0,0,0,0,0
+SP,Aguaí,350030,3500303,SP,Aguaí,"-22,0572","-46,9735",Região Sudeste,32148,Pequeno II,0,0,0,0,2003,28,0,0,0,74,0,0,0,0,0
+MG,Aguanil,310080,3100807,MG,Aguanil,"-20,9439","-45,3915",Região Sudeste,4054,Pequeno I,0,0,0,0,31,0,0,1,0,0,2,0,0,0,0
+PE,Águas Belas,260050,2600500,PE,Águas Belas,"-9,11125","-37,1226",Região Nordeste,40235,Pequeno II,0,0,0,0,25,4,0,0,0,118,3,0,0,0,0
+SP,Águas da Prata,350040,3500402,SP,Águas da Prata,"-21,9319","-46,7176",Região Sudeste,7584,Pequeno I,0,0,0,0,26,3,0,0,0,15,0,0,0,0,0
+SC,Águas de Chapecó,420050,4200507,SC,Águas de Chapecó,"-27,0754","-52,9808",Região Sul,6110,Pequeno I,0,0,0,0,26,1,0,2,0,17,0,0,0,0,0
+SP,Águas de Lindóia,350050,3500501,SP,Águas de Lindóia,"-22,4733","-46,6314",Região Sudeste,17266,Pequeno I,0,0,0,0,7,4,1,0,0,99,1,0,0,0,0
+SP,Águas de Santa Bárbara,350055,3500550,SP,Águas de Santa Bárbara,"-22,8812","-49,2421",Região Sudeste,5601,Pequeno I,0,0,0,0,1,0,0,0,0,16,0,0,0,0,0
+SP,Águas de São Pedro,350060,3500600,SP,Águas de São Pedro,"-22,5977","-47,8734",Região Sudeste,2707,Pequeno I,0,0,0,0,27,3,0,0,0,59,0,0,0,0,0
+MG,Águas Formosas,310090,3100906,MG,Águas Formosas,"-17,0802","-40,9384",Região Sudeste,18479,Pequeno I,0,0,0,0,205,6,0,0,0,88,2,0,0,0,0
+SC,Águas Frias,420055,4200556,SC,Águas Frias,"-26,8794","-52,8568",Região Sul,2424,Pequeno I,0,0,0,0,1,11,0,0,0,9,0,0,0,0,0
+GO,Águas Lindas de Goiás,520025,5200258,GO,Águas Lindas de Goiás,"-15,7617","-48,2816",Região Centro-Oeste,159378,Grande,0,0,0,0,1098,15,0,0,0,19,43,0,0,0,0
+SC,Águas Mornas,420060,4200606,SC,Águas Mornas,"-27,6963","-48,8243",Região Sul,5548,Pequeno I,0,0,0,0,0,1,0,3,0,1,0,0,0,0,0
+MG,Águas Vermelhas,310100,3101003,MG,Águas Vermelhas,"-15,7431","-41,4571",Região Sudeste,12722,Pequeno I,0,0,4,0,21,0,0,0,0,17,0,0,0,0,0
+RS,Agudo,430010,4300109,RS,Agudo,"-29,6447","-53,2515",Região Sul,16722,Pequeno I,0,0,0,0,0,0,0,50,0,2,0,0,0,0,0
+SP,Agudos,350070,3500709,SP,Agudos,"-22,4694","-48,9863",Região Sudeste,34524,Pequeno II,0,0,0,0,27,2,0,1,0,2,1,0,0,0,0
+PR,Agudos do Sul,410030,4100301,PR,Agudos do Sul,"-25,9899","-49,3343",Região Sul,8270,Pequeno I,0,0,0,0,0,0,0,0,0,64,1,0,0,0,0
+ES,Águia Branca,320013,3200136,ES,Águia Branca,"-18,9846","-40,7437",Região Sudeste,9519,Pequeno I,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+PB,Aguiar,250020,2500205,PB,Aguiar,"-7,0918","-38,1681",Região Nordeste,5530,Pequeno I,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0
+TO,Aguiarnópolis,170030,1700301,TO,Aguiarnópolis,"-6,55409","-47,4702",Região Norte,5162,Pequeno I,0,0,1,0,4,1,0,0,0,0,0,0,0,0,0
+MG,Aimorés,310110,3101102,MG,Aimorés,"-19,5007","-41,0746",Região Sudeste,24959,Pequeno II,0,2,1,0,68,6,0,0,0,68,36,0,0,0,0
+BA,Aiquara,290060,2900603,BA,Aiquara,"-14,1269","-39,8937",Região Nordeste,4602,Pequeno I,0,0,2,0,12,1,0,0,0,1,0,0,0,0,0
+CE,Aiuaba,230040,2300408,CE,Aiuaba,"-6,57122","-40,1178",Região Nordeste,16203,Pequeno I,0,1,1,0,10,0,0,0,0,14,0,0,0,0,0
+MG,Aiuruoca,310120,3101201,MG,Aiuruoca,"-21,9736","-44,6042",Região Sudeste,6162,Pequeno I,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0
+RS,Ajuricaba,430020,4300208,RS,Ajuricaba,"-28,2342","-53,7757",Região Sul,7255,Pequeno I,0,0,0,0,6,0,0,1,0,17,0,0,0,0,0
+MG,Alagoa,310130,3101300,MG,Alagoa,"-22,171","-44,6413",Região Sudeste,2709,Pequeno I,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+PB,Alagoa Grande,250030,2500304,PB,Alagoa Grande,"-7,03943","-35,6206",Região Nordeste,28479,Pequeno II,0,0,8,0,41,2,0,0,0,26,27,0,0,0,0
+PB,Alagoa Nova,250040,2500403,PB,Alagoa Nova,"-7,05377","-35,7591",Região Nordeste,19681,Pequeno I,0,0,4,0,44,0,0,0,0,6,39,0,0,0,0
+PB,Alagoinha,250050,2500502,PB,Alagoinha,"-6,94657","-35,5332",Região Nordeste,13576,Pequeno I,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+PE,Alagoinha,260060,2600609,PE,Alagoinha,"-8,4665","-36,7788",Região Nordeste,13759,Pequeno I,0,0,0,0,1,0,0,0,0,37,0,0,0,0,0
+PI,Alagoinha do Piauí,220025,2200251,PI,Alagoinha do Piauí,"-7,00039","-40,9282",Região Nordeste,7341,Pequeno I,0,0,0,0,84,0,0,0,0,0,0,0,0,0,0
+BA,Alagoinhas,290070,2900702,BA,Alagoinhas,"-12,1335","-38,4208",Região Nordeste,141949,Grande,0,0,2,0,1261,28,0,0,0,93,44,0,0,1,0
+SP,Alambari,350075,3500758,SP,Alambari,"-23,5503","-47,898",Região Sudeste,4884,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MG,Albertina,310140,3101409,MG,Albertina,"-22,2018","-46,6139",Região Sudeste,2913,Pequeno I,0,0,0,0,0,0,0,0,0,18,0,0,0,0,0
+MA,Alcântara,210020,2100204,MA,Alcântara,"-2,39574","-44,4062",Região Nordeste,21851,Pequeno II,0,0,13,0,0,0,0,0,0,3,3,0,0,0,0
+CE,Alcântaras,230050,2300507,CE,Alcântaras,"-3,58537","-40,5479",Região Nordeste,10771,Pequeno I,0,0,2,0,12,0,0,0,0,9,1,0,0,0,0
+PB,Alcantil,250053,2500536,PB,Alcantil,"-7,73668","-36,0511",Região Nordeste,5239,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MS,Alcinópolis,500025,5000252,MS,Alcinópolis,"-18,3255","-53,7042",Região Centro-Oeste,4569,Pequeno I,0,0,1,0,249,6,0,0,0,19,0,0,0,0,0
+BA,Alcobaça,290080,2900801,BA,Alcobaça,"-17,5195","-39,2036",Região Nordeste,21271,Pequeno II,0,0,0,0,35,4,0,0,0,19,0,0,0,0,0
+MA,Aldeias Altas,210030,2100303,MA,Aldeias Altas,"-4,62621","-43,4689",Região Nordeste,23952,Pequeno II,0,1,1,0,1,0,0,0,0,21,0,0,0,0,0
+RS,Alecrim,430030,4300307,RS,Alecrim,"-27,6579","-54,7649",Região Sul,7045,Pequeno I,0,0,0,0,5,3,0,1,0,3,0,0,0,0,0
+ES,Alegre,320020,3200201,ES,Alegre,"-20,758","-41,5382",Região Sudeste,30768,Pequeno II,0,0,0,0,8,2,0,4,0,3,1,0,0,0,0
+RS,Alegrete,430040,4300406,RS,Alegrete,"-29,7902","-55,7949",Região Sul,77653,Médio,0,0,0,0,1,90,0,2,0,13,1,0,0,0,0
+PI,Alegrete do Piauí,220027,2200277,PI,Alegrete do Piauí,"-7,24196","-40,8566",Região Nordeste,5153,Pequeno I,0,0,0,0,39,0,0,0,0,0,0,0,0,0,0
+RS,Alegria,430045,4300455,RS,Alegria,"-27,8345","-54,0557",Região Sul,4301,Pequeno I,0,0,0,0,3,0,0,0,0,12,0,0,0,0,0
+MG,Além Paraíba,310150,3101508,MG,Além Paraíba,"-21,8797","-42,7176",Região Sudeste,34349,Pequeno II,0,0,4,0,32,4,0,3,0,33,6,0,0,1,0
+PA,Alenquer,150040,1500404,PA,Alenquer,"-1,94623","-54,7384",Região Norte,52626,Médio,0,1,48,0,44,8,0,0,1,58,1,0,0,0,0
+RN,Alexandria,240050,2400505,RN,Alexandria,"-6,40533","-38,0142",Região Nordeste,13507,Pequeno I,0,0,0,0,10,0,0,0,0,0,2,0,0,0,0
+GO,Alexânia,520030,5200308,GO,Alexânia,"-16,0834","-48,5076",Região Centro-Oeste,23814,Pequeno II,0,0,1,0,262,5,0,0,0,33,1,0,0,0,0
+MG,Alfenas,310160,3101607,MG,Alfenas,"-21,4256","-45,9477",Região Sudeste,73774,Médio,0,0,0,0,1168,52,0,0,0,265,2,0,0,2,0
+ES,Alfredo Chaves,320030,3200300,ES,Alfredo Chaves,"-20,6396","-40,7543",Região Sudeste,13955,Pequeno I,0,0,0,0,0,1,0,5,0,0,16,0,0,0,0
+SP,Alfredo Marcondes,350080,3500808,SP,Alfredo Marcondes,"-21,9527","-51,414",Região Sudeste,3891,Pequeno I,0,0,0,0,160,1,0,0,0,11,0,0,0,0,0
+MG,Alfredo Vasconcelos,310163,3101631,MG,Alfredo Vasconcelos,"-21,1535","-43,7718",Região Sudeste,6075,Pequeno I,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+SC,Alfredo Wagner,420070,4200705,SC,Alfredo Wagner,"-27,7001","-49,3273",Região Sul,9410,Pequeno I,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0
+PB,Algodão de Jandaíra,250057,2500577,PB,Algodão de Jandaíra,"-6,89292","-36,0129",Região Nordeste,2366,Pequeno I,0,0,0,0,4,0,0,0,0,0,1,0,0,0,0
+PB,Alhandra,250060,2500601,PB,Alhandra,"-7,42977","-34,9057",Região Nordeste,18007,Pequeno I,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0
+PE,Aliança,260070,2600708,PE,Aliança,"-7,60398","-35,2227",Região Nordeste,37415,Pequeno II,0,0,5,0,0,6,0,0,0,3,1,0,0,0,0
+TO,Aliança do Tocantins,170035,1700350,TO,Aliança do Tocantins,"-11,3056","-48,9361",Região Norte,5671,Pequeno I,0,0,0,0,5,1,0,0,0,29,0,0,0,0,0
+BA,Almadina,290090,2900900,BA,Almadina,"-14,7089","-39,6415",Região Nordeste,6357,Pequeno I,0,0,3,0,47,0,0,0,0,2,0,0,0,0,0
+TO,Almas,170040,1700400,TO,Almas,"-11,5706","-47,1792",Região Norte,7586,Pequeno I,0,0,6,0,1,0,0,0,0,1,3,0,0,0,0
+PA,Almeirim,150050,1500503,PA,Almeirim,"-1,52904","-52,5788",Região Norte,33614,Pequeno II,0,0,28,0,0,0,0,0,0,124,0,0,0,0,0
+MG,Almenara,310170,3101706,MG,Almenara,"-16,1785","-40,6942",Região Sudeste,38775,Pequeno II,0,1,30,0,149,2,0,0,0,342,3,0,0,0,0
+RN,Almino Afonso,240060,2400604,RN,Almino Afonso,"-6,1475","-37,7636",Região Nordeste,4871,Pequeno I,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+PR,Almirante Tamandaré,410040,4100400,PR,Almirante Tamandaré,"-25,3188","-49,3037",Região Sul,103204,Grande,0,0,0,0,5,48,0,3,0,202,0,0,0,0,0
+RS,Almirante Tamandaré do Sul,430047,4300471,RS,Almirante Tamandaré do Sul,"-28,1149","-52,9142",Região Sul,2067,Pequeno I,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+GO,Aloândia,520050,5200506,GO,Aloândia,"-17,7292","-49,4769",Região Centro-Oeste,2051,Pequeno I,0,0,0,0,15,2,0,0,0,3,0,0,0,0,0
+MG,Alpercata,310180,3101805,MG,Alpercata,"-18,974","-41,97",Região Sudeste,7172,Pequeno I,0,0,0,0,6,1,0,0,0,0,2,0,0,0,0
+RS,Alpestre,430050,4300505,RS,Alpestre,"-27,2502","-53,0341",Região Sul,8027,Pequeno I,0,0,0,0,0,4,0,0,0,20,0,0,0,0,0
+MG,Alpinópolis,310190,3101904,MG,Alpinópolis,"-20,8631","-46,3878",Região Sudeste,18488,Pequeno I,0,0,0,0,15,0,0,0,0,4,2,0,0,1,0
+MT,Alta Floresta,510025,5100250,MT,Alta Floresta,"-9,86674","-56,0867",Região Centro-Oeste,49164,Pequeno II,0,0,36,0,868,72,0,0,0,27,20,0,0,0,0
+RO,Alta Floresta D'oeste,110001,1100015,RO,Alta Floresta D´oeste,"-11,9283","-61,9953",Região Norte,24392,Pequeno II,0,0,20,0,12,19,0,1,0,53,9,0,0,0,0
+SP,Altair,350090,3500907,SP,Altair,"-20,5242","-49,0571",Região Sudeste,3815,Pequeno I,0,0,0,0,1,0,0,0,0,9,0,0,0,0,0
+PA,Altamira,150060,1500602,PA,Altamira,"-3,20407","-52,21",Região Norte,99075,Médio,0,3,139,0,320,41,0,1,0,294,9,0,1,3,0
+MA,Altamira do Maranhão,210040,2100402,MA,Altamira do Maranhão,"-4,16598","-45,4706",Região Nordeste,11063,Pequeno I,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0
+PR,Altamira do Paraná,410045,4100459,PR,Altamira do Paraná,"-24,7983","-52,7128",Região Sul,4306,Pequeno I,0,0,1,0,67,5,0,1,0,22,3,0,0,0,0
+CE,Altaneira,230060,2300606,CE,Altaneira,"-6,99837","-39,7356",Região Nordeste,6856,Pequeno I,0,1,4,0,7,2,0,0,0,0,0,0,0,0,0
+MG,Alterosa,310200,3102001,MG,Alterosa,"-21,2488","-46,1387",Região Sudeste,13717,Pequeno I,0,0,0,0,22,0,0,0,0,1,0,0,0,0,0
+PE,Altinho,260080,2600807,PE,Altinho,"-8,48482","-36,0644",Região Nordeste,22353,Pequeno II,0,0,1,0,136,1,0,0,0,100,0,0,0,0,0
+SP,Altinópolis,350100,3501004,SP,Altinópolis,"-21,0214","-47,3712",Região Sudeste,15607,Pequeno I,0,0,0,0,26,2,0,0,0,68,0,0,0,0,0
+RR,Alto Alegre,140005,1400050,RR,Alto Alegre,"2,98858","-61,3072",Região Norte,16448,Pequeno I,0,0,8,0,0,2,0,0,0,131,5,0,0,0,0
+SP,Alto Alegre,350110,3501103,SP,Alto Alegre,"-21,5811","-50,168",Região Sudeste,4102,Pequeno I,0,0,0,0,32,0,0,0,0,41,0,0,0,0,0
+RS,Alto Alegre,430055,4300554,RS,Alto Alegre,"-28,7769","-52,9893",Região Sul,1848,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MA,Alto Alegre do Maranhão,210043,2100436,MA,Alto Alegre do Maranhão,"-4,213","-44,446",Região Nordeste,24599,Pequeno II,0,2,1,0,0,0,0,0,0,10,0,0,0,0,0
+MA,Alto Alegre do Pindaré,210047,2100477,MA,Alto Alegre do Pindaré,"-3,66689","-45,8421",Região Nordeste,31057,Pequeno II,0,0,35,0,6,0,0,0,0,22,3,0,0,0,0
+RO,Alto Alegre Dos Parecis,110037,1100379,RO,Alto Alegre Dos Parecis,"-12,132","-61,835",Região Norte,12816,Pequeno I,0,0,9,0,86,6,0,0,0,40,2,0,0,0,0
+MT,Alto Araguaia,510030,5100300,MT,Alto Araguaia,"-17,3153","-53,2181",Região Centro-Oeste,15644,Pequeno I,0,0,3,0,132,3,0,0,0,1,0,0,0,0,0
+SC,Alto Bela Vista,420075,4200754,SC,Alto Bela Vista,"-27,4333","-51,9044",Região Sul,2005,Pequeno I,0,0,0,0,0,1,0,0,0,7,0,0,0,0,0
+MT,Alto Boa Vista,510035,5100359,MT,Alto Boa Vista,"-11,6732","-51,3883",Região Centro-Oeste,5247,Pequeno I,0,0,23,0,0,1,0,0,0,0,0,0,0,0,0
+MG,Alto Caparaó,310205,3102050,MG,Alto Caparaó,"-20,448129","-41,873185",Região Sudeste,5297,Pequeno I,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0
+RN,Alto do Rodrigues,240070,2400703,RN,Alto do Rodrigues,"-5,28186","-36,75",Região Nordeste,12305,Pequeno I,0,0,0,0,54,0,0,0,0,2,1,0,0,0,0
+RS,Alto Feliz,430057,4300570,RS,Alto Feliz,"-29,3919","-51,3123",Região Sul,2917,Pequeno I,0,0,0,0,0,2,0,0,0,14,1,0,0,0,0
+MT,Alto Garças,510040,5100409,MT,Alto Garças,"-16,9462","-53,5272",Região Centro-Oeste,10350,Pequeno I,0,0,4,0,122,0,0,0,0,1,0,0,0,0,0
+GO,Alto Horizonte,520055,5200555,GO,Alto Horizonte,"-14,1978","-49,3378",Região Centro-Oeste,4505,Pequeno I,0,0,1,0,8,1,0,0,0,5,0,0,0,0,0
+MG,Alto Jequitibá,315350,3153509,MG,Alto Jequitibá,"-20,4208","-41,967457",Região Sudeste,8318,Pequeno I,0,0,4,0,364,0,0,0,0,90,0,0,0,0,0
+PI,Alto Longá,220030,2200301,PI,Alto Longá,"-5,25634","-42,2096",Região Nordeste,13646,Pequeno I,0,0,0,0,4,0,0,0,0,73,1,0,0,0,0
+MT,Alto Paraguai,510050,5100508,MT,Alto Paraguai,"-14,5137","-56,4776",Região Centro-Oeste,10066,Pequeno I,0,1,12,0,22,1,0,0,0,1,4,0,0,0,0
+RO,Alto Paraíso,110040,1100403,RO,Alto Paraíso,"-9,71429","-63,3188",Região Norte,17135,Pequeno I,0,0,7,0,12,59,0,0,0,17,1,0,0,0,0
+GO,Alto Paraíso de Goiás,520060,5200605,GO,Alto Paraíso de Goiás,"-14,1305","-47,51",Região Centro-Oeste,6885,Pequeno I,0,0,39,0,64,0,0,0,0,60,1,0,0,0,0
+PR,Alto Paraná,410060,4100608,PR,Alto Paraná,"-23,1312","-52,3189",Região Sul,13663,Pequeno I,0,0,1,0,1684,6,0,0,0,6,1,0,0,0,0
+MA,Alto Parnaíba,210050,2100501,MA,Alto Parnaíba,"-9,10273","-45,9303",Região Nordeste,10766,Pequeno I,0,0,0,0,31,0,0,0,0,5,0,0,0,0,0
+PR,Alto Piquiri,410070,4100707,PR,Alto Piquiri,"-24,0224","-53,44",Região Sul,10179,Pequeno I,0,0,0,0,1308,0,0,0,0,5,0,0,0,0,0
+MG,Alto Rio Doce,310210,3102100,MG,Alto Rio Doce,"-21,0281","-43,4067",Região Sudeste,12159,Pequeno I,0,0,1,0,0,0,0,0,0,6,0,0,0,0,0
+ES,Alto Rio Novo,320035,3200359,ES,Alto Rio Novo,"-19,0618","-41,0209",Região Sudeste,7317,Pequeno I,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0
+CE,Alto Santo,230070,2300705,CE,Alto Santo,"-5,50894","-38,2743",Região Nordeste,16359,Pequeno I,0,0,0,0,9,0,0,0,0,15,1,0,0,0,0
+MT,Alto Taquari,510060,5100607,MT,Alto Taquari,"-17,8241","-53,2792",Região Centro-Oeste,8072,Pequeno I,0,0,3,0,38,0,0,0,0,3,7,0,0,0,0
+PR,Altônia,410050,4100509,PR,Altônia,"-23,8759","-53,8958",Região Sul,20516,Pequeno II,0,0,0,0,1473,0,0,0,0,12,0,0,0,0,0
+PI,Altos,220040,2200400,PI,Altos,"-5,03888","-42,4612",Região Nordeste,38822,Pequeno II,0,0,0,0,3,1,0,0,0,58,2,0,0,0,0
+SP,Alumínio,350115,3501152,SP,Alumínio,"-23,5306","-47,2546",Região Sudeste,16839,Pequeno I,0,0,0,0,5,10,0,0,0,29,0,0,0,0,0
+AM,Alvarães,130002,1300029,AM,Alvarães,"-3,22727","-64,8007",Região Norte,14088,Pequeno I,0,0,1,0,0,4,0,0,0,70,0,0,0,0,0
+MG,Alvarenga,310220,3102209,MG,Alvarenga,"-19,4174","-41,7317",Região Sudeste,4444,Pequeno I,0,0,7,0,41,0,0,0,0,52,0,0,0,0,0
+SP,Álvares Florence,350120,3501202,SP,Álvares Florence,"-20,3203","-49,9141",Região Sudeste,3897,Pequeno I,0,0,0,0,70,0,0,0,0,49,0,0,0,0,0
+SP,Álvares Machado,350130,3501301,SP,Álvares Machado,"-22,0764","-51,4722",Região Sudeste,23513,Pequeno II,0,0,0,0,360,1,0,0,0,63,3,0,0,0,0
+SP,Álvaro de Carvalho,350140,3501400,SP,Álvaro de Carvalho,"-22,0841","-49,719",Região Sudeste,4650,Pequeno I,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0
+SP,Alvinlândia,350150,3501509,SP,Alvinlândia,"-22,4435","-49,7623",Região Sudeste,3000,Pequeno I,0,0,0,0,29,0,0,0,0,0,0,0,0,0,0
+MG,Alvinópolis,310230,3102308,MG,Alvinópolis,"-20,1098","-43,0535",Região Sudeste,15261,Pequeno I,0,0,0,0,10,0,0,0,0,170,1,0,0,0,0
+TO,Alvorada,170070,1700707,TO,Alvorada,"-12,4785","-49,1249",Região Norte,8374,Pequeno I,0,0,1,0,8,0,0,0,0,54,0,0,0,0,0
+RS,Alvorada,430060,4300604,RS,Alvorada,"-29,9914","-51,0809",Região Sul,195673,Grande,0,0,0,0,4,514,0,13,0,0,4,0,0,0,0
+RO,Alvorada D'oeste,110034,1100346,RO,Alvorada D´oeste,"-11,3463","-62,2847",Região Norte,16853,Pequeno I,0,0,4,0,2,7,0,0,0,19,0,0,0,0,0
+MG,Alvorada de Minas,310240,3102407,MG,Alvorada de Minas,"-18,7334","-43,3638",Região Sudeste,3546,Pequeno I,0,0,0,0,6,0,0,0,0,17,0,0,0,0,0
+PI,Alvorada do Gurguéia,220045,2200459,PI,Alvorada do Gurguéia,"-8,42418","-43,777",Região Nordeste,5050,Pequeno I,0,0,1,0,1,0,0,0,0,24,0,0,0,0,0
+GO,Alvorada do Norte,520080,5200803,GO,Alvorada do Norte,"-14,4797","-46,491",Região Centro-Oeste,8084,Pequeno I,0,0,0,0,78,0,0,0,0,40,0,0,0,0,0
+PR,Alvorada do Sul,410080,4100806,PR,Alvorada do Sul,"-22,7813","-51,2297",Região Sul,10283,Pequeno I,0,0,0,0,318,5,0,2,0,44,0,0,0,1,0
+RR,Amajari,140002,1400027,RR,Amajari,"3,64571","-61,3692",Região Norte,9327,Pequeno I,0,0,2,0,4,3,0,0,0,19,1,0,0,0,0
+MS,Amambaí,500060,5000609,MS,Amambaí,"-23,1058","-55,2253",Região Centro-Oeste,34730,Pequeno II,0,0,0,0,1824,17,0,0,0,135,30,0,0,0,0
+AP,Amapá,160010,1600105,AP,Amapá,"2,05267","-50,7957",Região Norte,8069,Pequeno I,0,0,2,0,0,0,0,0,0,29,0,0,0,0,0
+MA,Amapá do Maranhão,210055,2100550,MA,Amapá do Maranhão,"-1,67524","-46,0024",Região Nordeste,6431,Pequeno I,0,0,5,0,0,1,0,0,0,0,2,0,0,0,0
+PR,Amaporã,410090,4100905,PR,Amaporã,"-23,0943","-52,7866",Região Sul,5443,Pequeno I,0,0,0,0,173,1,0,0,0,9,0,0,0,0,0
+PE,Amaraji,260090,2600906,PE,Amaraji,"-8,37691","-35,4501",Região Nordeste,21939,Pequeno II,0,0,4,0,35,1,0,0,0,0,59,0,0,0,0
+RS,Amaral Ferrador,430063,4300638,RS,Amaral Ferrador,"-30,8756","-52,2509",Região Sul,6353,Pequeno I,0,0,0,0,0,2,0,0,0,4,0,0,0,0,0
+GO,Amaralina,520082,5200829,GO,Amaralina,"-13,9236","-49,2962",Região Centro-Oeste,3434,Pequeno I,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+PI,Amarante,220050,2200509,PI,Amarante,"-6,24304","-42,8433",Região Nordeste,17135,Pequeno I,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0
+MA,Amarante do Maranhão,210060,2100600,MA,Amarante do Maranhão,"-5,56913","-46,7473",Região Nordeste,37932,Pequeno II,0,1,10,0,11,8,0,0,0,78,0,0,0,0,0
+BA,Amargosa,290100,2901007,BA,Amargosa,"-13,0215","-39,602",Região Nordeste,34351,Pequeno II,0,0,3,0,623,2,0,0,0,496,18,0,0,0,0
+AM,Amaturá,130006,1300060,AM,Amaturá,"-3,37455","-68,2005",Região Norte,9467,Pequeno I,0,0,0,0,0,3,0,0,0,17,0,0,0,0,0
+BA,Amélia Rodrigues,290110,2901106,BA,Amélia Rodrigues,"-12,3914","-38,7563",Região Nordeste,25190,Pequeno II,0,0,0,0,32,0,0,0,0,9,0,0,0,0,0
+BA,América Dourada,290115,2901155,BA,América Dourada,"-11,4429","-41,439",Região Nordeste,15961,Pequeno I,0,2,0,0,33,8,0,0,0,72,19,8,0,0,0
+SP,Americana,350160,3501608,SP,Americana,"-22,7374","-47,3331",Região Sudeste,210638,Grande,0,0,1,0,1195,175,6,5,0,643,0,0,0,37,0
+GO,Americano do Brasil,520085,5200852,GO,Americano do Brasil,"-16,2514","-49,9831",Região Centro-Oeste,5508,Pequeno I,0,0,0,0,11,0,0,0,0,1,3,0,0,0,0
+SP,Américo Brasiliense,350170,3501707,SP,Américo Brasiliense,"-21,7288","-48,1147",Região Sudeste,34478,Pequeno II,0,0,0,1,42,8,0,0,0,38,3,0,0,1,0
+SP,Américo de Campos,350180,3501806,SP,Américo de Campos,"-20,2985","-49,7359",Região Sudeste,5706,Pequeno I,0,0,0,0,264,3,0,0,0,29,1,0,0,0,0
+RS,Ametista do Sul,430064,4300646,RS,Ametista do Sul,"-27,3607","-53,183",Região Sul,7323,Pequeno I,0,0,0,0,0,8,0,0,0,21,0,0,0,0,0
+CE,Amontada,230075,2300754,CE,Amontada,"-3,36017","-39,8288",Região Nordeste,39232,Pequeno II,0,0,0,0,2,0,0,0,0,10,6,0,0,0,0
+GO,Amorinópolis,520090,5200902,GO,Amorinópolis,"-16,6151","-51,0919",Região Centro-Oeste,3609,Pequeno I,0,0,0,0,59,0,0,0,0,0,1,0,0,0,0
+PB,Amparo,250073,2500734,PB,Amparo,"-7,55502","-37,0628",Região Nordeste,2088,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SP,Amparo,350190,3501905,SP,Amparo,"-22,7088","-46,772",Região Sudeste,65829,Médio,0,0,1,0,115,64,1,7,0,151,0,0,0,0,0
+SE,Amparo de São Francisco,280010,2800100,SE,Amparo de São Francisco,"-10,1348","-36,935",Região Nordeste,2275,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MG,Amparo do Serra,310250,3102506,MG,Amparo do Serra,"-20,5051","-42,8009",Região Sudeste,5053,Pequeno I,0,0,0,0,20,0,0,0,0,6,0,0,0,0,0
+PR,Ampére,410100,4101002,PR,Ampére,"-25,9168","-53,4686",Região Sul,17308,Pequeno I,0,0,0,0,177,30,0,6,0,54,0,0,0,0,0
+AL,Anadia,270020,2700201,AL,Anadia,"-9,68489","-36,3078",Região Nordeste,17424,Pequeno I,0,0,0,0,2,2,0,0,0,5,4,0,0,0,0
+BA,Anagé,290120,2901205,BA,Anagé,"-14,6151","-41,1356",Região Nordeste,25516,Pequeno II,0,0,1,0,25,3,0,0,0,142,6,0,0,0,0
+PR,Anahy,410105,4101051,PR,Anahy,"-24,6449","-53,1332",Região Sul,2874,Pequeno I,0,0,0,0,155,0,0,0,0,7,0,0,0,0,0
+PA,Anajás,150070,1500701,PA,Anajás,"-0,996811","-49,9354",Região Norte,24759,Pequeno II,0,0,3,0,0,0,0,0,14,89,1,2,0,0,0
+MA,Anajatuba,210070,2100709,MA,Anajatuba,"-3,26269","-44,6126",Região Nordeste,25291,Pequeno II,0,1,1,0,0,4,0,0,0,1,0,0,0,0,0
+SP,Analândia,350200,3502002,SP,Analândia,"-22,1289","-47,6619",Região Sudeste,4293,Pequeno I,0,0,0,0,20,1,0,0,0,14,0,0,0,0,0
+AM,Anamã,130008,1300086,AM,Anamã,"-3,56697","-61,3963",Região Norte,10214,Pequeno I,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0
+TO,Ananás,170100,1701002,TO,Ananás,"-6,36437","-48,0735",Região Norte,9865,Pequeno I,0,0,11,0,31,4,0,0,0,13,1,0,0,0,0
+PA,Ananindeua,150080,1500800,PA,Ananindeua,"-1,36391","-48,3743",Região Norte,471980,Grande,0,15,42,0,45,174,0,44,137,4,31,44,0,1,0
+GO,Anápolis,520110,5201108,GO,Anápolis,"-16,3281","-48,953",Região Centro-Oeste,334613,Grande,0,3,8,0,4952,198,0,4,0,506,117,0,6,6,0
+PA,Anapu,150085,1500859,PA,Anapu,"-3,46985","-51,2003",Região Norte,20543,Pequeno II,0,0,43,0,17,4,0,0,0,101,0,0,0,0,0
+MA,Anapurus,210080,2100808,MA,Anapurus,"-3,67577","-43,1014",Região Nordeste,13939,Pequeno I,0,0,14,0,7,0,0,0,0,45,0,0,0,0,0
+MS,Anastácio,500070,5000708,MS,Anastácio,"-20,4823","-55,8104",Região Centro-Oeste,23835,Pequeno II,0,0,1,0,122,7,0,0,0,19,7,0,0,0,0
+MS,Anaurilândia,500080,5000807,MS,Anaurilândia,"-22,1852","-52,7191",Região Centro-Oeste,8493,Pequeno I,0,0,0,0,238,0,0,0,0,30,0,0,0,0,0
+ES,Anchieta,320040,3200409,ES,Anchieta,"-20,7955","-40,6425",Região Sudeste,23902,Pequeno II,0,0,0,0,1,20,0,0,0,0,0,0,0,0,0
+SC,Anchieta,420080,4200804,SC,Anchieta,"-26,5382","-53,3319",Região Sul,6380,Pequeno I,0,0,1,0,9,35,0,2,0,45,1,0,0,0,0
+BA,Andaraí,290130,2901304,BA,Andaraí,"-12,8049","-41,3297",Região Nordeste,13960,Pequeno I,0,0,3,0,104,1,0,0,0,112,1,0,0,0,0
+PR,Andirá,410110,4101101,PR,Andirá,"-23,0533","-50,2304",Região Sul,20610,Pequeno II,0,0,0,0,1035,6,0,0,0,56,0,0,0,0,0
+BA,Andorinha,290135,2901353,BA,Andorinha,"-10,3482","-39,8391",Região Nordeste,14414,Pequeno I,0,0,0,0,55,0,0,0,0,39,9,0,0,0,0
+MG,Andradas,310260,3102605,MG,Andradas,"-22,0695","-46,5724",Região Sudeste,37270,Pequeno II,0,0,0,0,26,30,0,6,0,103,0,0,0,1,0
+SP,Andradina,350210,3502101,SP,Andradina,"-20,8948","-51,3786",Região Sudeste,55334,Médio,0,3,1,0,1191,101,0,0,0,753,2,0,1,3,0
+RS,André da Rocha,430066,4300661,RS,André da Rocha,"-28,6283","-51,5797",Região Sul,1216,Pequeno I,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0
+MG,Andrelândia,310280,3102803,MG,Andrelândia,"-21,7411","-44,3117",Região Sudeste,12173,Pequeno I,0,0,0,0,38,0,0,1,0,24,0,0,0,0,0
+SP,Angatuba,350220,3502200,SP,Angatuba,"-23,4917","-48,4139",Região Sudeste,22210,Pequeno II,0,0,1,0,4,4,0,0,0,11,0,0,0,0,0
+MG,Angelândia,310285,3102852,MG,Angelândia,"-17,7279","-42,2641",Região Sudeste,8003,Pequeno I,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+MS,Angélica,500085,5000856,MS,Angélica,"-22,1527","-53,7708",Região Centro-Oeste,9185,Pequeno I,0,0,0,0,50,1,0,0,0,6,1,0,0,0,0
+PE,Angelim,260100,2601003,PE,Angelim,"-8,88429","-36,2902",Região Nordeste,10202,Pequeno I,0,0,0,0,7,0,0,0,0,2,0,0,0,0,0
+SC,Angelina,420090,4200903,SC,Angelina,"-27,5704","-48,9879",Região Sul,5250,Pequeno I,0,0,0,0,2,1,0,3,0,25,0,0,0,0,0
+BA,Angical,290140,2901403,BA,Angical,"-12,0063","-44,7003",Região Nordeste,14073,Pequeno I,0,0,0,0,11,0,0,0,0,87,1,0,0,0,0
+PI,Angical do Piauí,220060,2200608,PI,Angical do Piauí,"-6,08786","-42,74",Região Nordeste,6672,Pequeno I,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0
+TO,Angico,170105,1701051,TO,Angico,"-6,39179","-47,8611",Região Norte,3175,Pequeno I,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0
+RN,Angicos,240080,2400802,RN,Angicos,"-5,65792","-36,6094",Região Nordeste,11549,Pequeno I,0,0,0,0,6,0,0,0,0,0,29,0,0,0,0
+RJ,Angra Dos Reis,330010,3300100,RJ,Angra Dos Reis,"-23,0011","-44,3196",Região Sudeste,169511,Grande,0,0,3,0,152,43,1,13,0,86,47,0,0,1,0
+BA,Anguera,290150,2901502,BA,Anguera,"-12,1462","-39,2462",Região Nordeste,10242,Pequeno I,0,0,0,0,72,0,0,0,0,11,7,0,0,0,0
+PR,Ângulo,410115,4101150,PR,Ângulo,"-23,1946","-51,9154",Região Sul,2859,Pequeno I,0,0,0,0,87,0,0,0,0,5,0,0,0,0,0
+GO,Anhanguera,520120,5201207,GO,Anhanguera,"-18,3339","-48,2204",Região Centro-Oeste,1020,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SP,Anhembi,350230,3502309,SP,Anhembi,"-22,793","-48,1336",Região Sudeste,5653,Pequeno I,0,0,0,0,4,0,0,0,0,111,0,0,0,0,0
+SP,Anhumas,350240,3502408,SP,Anhumas,"-22,2934","-51,3895",Região Sudeste,3738,Pequeno I,0,0,0,0,4,1,0,0,0,5,0,0,0,0,0
+GO,Anicuns,520130,5201306,GO,Anicuns,"-16,4642","-49,9617",Região Centro-Oeste,20239,Pequeno II,0,0,0,0,34,2,0,0,0,14,6,0,0,1,0
+PI,Anísio de Abreu,220070,2200707,PI,Anísio de Abreu,"-9,18564","-43,0494",Região Nordeste,9098,Pequeno I,0,0,1,0,0,0,0,0,0,13,0,0,0,0,0
+SC,Anita Garibaldi,420100,4201000,SC,Anita Garibaldi,"-27,6897","-51,1271",Região Sul,8623,Pequeno I,0,0,0,0,0,0,0,0,0,41,0,0,0,0,0
+SC,Anitápolis,420110,4201109,SC,Anitápolis,"-27,9012","-49,1316",Região Sul,3214,Pequeno I,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+AM,Anori,130010,1300102,AM,Anori,"-3,74603","-61,6575",Região Norte,16317,Pequeno I,0,0,0,0,0,9,0,0,0,15,0,0,0,1,0
+RS,Anta Gorda,430070,4300703,RS,Anta Gorda,"-28,9698","-52,0102",Região Sul,6073,Pequeno I,0,0,0,0,0,5,0,0,0,13,0,0,0,0,0
+BA,Antas,290160,2901601,BA,Antas,"-10,3856","-38,3401",Região Nordeste,17072,Pequeno I,0,0,0,0,57,1,0,0,0,29,0,0,0,1,0
+PR,Antonina,410120,4101200,PR,Antonina,"-25,4386","-48,7191",Região Sul,18891,Pequeno I,0,0,2,0,3,4,6,0,0,47,0,0,0,0,0
+CE,Antonina do Norte,230080,2300804,CE,Antonina do Norte,"-6,76919","-39,987",Região Nordeste,6984,Pequeno I,0,0,0,0,33,0,0,0,0,0,0,0,0,0,0
+PI,Antônio Almeida,220080,2200806,PI,Antônio Almeida,"-7,21276","-44,1889",Região Nordeste,3039,Pequeno I,0,0,0,0,1,0,0,0,0,5,0,0,0,0,0
+BA,Antônio Cardoso,290170,2901700,BA,Antônio Cardoso,"-12,4335","-39,1176",Região Nordeste,11554,Pequeno I,0,0,0,0,25,0,0,0,0,24,2,0,0,0,0
+MG,Antônio Carlos,310290,3102902,MG,Antônio Carlos,"-21,321","-43,7451",Região Sudeste,11114,Pequeno I,0,0,0,0,1,0,0,0,0,89,0,0,0,0,0
+SC,Antônio Carlos,420120,4201208,SC,Antônio Carlos,"-27,5191","-48,766",Região Sul,7458,Pequeno I,0,0,0,0,0,0,0,3,0,0,1,0,0,0,0
+MG,Antônio Dias,310300,3103009,MG,Antônio Dias,"-19,6491","-42,8732",Região Sudeste,9565,Pequeno I,0,0,2,0,9,0,0,0,0,37,4,0,0,0,0
+BA,Antônio Gonçalves,290180,2901809,BA,Antônio Gonçalves,"-10,5767","-40,2785",Região Nordeste,11015,Pequeno I,0,0,4,0,41,0,0,0,0,7,1,0,0,0,0
+MS,Antônio João,500090,5000906,MS,Antônio João,"-22,1927","-55,9517",Região Centro-Oeste,8208,Pequeno I,0,0,0,0,410,0,0,0,0,18,0,0,0,0,0
+RN,Antônio Martins,240090,2400901,RN,Antônio Martins,"-6,21367","-37,8834",Região Nordeste,6907,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PR,Antônio Olinto,410130,4101309,PR,Antônio Olinto,"-25,9804","-50,1972",Região Sul,7351,Pequeno I,0,0,0,0,1,0,0,1,0,83,0,0,0,0,0
+RS,Antônio Prado,430080,4300802,RS,Antônio Prado,"-28,8565","-51,2883",Região Sul,12833,Pequeno I,0,0,0,0,0,14,0,0,0,92,1,0,0,0,0
+MG,Antônio Prado de Minas,310310,3103108,MG,Antônio Prado de Minas,"-21,0192","-42,1109",Região Sudeste,1671,Pequeno I,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+PB,Aparecida,250077,2500775,PB,Aparecida,"-6,78466","-38,0803",Região Nordeste,7676,Pequeno I,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0
+SP,Aparecida,350250,3502507,SP,Aparecida,"-22,8495","-45,2325",Região Sudeste,35007,Pequeno II,0,0,1,0,664,33,0,1,0,68,2,0,0,0,0
+SP,Aparecida D'oeste,350260,3502606,SP,Aparecida D´oeste,"-20,4487","-50,8835",Região Sudeste,4450,Pequeno I,0,0,0,0,22,1,0,0,0,82,6,0,0,0,0
+GO,Aparecida de Goiânia,520140,5201405,GO,Aparecida de Goiânia,"-16,8198","-49,2469",Região Centro-Oeste,455657,Grande,0,0,3,0,10514,286,0,2,0,88,199,0,1,0,0
+GO,Aparecida do Rio Doce,520145,5201454,GO,Aparecida do Rio Doce,"-18,2941","-51,1516",Região Centro-Oeste,2427,Pequeno I,0,0,0,0,3,0,0,0,0,4,0,0,0,0,0
+TO,Aparecida do Rio Negro,170110,1701101,TO,Aparecida do Rio Negro,"-9,94139","-47,9638",Região Norte,4213,Pequeno I,0,0,4,0,6,1,0,0,1,11,2,0,0,0,0
+MS,Aparecida do Taboado,500100,5001003,MS,Aparecida do Taboado,"-20,0873","-51,0961",Região Centro-Oeste,22320,Pequeno II,0,3,1,0,22,0,0,0,0,55,0,0,0,0,0
+RJ,Aperibé,330015,3300159,RJ,Aperibé,"-21,6252","-42,1017",Região Sudeste,10213,Pequeno I,0,0,0,0,62,5,0,3,0,1,0,0,0,0,0
+ES,Apiacá,320050,3200508,ES,Apiacá,"-21,1523","-41,5693",Região Sudeste,7512,Pequeno I,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+MT,Apiacás,510080,5100805,MT,Apiacás,"-9,53981","-57,4587",Região Centro-Oeste,8567,Pequeno I,0,0,3,0,7,0,0,0,0,24,2,0,0,0,0
+SP,Apiaí,350270,3502705,SP,Apiaí,"-24,5108","-48,8443",Região Sudeste,25191,Pequeno II,0,0,4,0,1,4,0,1,0,52,0,0,0,0,0
+MA,Apicum-açu,210083,2100832,MA,Apicum-açu,"-1,45862","-45,0864",Região Nordeste,14959,Pequeno I,0,0,1,0,0,0,0,0,0,12,0,0,0,0,0
+SC,Apiúna,420125,4201257,SC,Apiúna,"-27,0375","-49,3885",Região Sul,9600,Pequeno I,0,0,0,0,0,3,2,0,0,1,0,0,0,0,0
+RN,Apodi,240100,2401008,RN,Apodi,"-5,65349","-37,7946",Região Nordeste,34763,Pequeno II,0,0,0,0,83,0,0,0,0,0,2,0,0,0,0
+BA,Aporá,290190,2901908,BA,Aporá,"-11,6577","-38,0814",Região Nordeste,17731,Pequeno I,0,0,0,0,11,0,0,0,0,0,3,0,0,0,0
+GO,Aporé,520150,5201504,GO,Aporé,"-18,9607","-51,9232",Região Centro-Oeste,3803,Pequeno I,0,0,0,0,50,2,0,0,0,9,1,0,0,0,0
+BA,Apuarema,290195,2901957,BA,Apuarema,"-13,8542","-39,7501",Região Nordeste,7459,Pequeno I,0,0,0,0,62,2,0,0,0,7,2,0,0,0,0
+PR,Apucarana,410140,4101408,PR,Apucarana,"-23,55","-51,4635",Região Sul,120919,Grande,0,0,3,0,966,88,0,7,0,68,0,0,0,0,0
+AM,Apuí,130014,1300144,AM,Apuí,"-7,19409","-59,896",Região Norte,18007,Pequeno I,0,0,27,0,0,2,0,0,0,159,0,0,0,0,0
+CE,Apuiarés,230090,2300903,CE,Apuiarés,"-3,94506","-39,4359",Região Nordeste,13925,Pequeno I,0,0,0,0,2,1,0,0,0,9,0,0,0,0,0
+SE,Aquidabã,280020,2800209,SE,Aquidabã,"-10,278","-37,0148",Região Nordeste,20056,Pequeno II,0,0,0,0,9,0,0,0,0,1,20,0,0,0,0
+MS,Aquidauana,500110,5001102,MS,Aquidauana,"-20,4666","-55,7868",Região Centro-Oeste,45614,Pequeno II,0,2,0,0,358,8,0,0,0,57,23,0,0,0,0
+CE,Aquiraz,230100,2301000,CE,Aquiraz,"-3,89929","-38,3896",Região Nordeste,72628,Médio,0,0,0,0,7,0,0,0,0,13,5,0,0,0,0
+SC,Arabutã,420127,4201273,SC,Arabutã,"-27,1587","-52,1423",Região Sul,4193,Pequeno I,0,0,0,0,0,0,0,1,0,25,0,0,0,0,0
+PB,Araçagi,250080,2500809,PB,Araçagi,"-6,84374","-35,3737",Região Nordeste,17224,Pequeno I,0,0,0,0,36,0,0,0,0,0,1,0,0,0,0
+MG,Araçaí,310320,3103207,MG,Araçaí,"-19,1955","-44,2493",Região Sudeste,2243,Pequeno I,0,0,0,0,4,1,0,0,0,1,0,0,0,0,0
+SE,Aracaju,280030,2800308,SE,Aracaju,"-10,9091","-37,0677",Região Nordeste,571149,Grande,0,55,12,0,1083,532,0,62,0,1261,189,0,0,18,0
+SP,Araçariguama,350275,3502754,SP,Araçariguama,"-23,4366","-47,0608",Região Sudeste,17080,Pequeno I,0,0,1,0,1,11,0,0,0,85,1,0,0,0,0
+BA,Araças,290205,2902054,BA,Araças,"-12,22","-38,2027",Região Nordeste,11561,Pequeno I,0,0,0,0,13,0,0,0,0,18,0,0,0,0,0
+CE,Aracati,230110,2301109,CE,Aracati,"-4,55826","-37,7679",Região Nordeste,69159,Médio,0,1,0,0,425,15,0,0,0,124,67,0,0,0,0
+BA,Aracatu,290200,2902005,BA,Aracatu,"-14,428","-41,4648",Região Nordeste,13743,Pequeno I,0,0,0,0,50,0,0,0,0,74,2,0,0,0,0
+SP,Araçatuba,350280,3502804,SP,Araçatuba,"-21,2076","-50,4401",Região Sudeste,181579,Grande,0,9,5,0,2597,120,0,0,0,1342,64,0,0,37,0
+BA,Araci,290210,2902104,BA,Araci,"-11,3253","-38,9584",Região Nordeste,51651,Médio,0,3,1,0,237,3,0,0,0,67,7,0,0,0,0
+MG,Aracitaba,310330,3103306,MG,Aracitaba,"-21,3446","-43,3736",Região Sudeste,2058,Pequeno I,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0
+CE,Aracoiaba,230120,2301208,CE,Aracoiaba,"-4,36872","-38,8125",Região Nordeste,25391,Pequeno II,0,0,0,0,7,2,0,0,0,8,1,0,0,0,0
+PE,Araçoiaba,260105,2601052,PE,Araçoiaba,"-7,78391","-35,0809",Região Nordeste,18156,Pequeno I,0,0,7,0,0,0,0,0,0,55,1,0,0,0,0
+SP,Araçoiaba da Serra,350290,3502903,SP,Araçoiaba da Serra,"-23,5029","-47,6166",Região Sudeste,27299,Pequeno II,0,0,0,0,10,1,0,0,0,10,0,0,0,0,0
+ES,Aracruz,320060,3200607,ES,Aracruz,"-19,82","-40,2764",Região Sudeste,81832,Médio,0,0,0,0,0,24,0,0,0,0,8,0,0,0,0
+GO,Araçu,520160,5201603,GO,Araçu,"-16,3563","-49,6804",Região Centro-Oeste,3802,Pequeno I,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0
+MG,Araçuaí,310340,3103405,MG,Araçuaí,"-16,8523","-42,0637",Região Sudeste,36013,Pequeno II,0,3,48,0,851,7,0,0,0,61,4,0,0,0,0
+GO,Aragarças,520170,5201702,GO,Aragarças,"-15,8955","-52,2372",Região Centro-Oeste,18305,Pequeno I,0,0,11,0,67,1,0,0,0,28,5,0,0,0,0
+GO,Aragoiânia,520180,5201801,GO,Aragoiânia,"-16,9087","-49,4476",Região Centro-Oeste,8365,Pequeno I,0,0,0,0,31,1,0,0,0,19,1,0,0,0,0
+TO,Aragominas,170130,1701309,TO,Aragominas,"-7,16005","-48,5291",Região Norte,5882,Pequeno I,0,0,0,0,7,2,0,0,0,13,40,0,0,0,0
+TO,Araguacema,170190,1701903,TO,Araguacema,"-8,80755","-49,5569",Região Norte,6317,Pequeno I,0,0,8,0,3,1,0,1,0,29,1,0,0,0,0
+TO,Araguaçu,170200,1702000,TO,Araguaçu,"-12,9289","-49,8231",Região Norte,8786,Pequeno I,0,0,2,0,12,0,0,0,0,41,0,0,0,0,0
+MT,Araguaiana,510100,5101001,MT,Araguaiana,"-15,7291","-51,8341",Região Centro-Oeste,3197,Pequeno I,0,0,7,0,76,0,0,0,0,23,2,0,0,0,0
+TO,Araguaína,170210,1702109,TO,Araguaína,"-7,19238","-48,2044",Região Norte,150484,Grande,0,82,43,0,382,197,0,7,12,930,161,0,0,4,0
+MT,Araguainha,510120,5101209,MT,Araguainha,"-16,857","-53,0318",Região Centro-Oeste,1096,Pequeno I,0,0,5,0,4,1,0,0,0,0,0,0,0,0,0
+TO,Araguanã,170215,1702158,TO,Araguanã,"-6,58225","-48,6395",Região Norte,5030,Pequeno I,0,0,0,0,6,1,0,0,0,21,2,0,0,0,0
+MA,Araguanã,210087,2100873,MA,Araguanã,"-2,94644","-45,6589",Região Nordeste,13973,Pequeno I,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0
+GO,Araguapaz,520215,5202155,GO,Araguapaz,"-15,0909","-50,6315",Região Centro-Oeste,7510,Pequeno I,0,0,3,0,32,3,0,0,0,17,0,0,0,0,0
+MG,Araguari,310350,3103504,MG,Araguari,"-18,6456","-48,1934",Região Sudeste,109801,Grande,0,0,0,1,273,46,0,0,0,351,40,0,0,0,0
+TO,Araguatins,170220,1702208,TO,Araguatins,"-5,64659","-48,1232",Região Norte,31329,Pequeno II,0,2,3,0,11,6,0,0,0,117,170,0,0,0,0
+MA,Araioses,210090,2100907,MA,Araioses,"-2,89091","-41,905",Região Nordeste,42505,Pequeno II,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0
+MS,Aral Moreira,500124,5001243,MS,Aral Moreira,"-22,9385","-55,6334",Região Centro-Oeste,10251,Pequeno I,0,0,2,0,326,2,0,0,0,2,3,0,0,0,0
+BA,Aramari,290220,2902203,BA,Aramari,"-12,0884","-38,4969",Região Nordeste,10036,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RS,Arambaré,430085,4300851,RS,Arambaré,"-30,9092","-51,5046",Região Sul,3693,Pequeno I,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0
+MA,Arame,210095,2100956,MA,Arame,"-4,88347","-46,0032",Região Nordeste,31702,Pequeno II,0,0,8,0,6,3,0,0,0,163,0,0,0,0,0
+SP,Aramina,350300,3503000,SP,Aramina,"-20,0882","-47,7873",Região Sudeste,5152,Pequeno I,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0
+SP,Arandu,350310,3503109,SP,Arandu,"-23,1386","-49,0487",Região Sudeste,6123,Pequeno I,0,0,0,0,0,0,0,1,0,14,0,0,0,0,0
+MG,Arantina,310360,3103603,MG,Arantina,"-21,9102","-44,2555",Região Sudeste,2823,Pequeno I,0,0,0,0,1,0,0,0,0,3,0,0,0,0,0
+SP,Arapeí,350315,3503158,SP,Arapeí,"-22,6717","-44,4441",Região Sudeste,2493,Pequeno I,0,0,0,0,5,0,0,0,0,4,0,0,0,0,0
+AL,Arapiraca,270030,2700300,AL,Arapiraca,"-9,75487","-36,6615",Região Nordeste,214006,Grande,0,1,0,0,146,9,0,1,0,2374,226,0,0,0,0
+TO,Arapoema,170230,1702307,TO,Arapoema,"-7,65463","-49,0637",Região Norte,6742,Pequeno I,0,0,1,0,29,2,0,0,0,22,8,0,0,0,0
+MG,Araponga,310370,3103702,MG,Araponga,"-20,6686","-42,5178",Região Sudeste,8152,Pequeno I,0,0,0,0,0,1,0,0,0,55,0,0,0,0,0
+PR,Arapongas,410150,4101507,PR,Arapongas,"-23,4153","-51,4259",Região Sul,104150,Grande,0,0,2,0,569,83,0,6,0,10,0,0,0,0,0
+MG,Araporã,310375,3103751,MG,Araporã,"-18,4357","-49,1847",Região Sudeste,6144,Pequeno I,0,0,0,0,20,0,0,0,0,9,1,0,0,0,0
+PR,Arapoti,410160,4101606,PR,Arapoti,"-24,1548","-49,8285",Região Sul,25855,Pequeno II,0,0,0,0,58,11,0,1,0,61,0,0,0,0,0
+MG,Arapuá,310380,3103801,MG,Arapuá,"-19,0268","-46,1484",Região Sudeste,2775,Pequeno I,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0
+PR,Arapuã,410165,4101655,PR,Arapuã,"-24,3132","-51,7856",Região Sul,3561,Pequeno I,0,0,0,0,18,9,0,1,0,3,0,0,0,0,0
+MT,Araputanga,510125,5101258,MT,Araputanga,"-15,4641","-58,3425",Região Centro-Oeste,15342,Pequeno I,0,0,5,0,149,11,0,0,0,16,14,0,0,0,0
+SC,Araquari,420130,4201307,SC,Araquari,"-26,3754","-48,7188",Região Sul,24810,Pequeno II,0,0,0,0,27,1,0,1,0,12,1,0,0,0,0
+PB,Arara,250090,2500908,PB,Arara,"-6,82813","-35,7552",Região Nordeste,12653,Pequeno I,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0
+SC,Araranguá,420140,4201406,SC,Araranguá,"-28,9356","-49,4918",Região Sul,61310,Médio,0,0,0,0,1,76,0,16,0,32,1,0,0,3,0
+SP,Araraquara,350320,3503208,SP,Araraquara,"-21,7845","-48,178",Região Sudeste,208662,Grande,0,1,1,0,262,137,0,0,0,347,34,0,0,15,0
+SP,Araras,350330,3503307,SP,Araras,"-22,3572","-47,3842",Região Sudeste,118843,Grande,0,0,1,0,897,142,6,4,0,42,17,0,0,13,0
+CE,Ararendá,230125,2301257,CE,Ararendá,"-4,74567","-40,831",Região Nordeste,10491,Pequeno I,0,0,1,0,14,0,0,0,0,16,1,0,0,0,0
+MA,Arari,210100,2101004,MA,Arari,"-3,45214","-44,7665",Região Nordeste,28488,Pequeno II,0,0,0,0,0,0,0,0,0,24,5,0,0,0,0
+RS,Araricá,430087,4300877,RS,Araricá,"-29,6168","-50,9291",Região Sul,4864,Pequeno I,0,0,0,0,0,6,0,0,0,7,0,0,0,0,0
+CE,Araripe,230130,2301307,CE,Araripe,"-7,21319","-40,1359",Região Nordeste,20685,Pequeno II,0,1,0,0,98,0,0,0,0,4,2,0,0,0,0
+PE,Araripina,260110,2601102,PE,Araripina,"-7,57073","-40,494",Região Nordeste,77302,Médio,0,5,0,0,113,1,0,0,0,40,12,0,0,0,0
+RJ,Araruama,330020,3300209,RJ,Araruama,"-22,8697","-42,3326",Região Sudeste,112008,Grande,0,0,0,0,24,26,0,2,0,60,5,0,0,0,0
+PB,Araruna,250100,2501005,PB,Araruna,"-6,54848","-35,7498",Região Nordeste,18879,Pequeno I,0,0,0,0,43,0,0,0,0,18,3,0,0,0,0
+PR,Araruna,410170,4101705,PR,Araruna,"-23,9315","-52,5021",Região Sul,13419,Pequeno I,0,0,0,0,186,10,0,1,0,10,0,0,0,0,0
+BA,Arataca,290225,2902252,BA,Arataca,"-15,2651","-39,419",Região Nordeste,10392,Pequeno I,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+RS,Aratiba,430090,4300901,RS,Aratiba,"-27,3978","-52,2975",Região Sul,6565,Pequeno I,0,0,0,0,0,1,0,1,0,21,0,0,0,0,0
+CE,Aratuba,230140,2301406,CE,Aratuba,"-4,41229","-39,0471",Região Nordeste,11529,Pequeno I,0,0,7,0,17,0,0,1,0,26,51,0,0,0,0
+BA,Aratuípe,290230,2902302,BA,Aratuípe,"-13,0716","-39,0038",Região Nordeste,8599,Pequeno I,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+SE,Arauá,280040,2800407,SE,Arauá,"-11,2614","-37,6201",Região Nordeste,10878,Pequeno I,0,0,0,0,2,0,0,0,0,0,4,0,0,0,0
+PR,Araucária,410180,4101804,PR,Araucária,"-25,5859","-49,4047",Região Sul,119123,Grande,0,0,0,0,11,75,0,16,0,104,0,0,0,1,0
+MG,Araújos,310390,3103900,MG,Araújos,"-19,9405","-45,1671",Região Sudeste,7883,Pequeno I,0,0,0,0,106,1,0,0,0,12,4,0,0,0,0
+MG,Araxá,310400,3104007,MG,Araxá,"-19,5902","-46,9438",Região Sudeste,93672,Médio,0,1,1,0,168,53,0,2,0,242,11,0,10,2,0
+MG,Arceburgo,310410,3104106,MG,Arceburgo,"-21,359","-46,9401",Região Sudeste,9509,Pequeno I,0,0,1,0,104,1,0,0,0,30,0,0,0,0,0
+SP,Arco-íris,350335,3503356,SP,Arco-íris,"-21,7728","-50,466",Região Sudeste,1925,Pequeno I,0,0,0,0,39,0,0,0,0,0,0,0,0,0,0
+MG,Arcos,310420,3104205,MG,Arcos,"-20,2863","-45,5373",Região Sudeste,36597,Pequeno II,0,0,0,0,65,4,0,0,0,136,1,0,0,0,0
+PE,Arcoverde,260120,2601201,PE,Arcoverde,"-8,41519","-37,0577",Região Nordeste,68793,Médio,0,1,1,0,73,17,0,1,4,425,27,0,0,1,0
+MG,Areado,310430,3104304,MG,Areado,"-21,3572","-46,1421",Região Sudeste,13731,Pequeno I,0,0,0,0,72,2,0,0,0,1,3,0,0,0,0
+RJ,Areal,330022,3300225,RJ,Areal,"-22,2283","-43,1118",Região Sudeste,11423,Pequeno I,0,0,0,0,4,0,0,1,0,16,0,0,0,0,0
+SP,Arealva,350340,3503406,SP,Arealva,"-22,031","-48,9135",Região Sudeste,7841,Pequeno I,0,0,0,0,7,0,0,0,0,41,0,0,0,0,0
+PB,Areia,250110,2501104,PB,Areia,"-6,96396","-35,6977",Região Nordeste,23829,Pequeno II,0,0,3,0,20,0,0,0,0,3,6,0,0,0,0
+RN,Areia Branca,240110,2401107,RN,Areia Branca,"-4,95254","-37,1252",Região Nordeste,25315,Pequeno II,0,0,0,0,108,2,0,0,0,62,12,0,0,0,0
+SE,Areia Branca,280050,2800506,SE,Areia Branca,"-10,758","-37,3251",Região Nordeste,16857,Pequeno I,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0
+PB,Areia de Baraúnas,250115,2501153,PB,Areia de Baraúnas,"-7,11702","-36,9404",Região Nordeste,1927,Pequeno I,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+PB,Areial,250120,2501203,PB,Areial,"-7,04789","-35,9313",Região Nordeste,6470,Pequeno I,0,0,0,0,14,0,0,0,0,0,6,0,0,0,0
+SP,Areias,350350,3503505,SP,Areias,"-22,5786","-44,6992",Região Sudeste,3696,Pequeno I,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0
+SP,Areiópolis,350360,3503604,SP,Areiópolis,"-22,6672","-48,6681",Região Sudeste,10579,Pequeno I,0,0,0,0,1,0,0,0,0,10,1,0,0,0,0
+MT,Arenápolis,510130,5101308,MT,Arenápolis,"-14,4472","-56,8437",Região Centro-Oeste,10316,Pequeno I,0,0,4,0,98,2,0,0,0,8,3,0,0,0,0
+GO,Arenópolis,520235,5202353,GO,Arenópolis,"-16,3837","-51,5563",Região Centro-Oeste,3277,Pequeno I,0,0,0,0,37,0,0,0,0,5,0,0,0,0,0
+RN,Arês,240120,2401206,RN,Arês,"-6,18831","-35,1608",Região Nordeste,12924,Pequeno I,0,0,0,0,35,0,0,0,0,2,0,0,0,0,0
+MG,Argirita,310440,3104403,MG,Argirita,"-21,6083","-42,8292",Região Sudeste,2901,Pequeno I,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+MG,Aricanduva,310445,3104452,MG,Aricanduva,"-17,8666","-42,5533",Região Sudeste,4770,Pequeno I,0,0,0,0,1,0,0,0,0,14,0,0,0,0,0
+MG,Arinos,310450,3104502,MG,Arinos,"-15,9187","-46,1043",Região Sudeste,17674,Pequeno I,0,0,4,0,97,1,0,0,0,118,1,0,0,0,0
+MT,Aripuanã,510140,5101407,MT,Aripuanã,"-10,1723","-59,4568",Região Centro-Oeste,18656,Pequeno I,0,0,60,0,128,11,0,0,0,80,0,0,0,0,0
+RO,Ariquemes,110002,1100023,RO,Ariquemes,"-9,90571","-63,0325",Região Norte,90353,Médio,0,0,25,0,154,116,1,1,0,137,122,0,0,0,0
+SP,Ariranha,350370,3503703,SP,Ariranha,"-21,1872","-48,7904",Região Sudeste,8547,Pequeno I,0,0,0,0,295,0,0,0,0,22,2,0,0,0,0
+PR,Ariranha do Ivaí,410185,4101853,PR,Ariranha do Ivaí,"-24,3857","-51,5839",Região Sul,2453,Pequeno I,0,0,0,0,33,1,0,0,0,0,0,0,0,0,0
+RJ,Armação Dos Búzios,330023,3300233,RJ,Armação Dos Búzios,"-22,7528","-41,8846",Região Sudeste,27560,Pequeno II,0,0,0,0,1,57,0,0,0,18,1,0,0,0,0
+SC,Armazém,420150,4201505,SC,Armazém,"-28,2448","-49,0215",Região Sul,7753,Pequeno I,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0
+CE,Arneiroz,230150,2301505,CE,Arneiroz,"-6,3165","-40,1653",Região Nordeste,7650,Pequeno I,0,0,0,0,6,0,0,0,0,3,1,0,0,0,0
+PI,Aroazes,220090,2200905,PI,Aroazes,"-6,11022","-41,7822",Região Nordeste,5779,Pequeno I,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0
+PB,Aroeiras,250130,2501302,PB,Aroeiras,"-7,54473","-35,7066",Região Nordeste,19082,Pequeno I,0,1,0,0,5,0,0,0,0,0,2,0,0,0,0
+PI,Aroeiras do Itaim,220095,2200954,PI,Aroeiras do Itaim,"-7,24502","-41,5325",Região Nordeste,2440,Pequeno I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PI,Arraial,220100,2201002,PI,Arraial,"-6,65075","-42,5418",Região Nordeste,4688,Pequeno I,0,0,0,0,4,0,0,0,0,13,0,0,0,0,0
+RJ,Arraial do Cabo,330025,3300258,RJ,Arraial do Cabo,"-22,9774","-42,0267",Região Sudeste,27715,Pequeno II,0,0,0,0,3,1,0,0,0,8,4,0,0,0,0
+TO,Arraias,170240,1702406,TO,Arraias,"-12,9287","-46,9359",Região Norte,10645,Pequeno I,0,0,1,0,43,1,0,0,0,94,1,0,0,0,0
+RS,Arroio do Meio,430100,4301008,RS,Arroio do Meio,"-29,4014","-51,9557",Região Sul,18783,Pequeno I,0,0,0,0,0,3,0,4,0,8,1,0,0,1,0
+RS,Arroio do Padre,430107,4301073,RS,Arroio do Padre,"-31,4389","-52,4246",Região Sul,2730,Pequeno I,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0
+RS,Arroio do Sal,430105,4301057,RS,Arroio do Sal,"-29,5439","-49,8895",Região Sul,7740,Pequeno I,0,0,0,0,0,10,0,0,0,82,0,0,0,0,0
+RS,Arroio do Tigre,430120,4301206,RS,Arroio do Tigre,"-29,3348","-53,0966",Região Sul,12648,Pequeno I,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0
+RS,Arroio Dos Ratos,430110,4301107,RS,Arroio Dos Ratos,"-30,0875","-51,7275",Região Sul,13606,Pequeno I,0,0,0,0,0,24,0,1,0,1,0,0,0,0,0
+RS,Arroio Grande,430130,4301305,RS,Arroio Grande,"-32,2327","-53,0862",Região Sul,18470,Pequeno I,0,0,0,0,0,3,0,0,0,10,0,0,0,0,0
+SC,Arroio Trinta,420160,4201604,SC,Arroio Trinta,"-26,9257","-51,3407",Região Sul,3502,Pequeno I,0,0,0,0,0,3,0,0,0,14,0,0,0,0,0
+SP,Artur Nogueira,350380,3503802,SP,Artur Nogueira,"-22,5727","-47,1727",Região Sudeste,44177,Pequeno II,0,0,0,0,109,3,0,0,0,32,1,0,0,0,0
+GO,Aruanã,520250,5202502,GO,Aruanã,"-14,9166","-51,075",Região Centro-Oeste,7496,Pequeno I,0,0,0,0,39,0,0,0,0,17,0,0,0,0,0
+SP,Arujá,350390,3503901,SP,Arujá,"-23,3965","-46,32",Região Sudeste,74905,Médio,0,0,0,0,111,5,0,5,0,15,2,0,0,6,0
+SC,Arvoredo,420165,4201653,SC,Arvoredo,"-27,0748","-52,4543",Região Sul,2260,Pequeno I,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0
+RS,Arvorezinha,430140,4301404,RS,Arvorezinha,"-28,8737","-52,1781",Região Sul,10225,Pequeno I,0,0,1,0,0,1,0,1,0,19,0,0,0,0,0
+SC,Ascurra,420170,4201703,SC,Ascurra,"-26,9548","-49,3783",Região Sul,7412,Pequeno I,0,0,0,0,0,4,1,1,0,3,0,0,0,0,0
+SP,Aspásia,350395,3503950,SP,Aspásia,"-20,16","-50,728",Região Sudeste,1809,Pequeno I,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0
+PR,Assaí,410190,4101903,PR,Assaí,"-23,3697","-50,8459",Região Sul,16354,Pequeno I,0,0,0,0,2272,3,0,0,0,11,2,0,0,0,0
+CE,Assaré,230160,2301604,CE,Assaré,"-6,8669","-39,8689",Região Nordeste,22445,Pequeno II,0,2,6,0,7,1,0,0,0,2,0,0,0,0,0
+SP,Assis,350400,3504008,SP,Assis,"-22,66","-50,4183",Região Sudeste,95144,Médio,0,0,1,0,1067,82,3,9,0,45,5,0,2,6,0
+AC,Assis Brasil,120005,1200054,AC,Assis Brasil,"-10,9298","-69,5738",Região Norte,6072,Pequeno I,0,0,73,0,194,5,0,0,0,9,3,0,0,0,0
+PR,Assis Chateaubriand,410200,4102000,PR,Assis Chateaubriand,"-24,4168","-53,5213",Região Sul,33025,Pequeno II,0,0,0,0,2897,55,0,1,0,48,0,0,0,2,0
+PB,Assunção,250135,2501351,PB,Assunção,"-7,07231","-36,725",Região Nordeste,3522,Pequeno I,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0
+PI,Assunção do Piauí,220105,2201051,PI,Assunção do Piauí,"-5,865","-41,0389",Região Nordeste,7503,Pequeno I,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0
+MG,Astolfo Dutra,310460,3104601,MG,Astolfo Dutra,"-21,3184","-42,8572",Região Sudeste,13049,Pequeno I,0,0,0,0,297,0,0,0,0,12,2,0,0,0,0
+PR,Astorga,410210,4102109,PR,Astorga,"-23,2318","-51,6668",Região Sul,24698,Pequeno II,0,0,0,0,681,9,0,2,0,23,1,0,0,0,0
+AL,Atalaia,270040,2700409,AL,Atalaia,"-9,5119","-36,0086",Região Nordeste,44322,Pequeno II,0,0,0,0,1,18,0,5,0,209,5,0,0,0,0
+PR,Atalaia,410220,4102208,PR,Atalaia,"-23,1517","-52,0551",Região Sul,3913,Pequeno I,0,0,0,0,411,4,0,0,0,2,0,0,0,0,0
+AM,Atalaia do Norte,130020,1300201,AM,Atalaia do Norte,"-4,37055","-70,1967",Região Norte,15153,Pequeno I,0,0,8,0,9,27,0,0,0,127,0,0,0,0,0
+SC,Atalanta,420180,4201802,SC,Atalanta,"-27,4219","-49,7789",Região Sul,3300,Pequeno I,0,0,0,0,0,3,0,0,0,7,0,0,0,0,0
+MG,Ataléia,310470,3104700,MG,Ataléia,"-18,0438","-41,1149",Região Sudeste,14455,Pequeno I,0,0,1,0,13,0,0,0,0,48,0,0,0,0,0
+SP,Atibaia,350410,3504107,SP,Atibaia,"-23,1171","-46,5563",Região Sudeste,126603,Grande,0,0,2,0,212,139,0,5,0,150,0,0,0,4,0
+ES,Atilio Vivacqua,320070,3200706,ES,Atilio Vivacqua,"-20,913","-41,1986",Região Sudeste,9850,Pequeno I,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+TO,Augustinópolis,170255,1702554,TO,Augustinópolis,"-5,46863","-47,8863",Região Norte,15950,Pequeno I,0,13,3,0,7,7,0,0,0,65,7,0,0,0,0
+PA,Augusto Corrêa,150090,1500909,PA,Augusto Corrêa,"-1,05109","-46,6147",Região Norte,40497,Pequeno II,0,0,5,0,28,6,0,0,0,16,3,0,0,0,0
+MG,Augusto de Lima,310480,3104809,MG,Augusto de Lima,"-18,0997","-44,2655",Região Sudeste,4960,Pequeno I,0,0,0,0,2,0,0,0,0,18,0,0,0,0,0
+RS,Augusto Pestana,430150,4301503,RS,Augusto Pestana,"-28,5172","-53,9883",Região Sul,7096,Pequeno I,0,0,0,0,0,3,0,0,0,1,0,0,0,0,0
+RN,Augusto Severo,240130,2401305,RN,Augusto Severo,"-5,86206","-37,3135",Região Nordeste,9289,Pequeno I,0,0,0,0,6,1,0,0,0,6,1,0,0,0,0
+RS,Áurea,430155,4301552,RS,Áurea,"-27,6936","-52,0505",Região Sul,3665,Pequeno I,0,0,0,0,0,1,0,0,0,9,0,0,0,0,0
+BA,Aurelino Leal,290240,2902401,BA,Aurelino Leal,"-14,321","-39,329",Região Nordeste,13595,Pequeno I,0,0,1,0,20,1,0,0,0,0,0,0,0,0,0
+SP,Auriflama,350420,3504206,SP,Auriflama,"-20,6836","-50,5572",Região Sudeste,14202,Pequeno I,0,0,0,0,172,1,0,0,0,111,3,0,0,0,0
+GO,Aurilândia,520260,5202601,GO,Aurilândia,"-16,6773","-50,4641",Região Centro-Oeste,3650,Pequeno I,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0
+CE,Aurora,230170,2301703,CE,Aurora,"-6,93349","-38,9742",Região Nordeste,24566,Pequeno II,0,1,0,0,3,0,0,0,0,18,0,0,0,0,0
+SC,Aurora,420190,4201901,SC,Aurora,"-27,3098","-49,6295",Região Sul,5549,Pequeno I,0,0,0,0,0,0,0,2,0,13,0,0,0,0,0
+PA,Aurora do Pará,150095,1500958,PA,Aurora do Pará,"-2,14898","-47,5677",Região Norte,26546,Pequeno II,0,3,4,0,0,1,0,0,2,26,5,0,0,0,0
+TO,Aurora do Tocantins,170270,1702703,TO,Aurora do Tocantins,"-12,7105","-46,4076",Região Norte,3446,Pequeno I,0,0,8,0,0,0,0,0,0,38,0,0,0,0,0
+AM,Autazes,130030,1300300,AM,Autazes,"-3,58574","-59,1256",Região Norte,32135,Pequeno II,0,0,9,0,0,10,0,0,0,60,0,0,0,0,0
+SP,Avaí,350430,3504305,SP,Avaí,"-22,1514","-49,3356",Região Sudeste,4959,Pequeno I,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0
+SP,Avanhandava,350440,3504404,SP,Avanhandava,"-21,4584","-49,9509",Região Sudeste,11310,Pequeno I,0,0,1,0,52,4,0,0,0,16,1,0,0,0,0
+SP,Avaré,350450,3504503,SP,Avaré,"-23,1067","-48,9251",Região Sudeste,82934,Médio,0,0,0,0,16,10,0,0,0,33,0,0,0,3,0
+PA,Aveiro,150100,1501006,PA,Aveiro,"-3,60841","-55,3199",Região Norte,15849,Pequeno I,0,0,19,0,0,0,0,0,0,41,0,0,0,0,0
+PI,Avelino Lopes,220110,2201101,PI,Avelino Lopes,"-10,1345","-43,9563",Região Nordeste,11067,Pequeno I,0,0,0,0,0,1,0,0,0,9,0,0,0,0,0
+GO,Avelinópolis,520280,5202809,GO,Avelinópolis,"-16,4672","-49,7579",Região Centro-Oeste,2450,Pequeno I,0,0,0,0,14,0,0,0,0,1,0,0,0,0,0
+MA,Axixá,210110,2101103,MA,Axixá,"-2,83939","-44,062",Região Nordeste,11407,Pequeno I,0,0,18,0,0,0,0,1,0,1,2,0,0,0,0
+TO,Axixá do Tocantins,170290,1702901,TO,Axixá do Tocantins,"-5,61275","-47,7701",Região Norte,9275,Pequeno I,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0
+TO,Babaçulândia,170300,1703008,TO,Babaçulândia,"-7,20923","-47,7613",Região Norte,10424,Pequeno I,0,0,0,0,2,0,0,0,0,20,11,0,0,0,0
+MA,Bacabal,210120,2101202,MA,Bacabal,"-4,22447","-44,7832",Região Nordeste,100014,Grande,0,0,4,0,5,9,0,1,0,77,2,0,0,0,0
+MA,Bacabeira,210125,2101251,MA,Bacabeira,"-2,96452","-44,3164",Região Nordeste,14925,Pequeno I,0,0,2,0,26,1,0,0,0,3,2,0,0,0,0
+MA,Bacuri,210130,2101301,MA,Bacuri,"-1,6965","-45,1328",Região Nordeste,16604,Pequeno I,0,0,2,0,0,0,0,0,0,17,0,0,0,0,0
+MA,Bacurituba,210135,2101350,MA,Bacurituba,"-2,71","-44,7329",Região Nordeste,5293,Pequeno I,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+SP,Bady Bassitt,350460,3504602,SP,Bady Bassitt,"-20,9197","-49,4385",Região Sudeste,14603,Pequeno I,0,0,0,0,94,1,0,0,0,97,23,0,0,0,0
+MG,Baependi,310490,3104908,MG,Baependi,"-21,957","-44,8874",Região Sudeste,18307,Pequeno I,0,0,0,0,228,5,0,2,0,43,0,0,0,0,0
+RS,Bagé,430160,4301602,RS,Bagé,"-31,3297","-54,0999",Região Sul,116794,Grande,0,0,0,0,0,221,0,0,0,9,0,0,0,0,0
+PA,Bagre,150110,1501105,PA,Bagre,"-1,90057","-50,1987",Região Norte,23864,Pequeno II,0,0,33,0,2,0,0,0,6,50,0,0,0,0,0
+PB,Baía da Traição,250140,2501401,PB,Baía da Traição,"-6,69209","-34,9381",Região Nordeste,8012,Pequeno I,0,0,0,0,0,0,0,0,0,5,1,0,0,0,0
+RN,Baía Formosa,240140,2401404,RN,Baía Formosa,"-6,37161","-35,0033",Região Nordeste,8573,Pequeno I,0,0,0,0,21,0,0,0,0,84,11,0,0,0,0
+BA,Baianópolis,290250,2902500,BA,Baianópolis,"-12,3016","-44,5388",Região Nordeste,13850,Pequeno I,0,0,0,0,17,0,0,0,0,111,0,0,0,0,0
+PA,Baião,150120,1501204,PA,Baião,"-2,79021","-49,6694",Região Norte,36882,Pequeno II,0,1,12,0,0,1,0,0,1,39,0,0,0,0,0
+BA,Baixa Grande,290260,2902609,BA,Baixa Grande,"-11,9519","-40,169",Região Nordeste,20060,Pequeno II,0,0,0,0,79,2,0,0,0,85,0,0,0,0,0
+PI,Baixa Grande do Ribeiro,220115,2201150,PI,Baixa Grande do Ribeiro,"-7,84903","-45,219",Região Nordeste,10516,Pequeno I,0,0,1,0,41,0,0,0,0,8,3,0,0,0,0
+CE,Baixio,230180,2301802,CE,Baixio,"-6,71945","-38,7134",Região Nordeste,6026,Pequeno I,0,0,0,0,3,0,0,0,0,3,0,0,0,0,0
+ES,Baixo Guandu,320080,3200805,ES,Baixo Guandu,"-19,5213","-41,0109",Região Sudeste,29081,Pequeno II,0,1,3,0,0,14,0,1,0,0,16,0,0,0,0
+SP,Balbinos,350470,3504701,SP,Balbinos,"-21,8963","-49,3619",Região Sudeste,3702,Pequeno I,0,0,0,0,0,53,0,0,0,1,0,0,0,0,0
+MG,Baldim,310500,3105004,MG,Baldim,"-19,2832","-43,9613",Região Sudeste,7913,Pequeno I,0,0,1,0,4,0,0,0,0,26,2,0,0,0,0
+GO,Baliza,520310,5203104,GO,Baliza,"-16,1966","-52,5393",Região Centro-Oeste,3714,Pequeno I,0,0,32,0,25,0,0,0,0,1,0,0,0,0,0
