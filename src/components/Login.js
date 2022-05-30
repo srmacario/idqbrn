@@ -3,6 +3,7 @@ import MapDashboard from './MapDashboard'
 import Blank from './img/blank.png'
 import BrasilAzul from './img/brasilAzul.png'
 import Lock from './img/lock.svg'
+//import './css/style.css'
 
 
 function Login() {
