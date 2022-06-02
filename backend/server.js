@@ -2,35 +2,41 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const csvtojson = require('csvtojson');
+const csvDownload = require('json-to-csv-export');
+const { wait } = require('@testing-library/user-event/dist/utils');
+//const fs = require('fs');
 
 require('dotenv').config();
 
 
-
-
-
-console.log("a\n");
-csvtojson().fromFile("dados.csv")
-    .then(csvData => {
-        console.log("b\n");
-        const uri = process.env.ATLAS_URI;
-        mongoose.connect(uri, {
-            useNewUrlParser: true,
-            //useCreateIndex: true
+function populate_db(path) {
+    csvtojson().fromFile(path)
+        .then(csvData => {
+            const uri = process.env.ATLAS_URI;
+            mongoose.connect(uri, {
+                useNewUrlParser: true,
+                //useCreateIndex: true
+            });
+            const connection = mongoose.connection;
+            connection.once('open', () => {
+                console.log("MongoDB connection estabilished successfully");
+                console.log(connection.collections);
+                if (connection.collections != {})
+                    connection.collection("dados").drop();
+                connection.collection("dados").insertMany(csvData, (err, res) => {
+                    if (err) throw err
+                    console.log(`Inserted: ${res.insertedCount} rows`);
+                    connection.close();
+                    console.log("Connection closes");
+                })
+            });
         });
-        const connection = mongoose.connection;
-        connection.once('open', () => {
-            console.log("MongoDB connection estabilished successfully");
-            console.log(connection.collections);
-            connection.collection("dados").drop();
-            connection.collection("dados").insertMany(csvData, (err, res) => {
-                if (err) throw err
-                console.log(`Inserted: ${res.insertedCount} rows`);
-                connection.close();
-                console.log("Connection closes");
-            })
-        });
-    });
+}
+
+
+
+
+
 
 
 
@@ -42,4 +48,5 @@ app.use(express.json());
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port} `);
+    populate_db("dados.csv");
 });
