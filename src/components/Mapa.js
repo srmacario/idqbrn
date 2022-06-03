@@ -1,6 +1,7 @@
 import "./css/stylesMapa.css";
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import * as L from 'leaflet'
 
 export function LocationMarkers({ markersArray }) {
 
@@ -22,16 +23,18 @@ export function LocationMarkers({ markersArray }) {
     );
 }
 
+var bounds = new L.LatLngBounds(new L.LatLng(-90, -180), new L.LatLng(90, 180));
+
 export default function Mapa({ markersArray }) {
     return (
-        <MapContainer id="map" center={[-14.613282, -48.484189]} zoom={5} scrollWheelZoom={true}>
+        <MapContainer id="map" center={[-14.613282, -48.484189]} zoom={5} scrollWheelZoom={true} maxBounds={bounds} maxBoundsViscosity={1.0}>
             <TileLayer
-                attribution='\u003ca href=\"https://carto.com/\" target=\"_blank\"\u003e\u0026copy; CARTO\u003c/a\u003e \u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e'
+                attribution='© OpenStreetMap'
                 url="https://api.maptiler.com/maps/voyager/{z}/{x}/{y}.png?key=jtOqBSIykHSBkZTIYEDL"
                 crossOrigin={true}
                 tileSize={512}
                 zoomOffset={-1}
-                minZoom={1}
+                minZoom={3}
             />
             <LocationMarkers markersArray={markersArray} />
         </MapContainer>

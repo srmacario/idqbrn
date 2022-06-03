@@ -1,4 +1,4 @@
-body {
+.conteudo {
 	overflow-x: hidden;
 }
 
@@ -70,18 +70,18 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.titulo,
-.sub-titulo {
+.nome,
+.sub-nome {
 	margin: 0;
 	padding: 3px 20px 3px 20px;
 }
 
-.titulo {
+.nome {
 	font-size: 40px;
 	font-weight: bold;
 }
 
-.sub-titulo {
+.sub-nome {
 	font-weight: bold;
 	color: #3F3F3F;
 }

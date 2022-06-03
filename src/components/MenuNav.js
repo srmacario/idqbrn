@@ -1,22 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import IDQBRNlogo from './img/IDQBRNLogoWhite.png'
 import CityMarker from '../CityMarker';
+import NewCheckbox from './NewCheckbox'
 
-export default function MenuNav({ markersArray, setMarkers }) {
+export default function MenuNav({ markersArray, setMarkers, navigate }) {
+
+    function findCity(e) {
+        e.preventDefault()
+        console.log(place)
+    }
 
     function activateCheck(e) {
         var selected = e.target.checked;
         var value = e.target.value;
+        var id = e.target.id//Esse ID não sera target.id mas sim o valor do ID do IBGE que está no banco de dados para cada cidade
         if (selected) {
-            console.log("You selected " + value);
-            setMarkers((prevValue) => [...prevValue, new CityMarker(1, value, 0, 14.613282, -48.484189)]);
+            setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
         }
         else {
-            console.log("You unselected " + value);
             setMarkers(markersArray.filter(item => item.getDoenca() !== value));
         }
     }
 
+    const [place, setPlace] = useState()
 
     return (
         <div className="menuNav">
@@ -25,35 +31,26 @@ export default function MenuNav({ markersArray, setMarkers }) {
             </div>
 
             <div className="container">
-                <div className="wrap">
+                <form className="wrap" onSubmit={findCity}>
                     <div className="search">
-                        <input type="text" className="searchTerm" placeholder="Buscar..." />
+                        <input type="text" className="searchTerm" placeholder="Buscar por uma cidade..." onChange={(e) => setPlace(e.target.value)} />
                         <button type="submit" className="searchButton">
                             <i className="fa fa-search"></i>
                         </button>
                     </div>
-                </div>
+                </form>
 
                 <div className="containerList">
                     <ul className="ks-cboxtags">
-                        <li><input type="checkbox" id="checkboxOne" onChange={activateCheck} value="Dengue" />
-                            <label htmlFor="checkboxOne" >Dengue</label></li>
-                        <li><input type="checkbox" id="checkboxTwo" onChange={activateCheck} value="Febre Amarela" defaultChecked />
-                            <label htmlFor="checkboxTwo">Febre Amarela</label></li>
-                        <li><input type="checkbox" id="checkboxThree" onChange={activateCheck} value="Esquistossomose" defaultChecked />
-                            <label htmlFor="checkboxThree">Esquistossomose</label></li>
-                        <li><input type="checkbox" id="checkboxFour" onChange={activateCheck} value="Malária" />
-                            <label htmlFor="checkboxFour">Malária</label></li>
-                        <li><input type="checkbox" id="checkboxFive" onChange={activateCheck} value="Tuberculose" />
-                            <label htmlFor="checkboxFive">Tuberculose</label></li>
-                        <li><input type="checkbox" id="checkboxSix" onChange={activateCheck} value="Leishmaniose" defaultChecked />
-                            <label htmlFor="checkboxSix">Leishmaniose</label></li>
-                        <li><input type="checkbox" id="checkboxSeven" onChange={activateCheck} value="Doença de Chagas" />
-                            <label htmlFor="checkboxSeven">Doença de Chagas</label></li>
-                        <li><input type="checkbox" id="checkboxEight" onChange={activateCheck} value="Leptospirose" />
-                            <label htmlFor="checkboxEight">Leptospirose</label></li>
-                        <li><input type="checkbox" id="checkboxNine" onChange={activateCheck} value="Arboviroses Urbanas" />
-                            <label htmlFor="checkboxNine">Arboviroses Urbanas</label></li>
+                        <li><NewCheckbox id={0} onChange={activateCheck} navigate={navigate} value="Dengue" /></li>
+                        <li><NewCheckbox id={1} onChange={activateCheck} navigate={navigate} value="Febre Amarela" /></li>
+                        <li><NewCheckbox id={2} onChange={activateCheck} navigate={navigate} value="Esquistossomose" /></li>
+                        <li><NewCheckbox id={3} onChange={activateCheck} navigate={navigate} value="Malária" /></li>
+                        <li><NewCheckbox id={4} onChange={activateCheck} navigate={navigate} value="Tuberculose" /></li>
+                        <li><NewCheckbox id={5} onChange={activateCheck} navigate={navigate} value="Leishmaniose" /></li>
+                        <li><NewCheckbox id={6} onChange={activateCheck} navigate={navigate} value="Doença de Chagas" /></li>
+                        <li><NewCheckbox id={7} onChange={activateCheck} navigate={navigate} value="Leptospirose" /></li>
+                        <li><NewCheckbox id={8} onChange={activateCheck} navigate={navigate} value="Arboviroses Urbanas" /></li>
                     </ul>
                 </div>
             </div>
