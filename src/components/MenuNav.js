@@ -1,77 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import IDQBRNlogo from './img/IDQBRNLogoWhite.png'
+import CityMarker from '../CityMarker';
+import NewCheckbox from './NewCheckbox'
 import Select from 'react-select'
-import ImeLogo from './img/imeLogo.png'
-import SearchBox from './SearchBox'
-
-// class MenuNav extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             dados: props.dataParentToChild
-//         }
-//     }
-//     render() {
-//         console.log('stdados' + this.state.dados);
-//         const dados = this.state.dados;
-//         console.log("menuNav");
-//         console.log(dados);
-//         return (
-//             <div className="menuNav">
-//                 <div className="titulo">
-//                     <img className="logo" src={ImeLogo} />
-//                 </div>
-
-//                 <div className="container">
-//                     <div className="wrap">
-//                         <div className="search">
-//                             {/* <SearchBox type="search" className = "searchTerm" placeholder="Buscar..." 
-//                             handleChange={(e) => console.log(e.target.value)}/> */}
-//                             <Select options={dados}
-
-//                             />
-//                             <button type="submit" className="searchButton">
-//                                 <i className="fa fa-search"></i>
-//                             </button>
-//                         </div>
-//                     </div>
-
-//                     <div className="containerList">
-//                         <ul className="ks-cboxtags">
-//                             <li><input type="checkbox" id="checkboxOne" value="Dengue" /><label for="checkboxOne">Dengue</label>
-//                             </li>
-//                             <li><input type="checkbox" id="checkboxTwo" value="Febre Amarela" checked /><label
-//                                 for="checkboxTwo">Febre Amarela</label></li>
-//                             <li><input type="checkbox" id="checkboxThree" value="Esquistossomose" checked /><label
-//                                 for="checkboxThree">Esquistossomose</label></li>
-//                             <li><input type="checkbox" id="checkboxFour" value="Malária" /><label
-//                                 for="checkboxFour">Malária</label></li>
-//                             <li><input type="checkbox" id="checkboxFive" value="Tuberculose" /><label
-//                                 for="checkboxFive">Tuberculose</label></li>
-//                             <li><input type="checkbox" id="checkboxSix" value="Leishmaniose" checked /><label
-//                                 for="checkboxSix">Leishmaniose</label></li>
-//                             <li><input type="checkbox" id="checkboxSeven" value="Doença de Chagas" /><label
-//                                 for="checkboxSeven">Doença de Chagas</label></li>
-//                             <li><input type="checkbox" id="checkboxEight" value="Leptospirose" /><label
-//                                 for="checkboxEight">Leptospirose</label></li>
-//                             <li><input type="checkbox" id="checkboxNine" value="Arboviroses Urbanas" /><label
-//                                 for="checkboxNine">Arboviroses Urbanas</label></li>
-//                         </ul>
-//                     </div>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
-// export default MenuNav;
-
-// const filterOptions = (
-//     candidate: {label:string, value:tring}},
-//     input:string) =>{
-
-//     }
-// )
-
-
 
 export default function MenuNav(props) {
     const dados = props.dados;
@@ -91,47 +22,56 @@ export default function MenuNav(props) {
     //     cidades_opt.push({label: element['Municipio'], value: element['Municipio']});
     // });
     console.log(cidades_opt);
+  
+  function findCity(e) {
+        e.preventDefault()
+        console.log(place)
+    }
+  
+  function activateCheck(e) {
+        var selected = e.target.checked;
+        var value = e.target.value;
+        var id = e.target.id//Esse ID não sera target.id mas sim o valor do ID do IBGE que está no banco de dados para cada cidade
+        if (selected) {
+            setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
+        }
+        else {
+           setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
+        }
+    }
+    const [place, setPlace] = useState()
     return (
         <div className="menuNav">
             <div className="titulo">
-                <img className="logo" src={ImeLogo} />
+                <img alt="Logo" className="logo" src={IDQBRNlogo} />
             </div>
 
             <div className="container">
-                <div className="wrap">
+                <form className="wrap" onSubmit={findCity}>
                     <div className="search">
-                        {/* <SearchBox type="search" className = "searchTerm" placeholder="Buscar..." 
-                        handleChange={(e) => console.log(e.target.value)}/> */}
-                        <Select options={cidades_opt} placeholder="Buscar..."
-                            openMenuOnClick={true} filterConfig={filterConfig}
-
-                        />
+                        <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} filterConfig={filterConfig}/>
+                         //<input type="text" className="searchTerm" placeholder="Buscar por uma cidade..." onChange={(e) => setPlace(e.target.value)} />
                         <button type="submit" className="searchButton">
                             <i className="fa fa-search"></i>
                         </button>
                     </div>
-                </div>
+                </form>
 
                 <div className="containerList">
                     <ul className="ks-cboxtags">
-                        <li><input type="checkbox" id="checkboxOne" value="Dengue" /><label for="checkboxOne">Dengue</label>
-                        </li>
-                        <li><input type="checkbox" id="checkboxTwo" value="Febre Amarela" checked /><label
-                            for="checkboxTwo">Febre Amarela</label></li>
-                        <li><input type="checkbox" id="checkboxThree" value="Esquistossomose" checked /><label
-                            for="checkboxThree">Esquistossomose</label></li>
-                        <li><input type="checkbox" id="checkboxFour" value="Malária" /><label
-                            for="checkboxFour">Malária</label></li>
-                        <li><input type="checkbox" id="checkboxFive" value="Tuberculose" /><label
-                            for="checkboxFive">Tuberculose</label></li>
-                        <li><input type="checkbox" id="checkboxSix" value="Leishmaniose" checked /><label
-                            for="checkboxSix">Leishmaniose</label></li>
-                        <li><input type="checkbox" id="checkboxSeven" value="Doença de Chagas" /><label
-                            for="checkboxSeven">Doença de Chagas</label></li>
-                        <li><input type="checkbox" id="checkboxEight" value="Leptospirose" /><label
-                            for="checkboxEight">Leptospirose</label></li>
-                        <li><input type="checkbox" id="checkboxNine" value="Arboviroses Urbanas" /><label
-                            for="checkboxNine">Arboviroses Urbanas</label></li>
+
+                       
+
+                        <li><NewCheckbox id={0} onChange={activateCheck} navigate={props.navigate} value="Dengue" /></li>
+                        <li><NewCheckbox id={1} onChange={activateCheck} navigate={props.navigate} value="Febre Amarela" /></li>
+                        <li><NewCheckbox id={2} onChange={activateCheck} navigate={props.navigate} value="Esquistossomose" /></li>
+                        <li><NewCheckbox id={3} onChange={activateCheck} navigate={props.navigate} value="Malária" /></li>
+                        <li><NewCheckbox id={4} onChange={activateCheck} navigate={props.navigate} value="Tuberculose" /></li>
+                        <li><NewCheckbox id={5} onChange={activateCheck} navigate={props.navigate} value="Leishmaniose" /></li>
+                        <li><NewCheckbox id={6} onChange={activateCheck} navigate={props.navigate} value="Doença de Chagas" /></li>
+                        <li><NewCheckbox id={7} onChange={activateCheck} navigate={props.navigate} value="Leptospirose" /></li>
+                        <li><NewCheckbox id={8} onChange={activateCheck} navigate={props.navigate} value="Arboviroses Urbanas" /></li>
+
                     </ul>
                 </div>
             </div>
