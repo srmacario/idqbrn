@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express')
 const cors = require('cors');
 const mongoose = require('mongoose');
 const csvtojson = require('csvtojson');
@@ -33,20 +33,16 @@ function populate_db(path) {
         });
 }
 
-
-
-
-
-
-
-
-
 const app = express();
 const port = process.env.port || 8080;
 app.use(cors());
 app.use(express.json());
 
+const dadosRouter = require('./routes/dados');
+app.use('/dados',dadosRouter);
+
 app.listen(port, () => {
     console.log(`Server running on port: ${port} `);
-    populate_db("dados.csv");
+    //populate_db("dados.csv");
 });
+
