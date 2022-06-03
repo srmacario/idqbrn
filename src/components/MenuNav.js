@@ -33,10 +33,10 @@ export default function MenuNav(props) {
         var value = e.target.value;
         var id = e.target.id//Esse ID não sera target.id mas sim o valor do ID do IBGE que está no banco de dados para cada cidade
         if (selected) {
-            setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
+            props.setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
         }
         else {
-           setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
+           props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
         }
     }
     const [place, setPlace] = useState()
