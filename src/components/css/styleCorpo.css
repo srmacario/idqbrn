@@ -145,9 +145,32 @@
 .insertdisease:active{
 	color: #56A3A6;
 }
+.insertNumberofCases{
+	width: 50%;
+	border: 3px solid #56A3A6;
+	padding: 5px;
+	height: 20px;
+	border-radius: 10px 10px 10px 10px;
+	outline: none;
+	color: #9DBFAF;
+  	text-align: center;
+	margin:auto;
+	display: flex;
+	left:50%;  
+	  
+
+}
+.insertNumberofCases:focus{
+	color: #56A3A6;
+}
+.insertNumberofCases:active{
+	color: #56A3A6;
+}
 
 
-.searchByDiseaseAndCity{
+
+
+.searchByDiseaseAndCity {
 	width: 110px;
   	height: 36px;
   	border: 1px solid #56A3A6;
@@ -163,4 +186,21 @@
   	border-radius: 5px 5px 5px 5px;
   	cursor: pointer;
   	font-size: 20px;
+}
+.inputNumber{
+	width: 110px;
+	height: 36px;
+	border: 1px solid #56A3A6;
+  
+	background: #56A3A6;
+	text-align: center;
+  
+  	margin: auto;
+  	display:flex;
+  
+  	left:50%;
+	color: #fff;
+	border-radius: 5px 5px 5px 5px;
+	cursor: pointer;
+	font-size: 20px;
 }
