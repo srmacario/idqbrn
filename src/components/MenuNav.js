@@ -35,7 +35,7 @@ export default function MenuNav(props) {
         console.log(e.target);
         if (selected) {
             props.city_filter.push(value.toUpperCase());
-            props.setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
+            //props.setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
         }
         else {
             let length = props.city_filter.length;
@@ -63,7 +63,7 @@ export default function MenuNav(props) {
                 console.log(aux);
 
                 props.setMarkers((prevValue) => [...prevValue, new CityMarker(aux['IBGE7'], "buttons", 0,
-                parseFloat(aux["latitude"]), parseFloat(aux["longitude"]))]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
+                parseFloat(aux["latitude"].replace(',', '.')), parseFloat(aux["longitude"].replace(',', '.')))]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
 
             }
             
