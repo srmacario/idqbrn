@@ -14,21 +14,16 @@ export default function MenuNav(props) {
         matchFrom: 'start',
         stringify: option => `${option.label} ${option.value}`
     };
-    //var cidades_opt = [];
     console.log('menunav');
     console.log(dados);
     console.log(cidades_opt);
-    // dados.forEach(element => {
-    //     cidades_opt.push({label: element['Municipio'], value: element['Municipio']});
-    // });
-    console.log(cidades_opt);
-  
-  function findCity(e) {
+    
+    function findCity(e) {
         e.preventDefault()
         console.log(place)
     }
-  
-  function activateCheck(e) {
+
+    function activateCheck(e) {
         var selected = e.target.checked;
         var value = e.target.value;
         var id = e.target.id//Esse ID não sera target.id mas sim o valor do ID do IBGE que está no banco de dados para cada cidade
@@ -36,10 +31,13 @@ export default function MenuNav(props) {
             props.setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
         }
         else {
-           props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
+            props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
         }
     }
+    
+
     const [place, setPlace] = useState()
+    var selectValue = "";
     return (
         <div className="menuNav">
             <div className="titulo">
@@ -49,8 +47,18 @@ export default function MenuNav(props) {
             <div className="container">
                 <form className="wrap" onSubmit={findCity}>
                     <div className="search">
-                        <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} filterConfig={filterConfig}/>
-                         //<input type="text" className="searchTerm" placeholder="Buscar por uma cidade..." onChange={(e) => setPlace(e.target.value)} />
+                        <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} 
+                        filterConfig={filterConfig} 
+                        onChange={e =>{
+                            selectValue = e.value;
+                            console.log("sv" + selectValue);
+                         }}
+                         onInputChange={e =>{
+                             if(e.length > 0)
+                                selectValue = e;
+                             console.log("sv" + selectValue)
+                         }} on/>
+                        {/* <input type="text" className="searchTerm" placeholder="Buscar por uma cidade..." onChange={(e) => setPlace(e.target.value)} /> */}
                         <button type="submit" className="searchButton">
                             <i className="fa fa-search"></i>
                         </button>
@@ -60,7 +68,7 @@ export default function MenuNav(props) {
                 <div className="containerList">
                     <ul className="ks-cboxtags">
 
-                       
+
 
                         <li><NewCheckbox id={0} onChange={activateCheck} navigate={props.navigate} value="Dengue" /></li>
                         <li><NewCheckbox id={1} onChange={activateCheck} navigate={props.navigate} value="Febre Amarela" /></li>
