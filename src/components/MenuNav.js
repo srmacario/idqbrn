@@ -1,4 +1,5 @@
 import React from 'react'
+import stylesMapa from "./css/stylesMapa.module.css"
 import IDQBRNlogo from './img/IDQBRNLogoWhite.png'
 import CityMarker from '../CityMarker';
 import NewCheckbox from './NewCheckbox'
@@ -7,6 +8,8 @@ import Select from 'react-select'
 export default function MenuNav(props) {
     const dados = props.dados;
     const cidades_opt = props.cidades_opt;
+    const markersArray = props.markersArray;
+
     const filterConfig = {
         ignoreCase: false,
         ignoreAccents: true,
@@ -14,14 +17,14 @@ export default function MenuNav(props) {
         matchFrom: 'start',
         stringify: option => `${option.label} ${option.value}`
     };
-    //var cidades_opt = [];
     console.log('menunav');
     console.log(dados);
     console.log(cidades_opt);
+
     // dados.forEach(element => {
     //     cidades_opt.push({label: element['Municipio'], value: element['Municipio']});
     // });
-    console.log(cidades_opt);
+    //console.log(cidades_opt);
 
     function activateCheck(e) {
         var selected = e.target.checked;
@@ -34,21 +37,41 @@ export default function MenuNav(props) {
             props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
         }
     }
+ 
+    var selectValue = "";
     return (
-        <div className="menuNav">
-            <div className="titulo">
-                <img alt="Logo" className="logo" src={IDQBRNlogo} />
+        <div className={stylesMapa.menuNav}>
+            <div className={stylesMapa.titulo}>
+                <img alt="Logo" className={stylesMapa.logo} src={IDQBRNlogo} />
             </div>
 
-            <div className="container">
-                <form className="wrap" >
-                    <div className="search">
-                        <Select options={cidades_opt} placeholder="Buscar por cidade..." openMenuOnClick={true} filterConfig={filterConfig} className="searchTerm" />
+            <div className={stylesMapa.container}>
+                <form className={stylesMapa.wrap} >
+                    <div className={stylesMapa.search}>
+                        <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} 
+                        filterConfig={filterConfig} 
+                        onChange={e =>{
+                            selectValue = e.value;
+                            console.log("sv" + selectValue);
+                            const find_cidade = dados.find(dado => dado['Municipio'] === selectValue);
+                            console.log("filtro");
+                            console.log(find_cidade);
+                            props.setMarkers((prevValue) => [...prevValue, new CityMarker(find_cidade['IBGE7'], "searchbar", 0,
+                            parseFloat(find_cidade['latitude'].replace(',','.')), parseFloat(find_cidade['longitude'].replace(',','.')))]);
+                            console.log(parseFloat(find_cidade['latitude'].replace(',','.')));
+                         }}
+                         onInputChange={e =>{
+                             if(e.length > 0)
+                                selectValue = e;
+                             console.log("sv" + selectValue)
+                         }} on/>
+                        
                     </div>
                 </form>
 
-                <div className="containerList">
-                    <ul className="ks-cboxtags">
+                <div className={stylesMapa.containerList}>
+                    <ul className={stylesMapa['ks-cboxtags']}>
+
                         <li><NewCheckbox id={0} onChange={activateCheck} navigate={props.navigate} value="Dengue" /></li>
                         <li><NewCheckbox id={1} onChange={activateCheck} navigate={props.navigate} value="Febre Amarela" /></li>
                         <li><NewCheckbox id={2} onChange={activateCheck} navigate={props.navigate} value="Esquistossomose" /></li>
