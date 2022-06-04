@@ -2,7 +2,7 @@ import "./css/styleCorpo.css";
 import React, { useState } from 'react'
 import { useParams } from "react-router-dom";
 function UpdateCases(){
-    function searchDatabase(event){
+    const searchDatabase=(event) =>{
         event.preventDefault();
 
     }
@@ -16,8 +16,8 @@ function UpdateCases(){
             </div>
             
             <div className="corpo">
-                <form onSubmit={searchDatabase}/>
-                <form>
+                {/* <form onSubmit={searchDatabase}/> */}
+                <form onSubmit={searchDatabase}>
                     <div>
                         {/* <label htmlFor = "city">Cidade:</label> */}
                         <input
