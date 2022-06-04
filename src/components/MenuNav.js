@@ -7,6 +7,8 @@ import Select from 'react-select'
 export default function MenuNav(props) {
     const dados = props.dados;
     const cidades_opt = props.cidades_opt;
+    const markersArray = props.markersArray;
+
     const filterConfig = {
         ignoreCase: false,
         ignoreAccents: true,
@@ -53,6 +55,8 @@ export default function MenuNav(props) {
                             const find_cidade = dados.find(dado => dado['Municipio'] === selectValue);
                             console.log("filtro");
                             console.log(find_cidade);
+                            props.setMarkers((prevValue) => [...prevValue, new CityMarker(find_cidade['IBGE7'], "searchbar", 0,
+                            parseFloat(find_cidade['latitude']), parseFloat(find_cidade['longitude']))]);
                          }}
                          onInputChange={e =>{
                              if(e.length > 0)
