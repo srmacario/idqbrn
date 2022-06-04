@@ -62,7 +62,7 @@ export default function MenuNav(props) {
                 console.log(aux);
 
                 props.setMarkers((prevValue) => [...prevValue, new CityMarker(aux['IBGE7'], "buttons", 0,
-                parseFloat(aux["latitude"]), parseFloat(aux["longitude"]))]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
+                parseFloat(aux["latitude"].replace(',', '.')), parseFloat(aux["longitude"].replace(',', '.')))]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
 
             }
             
