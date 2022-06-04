@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import IDQBRNlogo from './img/IDQBRNLogoWhite.png'
 import CityMarker from '../CityMarker';
 import NewCheckbox from './NewCheckbox'
@@ -17,11 +17,18 @@ export default function MenuNav(props) {
     console.log('menunav');
     console.log(dados);
     console.log(cidades_opt);
+<<<<<<< HEAD
     
     function findCity(e) {
         e.preventDefault()
         console.log(place)
     }
+=======
+    // dados.forEach(element => {
+    //     cidades_opt.push({label: element['Municipio'], value: element['Municipio']});
+    // });
+    console.log(cidades_opt);
+>>>>>>> c256845c94ae69920495c0dc956d3b3462758bd2
 
     function activateCheck(e) {
         var selected = e.target.checked;
@@ -34,10 +41,13 @@ export default function MenuNav(props) {
             props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
         }
     }
+<<<<<<< HEAD
     
 
     const [place, setPlace] = useState()
     var selectValue = "";
+=======
+>>>>>>> c256845c94ae69920495c0dc956d3b3462758bd2
     return (
         <div className="menuNav">
             <div className="titulo">
@@ -45,8 +55,9 @@ export default function MenuNav(props) {
             </div>
 
             <div className="container">
-                <form className="wrap" onSubmit={findCity}>
+                <form className="wrap" >
                     <div className="search">
+<<<<<<< HEAD
                         <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} 
                         filterConfig={filterConfig} 
                         onChange={e =>{
@@ -62,14 +73,20 @@ export default function MenuNav(props) {
                         <button type="submit" className="searchButton">
                             <i className="fa fa-search"></i>
                         </button>
+=======
+                        <Select options={cidades_opt} placeholder="Buscar por cidade..." openMenuOnClick={true} filterConfig={filterConfig} className="searchTerm" />
+>>>>>>> c256845c94ae69920495c0dc956d3b3462758bd2
                     </div>
                 </form>
 
                 <div className="containerList">
                     <ul className="ks-cboxtags">
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> c256845c94ae69920495c0dc956d3b3462758bd2
                         <li><NewCheckbox id={0} onChange={activateCheck} navigate={props.navigate} value="Dengue" /></li>
                         <li><NewCheckbox id={1} onChange={activateCheck} navigate={props.navigate} value="Febre Amarela" /></li>
                         <li><NewCheckbox id={2} onChange={activateCheck} navigate={props.navigate} value="Esquistossomose" /></li>
@@ -79,7 +96,6 @@ export default function MenuNav(props) {
                         <li><NewCheckbox id={6} onChange={activateCheck} navigate={props.navigate} value="Doença de Chagas" /></li>
                         <li><NewCheckbox id={7} onChange={activateCheck} navigate={props.navigate} value="Leptospirose" /></li>
                         <li><NewCheckbox id={8} onChange={activateCheck} navigate={props.navigate} value="Arboviroses Urbanas" /></li>
-
                     </ul>
                 </div>
             </div>

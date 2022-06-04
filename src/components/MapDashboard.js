@@ -17,7 +17,7 @@ class MapDashboard extends React.Component {
     axios.get('http://localhost:8080/dados/')
       .then(response => {
         this.setState({ dados: response.data });
-        if (this.state.cidades_opt.length == 0) {
+        if (this.state.cidades_opt.length === 0) {
           response.data.forEach(element => {
             this.state.cidades_opt.push({ label: element['Municipio'], value: element['Municipio'] })
           });
