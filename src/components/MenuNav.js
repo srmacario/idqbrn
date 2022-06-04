@@ -56,7 +56,8 @@ export default function MenuNav(props) {
                             console.log("filtro");
                             console.log(find_cidade);
                             props.setMarkers((prevValue) => [...prevValue, new CityMarker(find_cidade['IBGE7'], "searchbar", 0,
-                            parseFloat(find_cidade['latitude']), parseFloat(find_cidade['longitude']))]);
+                            parseFloat(find_cidade['latitude'].replace(',','.')), parseFloat(find_cidade['longitude'].replace(',','.')))]);
+                            console.log(parseFloat(find_cidade['latitude'].replace(',','.')));
                          }}
                          onInputChange={e =>{
                              if(e.length > 0)
