@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import IDQBRNlogo from './img/IDQBRNLogoWhite.png'
 import CityMarker from '../CityMarker';
 import NewCheckbox from './NewCheckbox'
@@ -22,24 +22,19 @@ export default function MenuNav(props) {
     //     cidades_opt.push({label: element['Municipio'], value: element['Municipio']});
     // });
     console.log(cidades_opt);
-  
-  function findCity(e) {
-        e.preventDefault()
-        console.log(place)
-    }
-  
-  function activateCheck(e) {
+
+    function activateCheck(e) {
         var selected = e.target.checked;
         var value = e.target.value;
         var id = e.target.id//Esse ID não sera target.id mas sim o valor do ID do IBGE que está no banco de dados para cada cidade
         if (selected) {
-            setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
+            props.setMarkers((prevValue) => [...prevValue, new CityMarker(id, value, 0, -10.613282, -40.484189)]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
         }
         else {
-           setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
+            props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
         }
     }
-    const [place, setPlace] = useState()
+    var selectValue = "";
     return (
         <div className="menuNav">
             <div className="titulo">
@@ -47,21 +42,24 @@ export default function MenuNav(props) {
             </div>
 
             <div className="container">
-                <form className="wrap" onSubmit={findCity}>
+                <form className="wrap" >
                     <div className="search">
-                        <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} filterConfig={filterConfig}/>
-                         //<input type="text" className="searchTerm" placeholder="Buscar por uma cidade..." onChange={(e) => setPlace(e.target.value)} />
-                        <button type="submit" className="searchButton">
-                            <i className="fa fa-search"></i>
-                        </button>
+                        <Select options={cidades_opt} placeholder="Buscar por cidade..." openMenuOnClick={true} filterConfig={filterConfig}
+                            className="searchTerm"
+                            onChange={e => {
+                                selectValue = e.value;
+                                console.log("sv" + selectValue);
+                            }}
+                            onInputChange={e => {
+                                if (e.length > 0)
+                                    selectValue = e;
+                                console.log("sv" + selectValue)
+                            }} />
                     </div>
                 </form>
 
                 <div className="containerList">
                     <ul className="ks-cboxtags">
-
-                       
-
                         <li><NewCheckbox id={0} onChange={activateCheck} navigate={props.navigate} value="Dengue" /></li>
                         <li><NewCheckbox id={1} onChange={activateCheck} navigate={props.navigate} value="Febre Amarela" /></li>
                         <li><NewCheckbox id={2} onChange={activateCheck} navigate={props.navigate} value="Esquistossomose" /></li>
@@ -71,7 +69,6 @@ export default function MenuNav(props) {
                         <li><NewCheckbox id={6} onChange={activateCheck} navigate={props.navigate} value="Doença de Chagas" /></li>
                         <li><NewCheckbox id={7} onChange={activateCheck} navigate={props.navigate} value="Leptospirose" /></li>
                         <li><NewCheckbox id={8} onChange={activateCheck} navigate={props.navigate} value="Arboviroses Urbanas" /></li>
-
                     </ul>
                 </div>
             </div>
