@@ -1,4 +1,5 @@
 import React from 'react'
+import stylesMapa from "./css/stylesMapa.module.css"
 import IDQBRNlogo from './img/IDQBRNLogoWhite.png'
 import CityMarker from '../CityMarker';
 import NewCheckbox from './NewCheckbox'
@@ -39,14 +40,14 @@ export default function MenuNav(props) {
  
     var selectValue = "";
     return (
-        <div className="menuNav">
-            <div className="titulo">
-                <img alt="Logo" className="logo" src={IDQBRNlogo} />
+        <div className={stylesMapa.menuNav}>
+            <div className={stylesMapa.titulo}>
+                <img alt="Logo" className={stylesMapa.logo} src={IDQBRNlogo} />
             </div>
 
-            <div className="container">
-                <form className="wrap" >
-                    <div className="search">
+            <div className={stylesMapa.container}>
+                <form className={stylesMapa.wrap} >
+                    <div className={stylesMapa.search}>
                         <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} 
                         filterConfig={filterConfig} 
                         onChange={e =>{
@@ -68,8 +69,8 @@ export default function MenuNav(props) {
                     </div>
                 </form>
 
-                <div className="containerList">
-                    <ul className="ks-cboxtags">
+                <div className={stylesMapa.containerList}>
+                    <ul className={stylesMapa['ks-cboxtags']}>
 
                         <li><NewCheckbox id={0} onChange={activateCheck} navigate={props.navigate} value="Dengue" /></li>
                         <li><NewCheckbox id={1} onChange={activateCheck} navigate={props.navigate} value="Febre Amarela" /></li>
