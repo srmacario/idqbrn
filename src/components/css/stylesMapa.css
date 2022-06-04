@@ -64,17 +64,8 @@
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #56A3A6;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus {
-  color: #56A3A6;
+  font-size: 12px;
 }
 
 .searchButton {

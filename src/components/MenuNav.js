@@ -14,10 +14,10 @@ export default function MenuNav(props) {
         matchFrom: 'start',
         stringify: option => `${option.label} ${option.value}`
     };
-    //var cidades_opt = [];
     console.log('menunav');
     console.log(dados);
     console.log(cidades_opt);
+
     // dados.forEach(element => {
     //     cidades_opt.push({label: element['Municipio'], value: element['Municipio']});
     // });
@@ -34,6 +34,7 @@ export default function MenuNav(props) {
             props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
         }
     }
+ 
     var selectValue = "";
     return (
         <div className="menuNav">
@@ -44,22 +45,24 @@ export default function MenuNav(props) {
             <div className="container">
                 <form className="wrap" >
                     <div className="search">
-                        <Select options={cidades_opt} placeholder="Buscar por cidade..." openMenuOnClick={true} filterConfig={filterConfig}
-                            className="searchTerm"
-                            onChange={e => {
-                                selectValue = e.value;
-                                console.log("sv" + selectValue);
-                            }}
-                            onInputChange={e => {
-                                if (e.length > 0)
-                                    selectValue = e;
-                                console.log("sv" + selectValue)
-                            }} />
+                        <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true} 
+                        filterConfig={filterConfig} 
+                        onChange={e =>{
+                            selectValue = e.value;
+                            console.log("sv" + selectValue);
+                         }}
+                         onInputChange={e =>{
+                             if(e.length > 0)
+                                selectValue = e;
+                             console.log("sv" + selectValue)
+                         }} on/>
+                        
                     </div>
                 </form>
 
                 <div className="containerList">
                     <ul className="ks-cboxtags">
+
                         <li><NewCheckbox id={0} onChange={activateCheck} navigate={props.navigate} value="Dengue" /></li>
                         <li><NewCheckbox id={1} onChange={activateCheck} navigate={props.navigate} value="Febre Amarela" /></li>
                         <li><NewCheckbox id={2} onChange={activateCheck} navigate={props.navigate} value="Esquistossomose" /></li>
