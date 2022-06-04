@@ -16,15 +16,9 @@ function UpdateCases(){
                 <div className={stylesCorpo.pagina}>Atualizar casos</div>
             </div>
             
-<<<<<<< HEAD
-            <div className="corpo">
-                {/* <form onSubmit={searchDatabase}/> */}
-                <form onSubmit={searchDatabase}>
-=======
             <div className={stylesCorpo.corpo}>
                 <form onSubmit={searchDatabase}/>
                 <form>
->>>>>>> c32471e0c5fe150eb2875d19fdcf23a9f30b3e8e
                     <div>
                         {/* <label htmlFor = "city">Cidade:</label> */}
                         <input
