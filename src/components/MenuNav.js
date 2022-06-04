@@ -21,7 +21,7 @@ export default function MenuNav(props) {
     // dados.forEach(element => {
     //     cidades_opt.push({label: element['Municipio'], value: element['Municipio']});
     // });
-    console.log(cidades_opt);
+    //console.log(cidades_opt);
 
     function activateCheck(e) {
         var selected = e.target.checked;
@@ -50,6 +50,9 @@ export default function MenuNav(props) {
                         onChange={e =>{
                             selectValue = e.value;
                             console.log("sv" + selectValue);
+                            const find_cidade = dados.find(dado => dado['Municipio'] === selectValue);
+                            console.log("filtro");
+                            console.log(find_cidade);
                          }}
                          onInputChange={e =>{
                              if(e.length > 0)
