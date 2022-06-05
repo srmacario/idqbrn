@@ -37,6 +37,11 @@ const port = process.env.port || 8080;
 app.use(cors());
 app.use(express.json());
 
+app.post('/api/register', (req, res) => {
+    console.log(req.body)
+    res.json({sttus: 'ok'})
+})
+
 const dadosRouter = require('./routes/dados');
 app.use('/dados',dadosRouter);
 
