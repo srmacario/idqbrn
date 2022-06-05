@@ -4,11 +4,14 @@ import { useParams } from "react-router-dom";
 
 function UpdateInformations() {
     const [values, setValues] = useState({});
+    let {doencaNome} = useParams();
 
     const UpdateInfo = (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
         const info = Object.fromEntries(formData);
+        //console.log(info);
+        info.doenca = Object.values(doencaNome).toString().replaceAll(',','');
         console.log(info);
     }
     const handleEntry = (event) => {
@@ -22,7 +25,7 @@ function UpdateInformations() {
     return (
         <>
             <div className={stylesCorpo.cabecalho}>
-                <div className={stylesCorpo.pagina}>Atualizar informações</div>
+                <div className={stylesCorpo.pagina}>{doencaNome}</div>
             </div>
             <div className={stylesCorpo.corpo}>
                 <form onSubmit={UpdateInfo}>
