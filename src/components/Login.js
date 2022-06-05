@@ -8,18 +8,28 @@ import Lock from './img/lock.svg'
 
 
 function Login() {
-    const searchUser=(event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        const searchU = Object.fromEntries(formData);
-        console.log(searchU);
+    const[usuario, setUsuario] = useState('')
+    const[senha, setSenha] = useState('')
+
+    async function registrarUsuario(event){
+        event.preventDefault()
+
+        const response = await fetch('http://localhost:8080/api/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json', 
+            },
+            body : JSON.stringify({
+                usuario,
+                senha,
+            }),
+        })
+
+        const data = await response.json()
+
+        console.log(data)
     }
-    const[value,setValues]=useState({});
-    const handleChange = (event)=>{
-        const target = event.target;
-        const{name,value} = target;
-        console.log("entry:",name,value);
-    }
+
     return (
       <>
         <img className = "wave" src = {BrasilAzul}/>
@@ -29,7 +39,7 @@ function Login() {
             </div>
         </div>
         <div className = "login-content">
-                <form onSubmit={searchUser}>
+                <form onSubmit = {registrarUsuario}>
                     <div>
                     <img src = {Lock}/>
                     <h2 className = "title">Administrador</h2>
@@ -39,7 +49,7 @@ function Login() {
                         </div>
                         <div className = "div">
                             <h5>Usuário</h5>
-                            <input type="text" className = "input" onChange={handleChange}/>
+                            <input type="text" className = "input" value = {usuario} onChange={(e) => setUsuario(e.target.value)}/>
                         </div>
                     </div>
                     <div className = "input-div pass">
@@ -48,7 +58,7 @@ function Login() {
                         </div>
                         <div className = "div">
                             <h5>Senha</h5>
-                            <input type="password" className = "input" onChange={handleChange}/>
+                            <input type="password" className = "input" value = {senha} onChange={(e) => setSenha(e.target.value)}/>
                         </div>
                     </div>
                     {/* <a href="#">Esqueci a senha</a> */}
