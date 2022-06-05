@@ -33,7 +33,7 @@ function UpdateInfoDisease(){
             </div>
             <form onSubmit={handleClick}>
                 <div className={stylesCorpo.corpo}>
-                    <select name="doenca" onChange={handleChange}>
+                    <select className = {stylesCorpo.select} name="doenca" onChange={handleChange}>
                         <option value="Dengue" >Dengue</option>
                         <option value="Febre Amarela" >Febre Amarela</option>
                         <option value="Esquistossomose" >Esquistossomose</option>
@@ -44,6 +44,7 @@ function UpdateInfoDisease(){
                         <option value="Leptospirose" >Leptospirose</option>
                         <option value="Arboviroses Urbanas" >Arboviroses Urbanas</option>
                     </select>
+                    <p></p>
                     <button className={stylesCorpo.input} type="submit">
                         {/* <Link to={openPage} > </Link>     */}
                         Atualizar
