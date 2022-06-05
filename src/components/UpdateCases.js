@@ -38,9 +38,6 @@ function UpdateCases(){
                         />
                     </div>
                     <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
                     <div>
                         {/* <label htmlFor = "disease">Doença:</label> */}
                         <input
@@ -52,9 +49,6 @@ function UpdateCases(){
                             onChange = {handleEntry}
                         />
                     </div>
-                    <p></p>
-                    <p></p>
-                    <p></p>
                     <p></p>
                     <div>
                         <input className={stylesCorpo.input} type="submit" value="Procurar"/>
