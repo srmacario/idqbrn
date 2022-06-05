@@ -1,6 +1,7 @@
 import stylesCorpo from "./css/stylesCorpo.module.css"
 import React, { useState } from 'react'
 import { useParams } from "react-router-dom";
+import axios from "axios";
 
 function UpdateInformations() {
     const [values, setValues] = useState({});
@@ -9,6 +10,8 @@ function UpdateInformations() {
         event.preventDefault();
         const formData = new FormData(event.target);
         const info = Object.fromEntries(formData);
+        axios.post('http://localhost:8080/info/',info)
+        .then(res => console.log(res.data));
         console.log(info);
     }
     const handleEntry = (event) => {
