@@ -41,13 +41,13 @@ export default function MenuNav(props) {
                 filtered = dados.filter(item => {
                     return parseInt(item[props.city_filter[i]]) > 0;
                 })
-                union_filtered = [... new Set([...union_filtered,...filtered])];
+                union_filtered = [... new Set([...union_filtered, ...filtered])];
             }
             console.log("dados filtrados");
             console.log(union_filtered);
             props.setMarkers((prevValue) => prevValue = [])
             var newMarkersArray = []
-            for (let i = 0; i < filtered.length; i++) {
+            for (let i = 0; i < union_filtered.length; i++) {
                 const aux = union_filtered[i]
                 newMarkersArray.push(new CityMarker(aux, doencas_lista));
 
