@@ -13,8 +13,9 @@ router.route('/').post((req, res) => {
     const connection = mongoose.connection;
     connection.once('open',async()  => {
         console.log("MongoDB connection estabilished successfully");
-        if(await connection.collection("info").findOne({doencaNome:req.body.doencaNome}).count === 0){
-            await connection.collection("info").deleteOne({doencaNome:req.body.doencaNome});
+        if(await (await connection.collection("info").find({doenca:req.body.doenca}).toArray()).length > 0){
+            await connection.collection("info").deleteMany({doenca:req.body.doenca});
+            
         }
         await connection.collection("info").insertOne(req.body);
         //const dado = await connection.collection("info").up;
@@ -26,3 +27,4 @@ router.route('/').post((req, res) => {
         
     });
 });
+module.exports = router;
