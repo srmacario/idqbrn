@@ -34,20 +34,21 @@ export default function MenuNav(props) {
             }
         }
         console.log(props.city_filter);
-        var filtered = []
+        var union_filtered = []
         if (props.city_filter.length > 0) {
-            filtered = dados;
+            var filtered = [];
             for (let i = 0; i < props.city_filter.length; i++) {
-                filtered = filtered.filter(item => {
+                filtered = dados.filter(item => {
                     return parseInt(item[props.city_filter[i]]) > 0;
                 })
+                union_filtered = [... new Set([...union_filtered,...filtered])];
             }
             console.log("dados filtrados");
-            console.log(filtered);
+            console.log(union_filtered);
             props.setMarkers((prevValue) => prevValue = [])
             var newMarkersArray = []
             for (let i = 0; i < filtered.length; i++) {
-                const aux = filtered[i]
+                const aux = union_filtered[i]
                 newMarkersArray.push(new CityMarker(aux, doencas_lista));
 
             }
