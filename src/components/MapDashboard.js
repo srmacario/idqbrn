@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Mapa from './Mapa'
 import MenuNav from './MenuNav'
-import CityMarker from '../CityMarker';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 class MapDashboard extends React.Component {
@@ -12,7 +11,7 @@ class MapDashboard extends React.Component {
       dados: [],
       cidades_opt: [],
       city_filter: [],
-      
+
     }
   }
   async componentDidMount() {
@@ -20,7 +19,7 @@ class MapDashboard extends React.Component {
       .then(response => {
         this.setState({ dados: response.data, dados_filtrados: response.data });
         if (this.state.cidades_opt.length === 0) {
-          response.data.forEach( element  =>  {
+          response.data.forEach(element => {
             this.state.cidades_opt.push({ label: element['Municipio'], value: element['Municipio'] })
             // this.state.name_to_doc.set(element['Municipio'],element).catch(e => console.log(e));
           });
@@ -41,9 +40,9 @@ class MapDashboard extends React.Component {
     //console.log("cidade_opt" + cidades_opt);
     return (
       <>
-        <MenuNav markersArray={this.props.markersArray} setMarkers={this.props.setMarkers} 
-        navigate={this.props.navigate} dados={dados} cidades_opt={cidades_opt} 
-        city_filter={city_filter} dados_filtrados={dados_filtrados} />
+        <MenuNav markersArray={this.props.markersArray} setMarkers={this.props.setMarkers}
+          navigate={this.props.navigate} dados={dados} cidades_opt={cidades_opt}
+          city_filter={city_filter} dados_filtrados={dados_filtrados} />
         <Mapa markersArray={this.props.markersArray} />
       </>
     );
@@ -51,7 +50,7 @@ class MapDashboard extends React.Component {
 }
 
 export default function MapDashboardFunc(props) {
-  const initialMarkers = [new CityMarker(-1, "Nada", 0, -14.613282, -48.484189)];
+  const initialMarkers = [];
   const [markersArray, setMarkers] = useState(initialMarkers);
   const navigate = useNavigate();
 
