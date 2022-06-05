@@ -1,18 +1,17 @@
 import { LatLng } from "leaflet";
 
 export default class CityMarker {
-    constructor(json, listaDoencas) {
-        this.json = json;
-        this.id = json['IBGE7'];
-        this.nome = json['Municipio'];
-        this.lat = parseFloat(json["latitude"].replace(',', '.'));
-        this.long = parseFloat(json["longitude"].replace(',', '.'));
-        this.listaDoencas = listaDoencas;
-        this.pos = new LatLng(this.lat, this.long);
+    constructor(id, doenca, casos, lat, long) {
+        this.id = id;
+        this.doenca = doenca;
+        this.casos = casos;
+        this.lat = lat;
+        this.long = long;
+        this.pos = new LatLng(lat, long);
     }
 
-    getNome() {
-        return this.nome;
+    getDoenca() {
+        return this.doenca;
     }
     getId() {
         return this.id;
@@ -20,14 +19,7 @@ export default class CityMarker {
     getPos() {
         return this.pos;
     }
-    getTotalCasos() {
-        let texto = "";
-        for (let i = 0; i < this.listaDoencas.length; i++) {
-            if (this.json[this.listaDoencas[i]] > 0)
-                texto = texto + this.listaDoencas[i] + ": " + this.json[this.listaDoencas[i]] + "\n"
-        }
-        const novoTexto = texto.split('\n').map(str => <p>{str}</p>);
-        return novoTexto;
-
+    getCasos() {
+        return this.casos;
     }
 }
