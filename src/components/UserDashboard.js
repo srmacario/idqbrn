@@ -1,10 +1,30 @@
 import stylesUser from "./css/stylesUser.module.css"
-import React from 'react'
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react'
+import { Link , useNavigate } from "react-router-dom";
 import jwt from 'jsonwebtoken'
 
 function UserDashboard() {
 
+    let navigate = useNavigate();
+
+    //function to check if there is a token on the session
+	useEffect(() => {
+		const token = localStorage.getItem('token')
+		if (token) {
+			const user = jwt.decode(token)
+            //false token: forbidden!
+			if (!user) {
+				localStorage.removeItem('token')
+				navigate('/login')
+			} else {
+                console.log(token)
+			}
+		}
+        //no token: forbidden to enter!!!
+        else{
+            navigate('/login')
+        }
+	}, [])
 
     return (
         <>
