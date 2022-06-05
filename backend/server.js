@@ -3,16 +3,25 @@ const express = require('express')
 const cors = require('cors');
 const mongoose = require('mongoose');
 const csvtojson = require('csvtojson');
+const jwt = require('jsonwebtoken')
 const { wait } = require('@testing-library/user-event/dist/utils');
-const{User} = require('./models/user.model.js')
-
-
 
 //const fs = require('fs');
 
 require('dotenv').config();
 
+//definindo schema e dados de usuario
+const UserSchema = new mongoose.Schema(
+    {
+        email:{type: String, required: true, unique:true},
+        password:{type:String, required:true},
+    },
+    {collection:'usuarios'}
+);
+const User = mongoose.model('UserData',UserSchema);
 
+
+//popular o db com doencas
 function populate_db(path) {
     csvtojson().fromFile(path)
         .then(csvData => {
@@ -42,9 +51,8 @@ const port = process.env.port || 8080;
 app.use(cors());
 app.use(express.json());
 
+//register route
 app.post('/api/register', (req, res) => {
-    
-
     console.log('a***');
     const uri = process.env.ATLAS_URI;
     mongoose.connect(uri, {
@@ -56,39 +64,56 @@ app.post('/api/register', (req, res) => {
         console.log("MongoDB connection estabilished successfully");
         console.log(req.body)
         try{
-            await User.create(
+            const user = await User.create(
                 {
-                    usuario: req.body.usuario,
-                    senha: req.body.senha,
+                    email: req.body.email,
+                    password: req.body.password,
                 }
-                // req.body
             )
             res.json({status: 'ok'})
+            console.log(user)
         }
         catch(err){
             res.json({status: 'error'})
             console.log(err.stack)
         }
-        
-        // const user = await User.findOne({
-        //     usuario: req.body.usuario,
-        //     senha: req.body.senha,
-        // })
-        // if (user)    {
-        //     return res.json({status: 'ok',user:true})
-        // }
-
-
-        //res.json({status: 'ok'})    
-        
-
         connection.close();
         console.log('Connection Closes');
-
-        
     });
+})
 
-    
+//login route
+app.post('/api/login', (req, res) => {
+    console.log('a***');
+    const uri = process.env.ATLAS_URI;
+    mongoose.connect(uri, {
+        useNewUrlParser: true,
+        //useCreateIndex: true
+    });
+    const connection = mongoose.connection;
+    connection.once('open',async()  => {
+        console.log("MongoDB connection estabilished successfully");
+        console.log(req.body)
+        
+        const user = await User.findOne({
+            email: req.body.email,
+            password: req.body.password,
+        })
+        if (user)    {
+            const token = jwt.sign(
+                {
+                    email: user.email,
+                },
+                'segredo123'
+            )
+            res.json({status: 'ok',user:token})
+        }
+        else{
+            res.json({status: 'error', user: 'false'})
+        } 
+        connection.close();
+        console.log('Connection Closes');
+    });
 })
 
 const dadosRouter = require('./routes/dados');
