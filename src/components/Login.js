@@ -1,27 +1,25 @@
-import React,{useState} from 'react'
-import Blank from './img/blank.png'
-import BrasilAzul from './img/brasilAzul.png'
+import { useState } from "react";
+
 import Lock from './img/lock.svg'
-//import styles from './css/style.module.css'
-//import stylesMapa from './css/stylesMapa.module.css'
+//import BrasilAzul from './img/brasilAzul.png'
 
-
+import "./css/stylesLogin.css";
 
 function Login() {
-    const[usuario, setUsuario] = useState('')
-    const[senha, setSenha] = useState('')
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-    async function registrarUsuario(event){
+    async function registrarUsuario(event) {
         event.preventDefault()
 
         const response = await fetch('http://localhost:8080/api/register', {
             method: 'POST',
             headers: {
-                'Content-Type' : 'application/json', 
+                'Content-Type': 'application/json',
             },
-            body : JSON.stringify({
-                usuario,
-                senha,
+            body: JSON.stringify({
+                email,
+                password,
             }),
         })
 
@@ -31,45 +29,47 @@ function Login() {
     }
 
     return (
-      <>
-        <img className = "wave" src = {BrasilAzul}/>
-        <div className = "container">
-            <div className = "img">
-			    <img src = {Blank}/>
+        <div className="container">
+            <div className="container-login">
+                <div className="wrap-login">
+                    <form className="login-form">
+                        <span className="login-form-title"> Administrador </span>
+
+                        <span className="login-form-title">
+                            <img src={Lock} alt="Jovem Programador" />
+                        </span>
+
+                        <div className="wrap-input">
+                            <input
+                                className={email !== "" ? "has-val input" : "input"}
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <span className="focus-input" data-placeholder="Email"></span>
+                        </div>
+
+                        <div className="wrap-input">
+                            <input
+                                className={password !== "" ? "has-val input" : "input"}
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                            <span className="focus-input" data-placeholder="Password"></span>
+                        </div>
+
+                        <div className="container-login-form-btn">
+                            <button className="login-form-btn" onClick={registrarUsuario}>Login</button>
+                        </div>
+
+                        <div className="text-center">
+                            {/*<a className="txt2" href="#">Esqueci a senha</a>*/}
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div className = "login-content">
-                <form onSubmit = {registrarUsuario}>
-                    <div>
-                    <img src = {Lock}/>
-                    <h2 className = "title">Administrador</h2>
-                    <div className = "input-div one">
-                        <div className = "i">
-                            <i className = "fas fa-user"></i>
-                        </div>
-                        <div className = "div">
-                            <h5>Usuário</h5>
-                            <input type="text" className = "input" value = {usuario} onChange={(e) => setUsuario(e.target.value)}/>
-                        </div>
-                    </div>
-                    <div className = "input-div pass">
-                        <div className = "i">
-                            <i className = "fas fa-lock"></i>
-                        </div>
-                        <div className = "div">
-                            <h5>Senha</h5>
-                            <input type="password" className = "input" value = {senha} onChange={(e) => setSenha(e.target.value)}/>
-                        </div>
-                    </div>
-                    {/* <a href="#">Esqueci a senha</a> */}
-                    </div>
-                    <div>
-                        <input type="submit" className = "btn" value="Login"/>
-                    </div>
-                </form>
-        </div>
-
-      </>
     );
 }
 

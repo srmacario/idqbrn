@@ -2,15 +2,16 @@ import './App.css'
 import MapDashboard from './components/MapDashboard'
 import Informations from './components/Informations'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './components/Login';
+import NewLogin from './components/Login.js';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route exact path="/" element={<MapDashboard />} />
           <Route path="/info/:doencaNome" element={<Informations />} />
+          <Route path="/login" element={<NewLogin />} />
         </Routes>
       </BrowserRouter>
     </>
