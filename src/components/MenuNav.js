@@ -8,9 +8,8 @@ import Select from 'react-select'
 export default function MenuNav(props) {
     const dados = props.dados;
     const cidades_opt = props.cidades_opt;
-    const markersArray = props.markersArray;
     const city_filter = props.city_filter;
-    
+
 
     const filterConfig = {
         ignoreCase: false,
@@ -31,7 +30,6 @@ export default function MenuNav(props) {
     function activateCheck(e) {
         var selected = e.target.checked;
         var value = e.target.value;
-        var id = e.target.id//Esse ID não sera target.id mas sim o valor do ID do IBGE que está no banco de dados para cada cidade
         console.log(e.target);
         if (selected) {
             props.city_filter.push(value.toUpperCase());
@@ -39,7 +37,7 @@ export default function MenuNav(props) {
         }
         else {
             let length = props.city_filter.length;
-            for (var i = 0; i < length; i++) {
+            for (let i = 0; i < length; i++) {
                 if (props.city_filter[i] === value.toUpperCase())
                     props.city_filter.splice(i, 1);
             }
@@ -49,24 +47,25 @@ export default function MenuNav(props) {
         var filtered = []
         if (props.city_filter.length > 0) {
             filtered = dados;
-            for (var i = 0; i < props.city_filter.length; i++) {
+            for (let i = 0; i < props.city_filter.length; i++) {
                 //console.log(i);
-                filtered = filtered.filter(item =>{
+                filtered = filtered.filter(item => {
                     return parseInt(item[props.city_filter[i]]) > 0;
                 })
             }
             console.log("dados filtrados");
             console.log(filtered);
             props.setMarkers((prevValue) => prevValue = [])
-            for(var i = 0; i < filtered.length; i++){
+            var newMarkersArray = []
+            for (let i = 0; i < filtered.length; i++) {
                 const aux = filtered[i]
                 console.log(aux);
 
-                props.setMarkers((prevValue) => [...prevValue, new CityMarker(aux['IBGE7'], "buttons", 0,
-                parseFloat(aux["latitude"].replace(',', '.')), parseFloat(aux["longitude"].replace(',', '.')))]);//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
+                newMarkersArray.push(new CityMarker(aux['IBGE7'], "buttons", 0,
+                    parseFloat(aux["latitude"].replace(',', '.')), parseFloat(aux["longitude"].replace(',', '.'))));//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
 
             }
-            
+            props.setMarkers(newMarkersArray)
         }
         else
             props.setMarkers([]);
@@ -81,7 +80,7 @@ export default function MenuNav(props) {
 
             <div className={stylesMapa.container}>
                 <form className={stylesMapa.wrap} >
-                    <div className={stylesMapa.search}>
+                    <div className={stylesMapa.searchTerm}>
                         <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true}
                             filterConfig={filterConfig}
                             onChange={e => {

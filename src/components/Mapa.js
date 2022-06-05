@@ -27,7 +27,7 @@ var bounds = new L.LatLngBounds(new L.LatLng(-90, -180), new L.LatLng(90, 180));
 
 export default function Mapa({ markersArray }) {
     return (
-        <MapContainer id = {stylesMapa.map}/*id="map"*/ center={[-14.613282, -48.484189]} zoom={5} scrollWheelZoom={true} maxBounds={bounds} maxBoundsViscosity={1.0}>
+        <MapContainer id={stylesMapa.map}/*id="map"*/ center={[-14.613282, -48.484189]} zoom={5} scrollWheelZoom={true} maxBounds={bounds} maxBoundsViscosity={1.0} >
             <TileLayer
                 attribution='© OpenStreetMap'
                 url="https://api.maptiler.com/maps/voyager/{z}/{x}/{y}.png?key=jtOqBSIykHSBkZTIYEDL"
@@ -37,6 +37,7 @@ export default function Mapa({ markersArray }) {
                 minZoom={3}
             />
             <LocationMarkers markersArray={markersArray} />
+
         </MapContainer>
     );
 }
