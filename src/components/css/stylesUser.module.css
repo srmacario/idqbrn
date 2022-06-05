@@ -1,0 +1,249 @@
+.conteudo {
+	overflow-x: hidden;
+}
+
+.cabecalho {
+	position: absolute;
+	top: 0;
+	left: 240px;
+	width: calc(100% - 240px);
+	height: 130px;
+	background: linear-gradient(180deg, rgba(117, 196, 199, 1) 0%, rgba(86, 163, 166, 1) 100%);
+	min-width: 480px;
+}
+
+.emailListName {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 30px 5px 30px;
+	font-size: 35px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	font-size: 40px;
+	/*Trazer para a frente*/
+	z-index: 1;
+}
+
+.pagina {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: bold;
+	border-radius: 50px;
+	width: auto;
+	height: auto;
+	padding: 5px 30px 5px 30px;
+	font-size: 35px;
+	background: white;
+	filter: drop-shadow(0px 0px 6px rgb(92, 92, 92));
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	/*Trazer para a frente*/
+	z-index: 1;
+}
+
+.signContainer {
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: bold;
+	border-radius: 20px;
+	width: auto;
+	height: auto;
+	padding: 5px 30px 5px 30px;
+	font-size: 20px;
+	background: white;
+	filter: drop-shadow(0px 0px 6px rgb(92, 92, 92));
+	z-index: 1;
+}
+
+.corpo {
+	position: absolute;
+	top: 60px;
+	left: 250px;
+	width: calc(100% - 250px);
+	height: calc(100% - 140px);
+	padding-top: 80px;
+	border-top-right-radius: 70px 40px;
+	border-top-left-radius: 70px 40px;
+	background: white;
+	min-width: 470px;
+	min-height: 360px;
+}
+
+.conteudo {
+	position: relative;
+	top: 20px;
+	margin-left: 60px;
+	margin-right: 60px;
+	text-align: justify;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-bottom: 100px;
+}
+
+.dados {
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.titulo {
+	background: linear-gradient(180deg, rgba(117, 196, 199, 1) 0%, rgba(86, 163, 166, 1) 100%);
+	border-top-right-radius: 3% 20px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	height: 130px;
+	padding-top: 20px;
+}
+
+.menuNav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	border-top-right-radius: 3% 20px;
+	border-bottom-right-radius: 3% 20px;
+	background: #fff;
+	filter: drop-shadow(-5px 0px 6px #000);
+	overflow-x: hidden;
+	overflow-y: auto;
+	direction: rtl;
+	min-height: 500px;
+}
+
+.container {
+	direction: ltr;
+	margin: 10px;
+	overflow-x: hidden;
+	background: white;
+}
+
+.center {
+	flex: 1;
+	display: flex;
+	/* create nested flex container */
+	flex-wrap: wrap;
+	/* enable flex items to wrap */
+	justify-content: center;
+}
+
+/*CSS da barra---------------------------------------*/
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+
+.searchTerm {
+	width: 100%;
+	outline: none;
+	font-size: 12px;
+}
+
+/*Mudar o tamanho da barra de pesquisa:*/
+.wrap {
+	width: 80%;
+	position: relative;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/*CSS da lista de doenças---------------------------------------*/
+.containerList {
+	max-width: 350px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 13px;
+	padding-top: 110px;
+	text-align: center;
+}
+
+ul.list-items {
+	list-style: none;
+	padding: 20px;
+}
+
+ul.list-items li {
+	display: list-item;
+}
+
+/*CSS do botão de Cadastrar---------------------------------------*/
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+button.outline {
+	position: relative;
+	z-index: 3;
+	background: transparent;
+	color: #56A3A6;
+	font-size: 15px;
+	border-color: #56A3A6;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 22px;
+	padding: 2px 5px;
+	transition: all 0.2s linear;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button.outline a {
+	text-decoration: none;
+}
+
+button.outline:hover {
+	color: white;
+	background: #56A3A6;
+	border-color: white;
+	transition: all 0.2s linear;
+}
+
+button.outline:active {
+	border-radius: 22px;
+}
+
+/*CSS dos emails---------------------------------------*/
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+button.email {
+	position: relative;
+	z-index: 3;
+	background: transparent;
+	color: #56A3A6;
+	font-size: 15px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 22px;
+	padding: 3px 5px;
+	transition: all 0.2s linear;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button.email a {
+	text-decoration: none;
+}
+
+button.email:hover {
+	color: white;
+	background: #56A3A6;
+	border-color: white;
+	transition: all 0.2s linear;
+}
+
+button.email:active {
+	border-radius: 22px;
+}
