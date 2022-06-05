@@ -44,23 +44,28 @@ export default function MenuNav(props) {
             //props.setMarkers(props.markersArray.filter(item => item.getDoenca() !== value));
         }
         console.log(props.city_filter);
-        var filtered = []
+        var union_filtered = []
         if (props.city_filter.length > 0) {
-            filtered = dados;
+            var filtered = [];
             for (let i = 0; i < props.city_filter.length; i++) {
                 //console.log(i);
-                filtered = filtered.filter(item => {
+                filtered = dados.filter(item => {
                     return parseInt(item[props.city_filter[i]]) > 0;
                 })
+                union_filtered = [... new Set([...union_filtered,...filtered])];
             }
             console.log("dados filtrados");
-            console.log(filtered);
+            console.log(union_filtered);
             props.setMarkers((prevValue) => prevValue = [])
             var newMarkersArray = []
-            for (let i = 0; i < filtered.length; i++) {
-                const aux = filtered[i]
-                console.log(aux);
-
+            for (let i = 0; i < union_filtered.length; i++) {
+                const aux = union_filtered[i]
+                //console.log(aux);
+                // for(let i = 11; i < Object.keys(aux).length; i++){
+                //     console.log(Object.keys(aux)[i]);
+                // }
+                //console.log(Object.keys(aux)[11]);
+                //console.log(Object.keys(aux)[12]);
                 newMarkersArray.push(new CityMarker(aux['IBGE7'], "buttons", 0,
                     parseFloat(aux["latitude"].replace(',', '.')), parseFloat(aux["longitude"].replace(',', '.'))));//AQUI VAMOS PASSAR OS PARAMETROS SEMPRE QUE CrIAR UM NOVO MARCADOR
 
