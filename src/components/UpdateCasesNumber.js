@@ -2,12 +2,21 @@
 import stylesCorpo from "./css/stylesCorpo.module.css"
 import React, { useState } from 'react'
 import { useParams } from "react-router-dom";
+//import { handleInputChange } from "react-select/dist/declarations/src/utils";
 function UpdateCasesNumber(){
+    const[value,setValue]=useState();//inicial
     function changeCaseNumber(event){
         event.preventDefault();
+        const formData = new FormData(event.target);
+        const number = Object.fromEntries(formData);
+        console.log("entry:",number)
 
     }
-    const[caseNumber,setCaseNumber]=useState()
+    const handleInput = (event)=>{
+        console.log("handleInput:",event.target.value);
+        setValue(event.target.value);
+
+    }
     
     
     return(
@@ -17,17 +26,17 @@ function UpdateCasesNumber(){
             </div>
             
             <div className={stylesCorpo.corpo}>
-                <form onSubmit={changeCaseNumber}/>
-                <form>
+                
+                <form onSubmit={changeCaseNumber}>
                     <div>
                         
                         <input
-                        className={stylesCorpo.insertNumberofCases}
-                        type="text"
+                        className={stylesCorpo.insert}
+                        type="number"
                         id="number"
                         name="number"
                         placeholder="Digite o novo número de casos."
-                        onChange = {(event)=>setCaseNumber(event.target.value)}
+                        onChange = {handleInput}
                         />
                     </div>
                     <p></p>
@@ -36,7 +45,7 @@ function UpdateCasesNumber(){
                     <p></p>
                   
                     <div>
-                        <input className={stylesCorpo.inputNumber} type="submit" value="Inserir"/>
+                        <input className={stylesCorpo.input} type="submit" value="Inserir"/>
                     </div>
                 </form>
             </div>

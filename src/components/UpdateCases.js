@@ -5,11 +5,18 @@ import { useParams } from "react-router-dom";
 function UpdateCases(){
     const searchDatabase=(event) =>{
         event.preventDefault();
-
+        const formData = new FormData(event.target);
+        const search = Object.fromEntries(formData);
+        console.log(search);
     }
-    const[city,setCity]=useState()
-    const[disease,setDisease]=useState()
-    
+    const[values,setValues] = useState({});
+    const handleEntry=(event)=>{
+        const target = event.target;
+        const{name,value}=target;
+        console.log("entry:",name,value);
+    }
+
+
     return(
         <>
             <div className={stylesCorpo.cabecalho}>
@@ -17,17 +24,17 @@ function UpdateCases(){
             </div>
             
             <div className={stylesCorpo.corpo}>
-                <form onSubmit={searchDatabase}/>
-                <form>
+                
+                <form onSubmit={searchDatabase}>
                     <div>
                         {/* <label htmlFor = "city">Cidade:</label> */}
                         <input
-                            className={stylesCorpo.insertcity}
+                            className={stylesCorpo.insert}
                             type="text"
                             id="city"
                             name="city"
                             placeholder="Digite a cidade que deseja-se alterar."
-                            onChange = {(event)=>setCity(event.target.value)}
+                            onChange = {handleEntry}
                         />
                     </div>
                     <p></p>
@@ -37,12 +44,12 @@ function UpdateCases(){
                     <div>
                         {/* <label htmlFor = "disease">Doença:</label> */}
                         <input
-                            className={stylesCorpo.insertdisease}
+                            className={stylesCorpo.insert}
                             type="text"
                             id="disease"
                             name="disease"
                             placeholder="Digite a doença que deseja-se alterar."
-                            onChange = {(event)=>setDisease(event.target.value)}
+                            onChange = {handleEntry}
                         />
                     </div>
                     <p></p>
@@ -50,7 +57,7 @@ function UpdateCases(){
                     <p></p>
                     <p></p>
                     <div>
-                        <input className={stylesCorpo.searchByDiseaseAndCity} type="submit" value="Procurar"/>
+                        <input className={stylesCorpo.input} type="submit" value="Procurar"/>
                     </div>
                 </form>
             </div>
