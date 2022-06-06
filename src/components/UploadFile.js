@@ -27,7 +27,17 @@ class UploadFile extends React.Component {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
-        });
+        })
+            .then(response => {
+                console.log(response.data.status)
+                if (response.data.status === 'ok') {
+                    alert('Banco de Dados foi substituído com sucesso!')
+                }
+                else {
+                    alert('Falha no envio do arquivo!')
+                }
+                console.log(response.data)
+            });
     };
 
     render() {

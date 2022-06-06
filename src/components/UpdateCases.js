@@ -20,7 +20,16 @@ function UpdateCases() {
         e.preventDefault();
         console.log(selectCidade);
         newValue = newValue.toString();
-        axios.post('http://localhost:8080/update', { Municipio: selectCidade, Doenca: selectDoenca, Casos: newValue });
+        axios.post('http://localhost:8080/update', { Municipio: selectCidade, Doenca: selectDoenca, Casos: newValue })
+            .then(response => {
+                if (response.data.status === 'ok') {
+                    alert('Atualizado com sucesso!')
+                }
+                else {
+                    alert('Falha na atualização!')
+                }
+                console.log(response.data)
+            });
     }
 
     const [doencas_lista, setDoencasLista] = useState([]);
