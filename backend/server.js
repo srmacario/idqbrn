@@ -109,7 +109,7 @@ app.post('/api/login', (req, res) => {
             res.json({status: 'ok',user:token})
         }
         else{
-            res.json({status: 'error', user: 'false'})
+            res.json({status: 'error', user: false})
         } 
         connection.close();
         console.log('Connection Closes');

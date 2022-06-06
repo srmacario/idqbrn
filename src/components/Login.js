@@ -25,6 +25,14 @@ function Login() {
 
         const data = await response.json()
 
+        if(data.user){
+            localStorage.setItem('token', data.user)
+            alert('Logado com sucesso!')
+            window.location.href = '/user'
+        }
+        else{
+            alert('Cheque suas credenciais!')
+        }
         console.log(data)
     }
 
