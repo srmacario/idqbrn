@@ -3,6 +3,29 @@ const { json } = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+
+router.route('/doenca').post((req,res)=>{
+    console.log("doencaPost")
+    console.log(req.body);
+    const uri = process.env.ATLAS_URI;
+    mongoose.connect(uri, {
+        useNewUrlParser: true,
+        //useCreateIndex: true
+    });
+    const connection = mongoose.connection;
+    connection.once('open',async()  => {
+        console.log("MongoDB connection estabilished successfully");
+        const dado  = await connection.collection("info").findOne({doenca:req.body.doenca});
+        //const dado = await connection.collection("info").up;
+        console.log(dado);
+        await res.json(dado);
+        connection.close();
+        console.log('Connection Closes');
+
+        
+    });
+});
+
 router.route('/').post((req, res) => {
     console.log('info***');
     const uri = process.env.ATLAS_URI;
