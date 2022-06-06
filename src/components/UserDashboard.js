@@ -26,6 +26,40 @@ function UserDashboard() {
         }
 	}, [])
 
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [repPassword, setRepPassword] = useState("");
+
+    async function registrarUsuario(event) {
+        event.preventDefault()
+        if(repPassword !== password){
+            alert('Senhas não são iguais')
+        }
+        else{
+            const response = await fetch('http://localhost:8080/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email,
+                    password,
+                }),
+            })
+
+            const data = await response.json()
+
+            if(data.status === 'ok'){
+                alert('Criado com sucesso!')
+            }
+            else{
+                alert('Falha na criacao, cheque se o usuario ja existe!')
+            }
+            console.log(data)
+        }
+    }
+
     return (
         <>
             <div className={stylesUser.cabecalho}>
@@ -49,10 +83,19 @@ function UserDashboard() {
                 <div className={stylesUser.container}>
                     <form className={stylesUser.signContainer} >
                         <div className="search">
-                            <input type="email" className="searchTerm" placeholder="Email" />
-                            <input type="password" className="searchTerm" placeholder="Senha" />
-                            <input type="password" className="searchTerm" placeholder="Confirmar Senha" />
-                            <button type="submit" className={stylesUser.outline}>Cadastrar</button>
+                            <input
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                type="email" className="searchTerm" placeholder="Email" />
+                            <input 
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                type="password" className="searchTerm" placeholder="Senha" />
+                            <input 
+                                value={repPassword}
+                                onChange={(e) => setRepPassword(e.target.value)}
+                                type="password" className="searchTerm" placeholder="Confirmar Senha" />
+                            <button type="submit" className={stylesUser.outline} onClick={registrarUsuario}>Cadastrar</button>
                         </div>
                     </form>
 
