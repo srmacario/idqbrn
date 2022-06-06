@@ -51,11 +51,11 @@ function UpdateInformations() {
             </div>
             <div className={stylesCorpo.corpo}>
                 <form onSubmit={UpdateInfo}>
-                    <textarea className={stylesCorpo.insertText1} name="formasdecontagio" value={formaDeContagio} cols="50" row="2" onChange={handleEntry}></textarea>
+                    <textarea className={stylesCorpo.insertText1} placeholder="Insira as Formas de Contágio..." name="formasdecontagio" defaultValue={formaDeContagio} cols="50" row="2" onChange={handleEntry}></textarea>
                     <p></p>
-                    <textarea className={stylesCorpo.insertText2} name="sintomas" value={sintomas} cols="50" row="10" onChange={handleEntry}></textarea>
+                    <textarea className={stylesCorpo.insertText2} placeholder="Insira os Sintomas..." name="sintomas" defaultValue={sintomas} cols="50" row="10" onChange={handleEntry}></textarea>
                     <p></p>
-                    <textarea className={stylesCorpo.insertText2} name="recomendacoes" value={recomendacoes} cols="50" row="10" onChange={handleEntry}></textarea>
+                    <textarea className={stylesCorpo.insertText2} placeholder="Insira as Recomendações..." name="recomendacoes" defaultValue={recomendacoes} cols="50" row="10" onChange={handleEntry}></textarea>
                     <p></p>
                     <button className={stylesCorpo.input} type="submit">Atualizar</button>
                 </form>
