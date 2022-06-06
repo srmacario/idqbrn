@@ -59,7 +59,7 @@ class UploadFile extends React.Component {
                     <div >
                         <div >
                             <div  >
-                                <div ><b>Fazer upload de novo Exel com dados</b></div>
+                                <div ><b>Fazer upload de novo CSV com dados</b></div>
                                 <div >
 
                                     <input type="file"  name="myFile" onChange={this.onFileChange} enctype="multipart/form-data"/>
