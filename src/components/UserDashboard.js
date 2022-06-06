@@ -89,8 +89,11 @@ function UserDashboard() {
                 if(response.data.status === 'ok'){
                     alert('Deletado com sucesso!')
                 }
+                else if (response.data.status === 'admin'){
+                    alert('Admin nao pode ser deletado!')
+                }
                 else{
-                    alert('Falha na delecao!')
+                    alert('Erro na delecao!')
                 }
                 console.log(response.data)
             })
