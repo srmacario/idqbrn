@@ -1,8 +1,6 @@
 const router = require('express').Router();
 let User = require('../models/User');
 
-const { json } = require('express');
-const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 

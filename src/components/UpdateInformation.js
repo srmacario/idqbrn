@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 function UpdateInformations() {
-    const [values, setValues] = useState({});
     let { doencaNome } = useParams();
     const[formaDeContagio, setFormasDeContagio] = useState("");
     const[sintomas, setSintomas] = useState("");
@@ -37,7 +36,6 @@ function UpdateInformations() {
 
     }
     const handleEntry = (event) => {
-        //event.preventDefault();
         const target = event.target;
         const { name, value } = target;
         console.log("entry:", name, value);

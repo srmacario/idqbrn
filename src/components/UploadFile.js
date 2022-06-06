@@ -1,9 +1,6 @@
 import axios from "axios";
 import React from "react";
 import stylesCorpo from "./css/stylesCorpo.module.css"
-//const csvtojson = require('csvtojson');
-//import csvtojson from 'csvtojson'
-
 
 class UploadFile extends React.Component {
     constructor() {
@@ -26,7 +23,7 @@ class UploadFile extends React.Component {
             this.state.selectedFile
         );
         console.log(formData);
-        axios.post('http://localhost:8080/dados/', formData, {
+        axios.post('http://localhost:8080/updatecsv', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -48,7 +45,7 @@ class UploadFile extends React.Component {
                         <div className={stylesCorpo['card-header']} ><b>Selecione um novo .CSV com dados para reescrever o Banco de Dados Atual:</b></div>
                         <div className={stylesCorpo['card-body']}>
                             <p />
-                            <input className={stylesCorpo.upload} type="file" name="myFile" onChange={this.onFileChange} enctype="multipart/form-data" />
+                            <input className={stylesCorpo.upload} type="file" name="myFile" onChange={this.onFileChange} encType="multipart/form-data" />
                             <br />
                             <br />
                             <br />

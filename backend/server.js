@@ -2,6 +2,8 @@
 const express = require('express')
 const cors = require('cors');
 const mongoose = require('mongoose');
+const multer = require('multer')
+const upload = multer({ dest: 'uploads/' })
 const csvtojson = require('csvtojson');
 const jwt = require('jsonwebtoken');
 const { wait } = require('@testing-library/user-event/dist/utils');
@@ -59,6 +61,19 @@ app.post('/update', async (req, res) => {
 
 });
 
+app.post('/updatecsv', upload.single('myFile'), async (req, res) => {
+    console.log(req.file);
+    csvtojson().fromFile(req.file.path)
+        .then(async csvData => {
+            if (connection.collections != {})
+                connection.collection("dados").drop();
+            await connection.collection("dados").insertMany(csvData, (err, res) => {
+                if (err) throw err
+                console.log(`Inserted: ${res.insertedCount} rows`);
+            })
+        });
+});
+
 const dadosRouter = require('./routes/dados');
 const infoRouter = require('./routes/info');
 const elementRouter = require('./routes/element');
@@ -77,6 +92,5 @@ app.use('/login', loginRouter);
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port} `);
-    //populate_db("dados.csv");
 });
 
