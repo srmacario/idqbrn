@@ -8,13 +8,15 @@ function UpdateInfoDisease() {
 
     async function buscarDoencas() {
         try {
+            var lista = []
             axios.get('http://localhost:8080/element/')
                 .then(response => {
-                    var lista = []
-                    for (let i = 11; i < Object.keys(response.data).length; i++) {
-                        lista.push(Object.keys(response.data)[i]);
+                    if (doencas_lista.length === 0) {
+                        for (let i = 11; i < Object.keys(response.data).length; i++) {
+                            lista.push(Object.keys(response.data)[i]);
+                        }
+                        setDoencasLista(lista);
                     }
-                    setDoencasLista(lista);
                 })
                 .catch(err => {
                     console.log(err);

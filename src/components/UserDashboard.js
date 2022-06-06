@@ -77,12 +77,13 @@ function UserDashboard() {
 
     async function deletar(event){
         event.preventDefault()
-        var temp = event.target.value
-        setEmail(temp)
+        const temp = event.target.value
+        console.log(temp);
         let dialog = window.confirm("DESEJA DELETAR O USUARIO?");
         if(dialog){
+            console.log(temp);
             axios.post('http://localhost:8080/deleteUser',{
-                email,
+                email: temp,
             })
             .then(response =>{
                 if(response.data.status === 'ok'){
