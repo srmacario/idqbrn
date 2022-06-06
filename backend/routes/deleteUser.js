@@ -13,14 +13,14 @@ const UserSchema = new mongoose.Schema(
 );
 const User = mongoose.model('DeleteData', UserSchema);
 
-router.route('/').post((req, res) => {
+router.route('/').post(async(req, res) => {
         console.log('delete***');
         const uri = process.env.ATLAS_URI;
-        mongoose.connect(uri, {
+        await mongoose.connect(uri, {
             useNewUrlParser: true,
             //useCreateIndex: true
         });
-        const connection = mongoose.connection;
+        const connection = await mongoose.connection;
         connection.once('open', async () => {
             console.log("MongoDB connection estabilished successfully");
             try{
@@ -36,7 +36,7 @@ router.route('/').post((req, res) => {
                 res.json({ status: 'error' })
                 console.log(err.stack)
             }
-            connection.close();
+            await connection.close();
             console.log('Connection Closes');
         });
 });
