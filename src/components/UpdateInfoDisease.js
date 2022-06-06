@@ -28,7 +28,7 @@ function UpdateInfoDisease() {
         buscarDoencas();
     }, []);
 
-    const [disease, setDisease] = useState('Dengue');
+    const [disease, setDisease] = useState('Botulismo');
     const handleClick = (event) => {
         event.preventDefault();
         //console.log(Object.values(disease).toString().replaceAll(',',''));
