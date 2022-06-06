@@ -6,6 +6,29 @@ import jwt from 'jsonwebtoken'
 function UserDashboard() {
 
     let navigate = useNavigate();
+    // const doencas_lista;
+
+    function loadUser() {
+        axios.get('http://localhost:8080/users/')
+          .then(response => {
+            this.setState({ dados: response.data, dados_filtrados: response.data });
+            if (this.state.cidades_opt.length === 0) {
+              response.data.forEach(element => {
+                this.state.cidades_opt.push({ label: element['Municipio'], value: element['Municipio'] })
+                if (this.state.doencas_lista.length === 0) {
+                  for (let i = 11; i < Object.keys(element).length; i++) {
+                    this.state.doencas_lista.push(Object.keys(element)[i]);
+                  }
+                }
+                // this.state.name_to_doc.set(element['Municipio'],element).catch(e => console.log(e));
+              });
+            }
+    
+          })
+          .catch(err => {
+            console.log(err);
+          })
+      }
 
     //function to check if there is a token on the session
 	useEffect(() => {
@@ -17,6 +40,7 @@ function UserDashboard() {
 				localStorage.removeItem('token')
 				navigate('/login')
 			} else {
+                //login sucessful: render user list
                 console.log(token)
 			}
 		}
