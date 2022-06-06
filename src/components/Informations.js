@@ -85,7 +85,6 @@ export default function Informations() {
                     </div>
                     <div className={stylesCorpo.identificacao}>
                         <p className={stylesCorpo.nome}>{doencaNome}</p>
-                        <p className={stylesCorpo['sub-nome']}>Nome Científico</p>
                     </div>
                 </div>
                 <div className={stylesCorpo.conteudo}>
