@@ -24,13 +24,18 @@ router.route('/').post((req, res) => {
         connection.once('open', async () => {
             console.log("MongoDB connection estabilished successfully");
             try{
-                console.log(req.body)
-                const user = await User.deleteOne({
-                    email: req.body.email
-                })
-    
-                console.log(user)
-                res.json({status: 'ok'})
+                if(req.body.email !== 'admin'){
+                    console.log(req.body)
+                    const user = await User.deleteOne({
+                        email: req.body.email
+                    })
+        
+                    console.log(user)
+                    res.json({status: 'ok'})
+                }
+                else{
+                    res.json({status: 'admin'})
+                }
             }
             catch (err) {
                 res.json({ status: 'error' })

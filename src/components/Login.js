@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import axios from 'axios'
 
 import Lock from './img/lock.svg'
@@ -6,9 +6,16 @@ import Lock from './img/lock.svg'
 
 import "./css/stylesLogin.css";
 
+
+
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+
+    useEffect(() => {
+        localStorage.removeItem('token')
+    }, [])
 
     async function logar(event) {
         event.preventDefault()
