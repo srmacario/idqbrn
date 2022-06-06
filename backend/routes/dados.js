@@ -11,14 +11,14 @@ require('dotenv').config();
 
 
 
-router.route('/update').post(async(req,res) => {
+router.route('/update').post((req,res) => {
     console.log(req.body);
     const uri = process.env.ATLAS_URI;
-    await mongoose.connect(uri, {
+    mongoose.connect(uri, {
         useNewUrlParser: true,
         //useCreateIndex: true
     });
-    const connection =await  mongoose.connection;
+    const connection = mongoose.connection;
     connection.once('open',async()  => {
         console.log("MongoDB connection estabilished successfully");
         //await connection.collection("dados").find({Municipio:req.body.Municipio}).update({$set:{}})
@@ -35,23 +35,23 @@ router.route('/update').post(async(req,res) => {
 });
 
 
-router.route('/').post(upload.single('myFile'),async (req, res) => {
+router.route('/').post(upload.single('myFile'), (req, res) => {
     console.log(req.file);
     //console.log(req);
     //fs.writeFileSync('server_dados.csv', req.file);
     csvtojson().fromFile(req.file.path)
         .then(csvData => {
             const uri = process.env.ATLAS_URI;
-            await mongoose.connect(uri, {
+            mongoose.connect(uri, {
                 useNewUrlParser: true,
                 //useCreateIndex: true
             });
-            const connection =await  mongoose.connection;
+            const connection = mongoose.connection;
             connection.once('open', async () => {
                 console.log("MongoDB connection estabilished successfully");
                 //console.log(connection.collections);
                 if (connection.collections != {})
-                    await connection.collection("dados").drop();
+                    connection.collection("dados").drop();
                 await connection.collection("dados").insertMany(csvData, (err, res) => {
                     if (err) throw err
                     console.log(`Inserted: ${res.insertedCount} rows`);
@@ -62,14 +62,14 @@ router.route('/').post(upload.single('myFile'),async (req, res) => {
         });
 });
 
-router.route('/').get(async(req, res) => {
+router.route('/').get((req, res) => {
     console.log('a***');
     const uri = process.env.ATLAS_URI;
-    await mongoose.connect(uri, {
+    mongoose.connect(uri, {
         useNewUrlParser: true,
         //useCreateIndex: true
     });
-    const connection =await  mongoose.connection;
+    const connection = mongoose.connection;
     connection.once('open', async () => {
         console.log("MongoDB connection estabilished successfully");
         const dados = await connection.collection("dados").find().toArray();

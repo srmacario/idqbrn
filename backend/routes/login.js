@@ -14,14 +14,14 @@ const UserSchema = new mongoose.Schema(
 );
 const User = mongoose.model('LoginData', UserSchema);
 
-router.route('/').post(async(req, res) => {
+router.route('/').post((req, res) => {
     console.log('login***');
     const uri = process.env.ATLAS_URI;
-    await mongoose.connect(uri, {
+    mongoose.connect(uri, {
         useNewUrlParser: true,
         //useCreateIndex: true
     });
-    const connection = await mongoose.connection;
+    const connection = mongoose.connection;
     connection.once('open', async () => {
         console.log("MongoDB connection estabilished successfully");
         console.log(req.body)
@@ -42,7 +42,7 @@ router.route('/').post(async(req, res) => {
         else {
             res.json({ status: 'error', user: false })
         }
-        await connection.close();
+        connection.close();
         console.log('Connection Closes');
     });
 });
