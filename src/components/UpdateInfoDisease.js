@@ -50,7 +50,7 @@ function UpdateInfoDisease() {
         //console.log(link);
         //navigate(Link);
         //return (Link);
-        window.open(Link);
+        window.location.replace(Link);
     }
     return (
         <>

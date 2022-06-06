@@ -13,8 +13,8 @@ require('dotenv').config();
 //definindo schema e dados de usuario
 const UserSchema = new mongoose.Schema(
     {
-        email: { type: String, required: true, unique: true },
-        password: { type: String, required: true },
+        email:{type: String, required: true, unique: true},
+        password:{type:String, required:true},
     },
     { collection: 'usuarios' }
 );
@@ -62,16 +62,20 @@ app.post('/api/register', (req, res) => {
     const connection = mongoose.connection;
     connection.once('open', async () => {
         console.log("MongoDB connection estabilished successfully");
+        try{
+            
         console.log(req.body)
-        try {
-            const user = await User.create(
+            const user = new User(
                 {
                     email: req.body.email,
                     password: req.body.password,
                 }
             )
-            res.json({ status: 'ok' })
+
+            await user.save()
+
             console.log(user)
+            res.json({status: 'ok'})
         }
         catch (err) {
             res.json({ status: 'error' })
@@ -117,10 +121,12 @@ app.post('/api/login', (req, res) => {
 })
 
 const dadosRouter = require('./routes/dados');
-const infoRouter = require('./routes/info');
+const infoRouter  = require('./routes/info');
+const usersRouter  = require('./routes/users');
 const elementRouter = require('./routes/element');
 app.use('/dados', dadosRouter);
 app.use('/info', infoRouter);
+app.use('/users', usersRouter);
 app.use('/element', elementRouter);
 
 app.listen(port, () => {

@@ -9,7 +9,7 @@ function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    async function registrarUsuario(event) {
+    async function logar(event) {
         event.preventDefault()
 
         const response = await fetch('http://localhost:8080/api/login', {
@@ -68,7 +68,7 @@ function Login() {
                         </div>
 
                         <div className="container-login-form-btn">
-                            <button className="login-form-btn" onClick={registrarUsuario}>Login</button>
+                            <button className="login-form-btn" onClick={logar}>Login</button>
                         </div>
 
                         <div className="text-center">
