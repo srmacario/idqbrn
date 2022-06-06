@@ -20,7 +20,7 @@ function UpdateCases() {
         e.preventDefault();
         console.log(selectCidade);
         newValue = newValue.toString();
-        axios.post('http://localhost:8080/dados/update', { Municipio: selectCidade, Doenca: selectDoenca, Casos: newValue });
+        axios.post('http://localhost:8080/update', { Municipio: selectCidade, Doenca: selectDoenca, Casos: newValue });
     }
 
     const [doencas_lista, setDoencasLista] = useState([]);
