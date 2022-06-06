@@ -26,7 +26,7 @@ export default class CityMarker {
             if (this.json[this.listaDoencas[i]] > 0)
                 texto = texto + this.listaDoencas[i] + ": " + this.json[this.listaDoencas[i]] + "\n"
         }
-        const novoTexto = texto.split('\n').map(str => <p>{str}</p>);
+        const novoTexto = texto.split('\n').map(str => <p key={str}>{str}</p>);
         return novoTexto;
 
     }

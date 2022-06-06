@@ -5,13 +5,6 @@ import * as L from 'leaflet'
 
 export function LocationMarkers({ markersArray }) {
 
-    /*const map = useMapEvents({
-        click(e) {
-            markers.push(e.latlng);
-            setMarkers((prevValue) => [...prevValue, e.latlng]);
-        }
-    });*/
-
     return (
         <React.Fragment>
             {markersArray.map(marker => <Marker position={marker.getPos()} key={marker.getId()}>

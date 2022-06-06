@@ -6,8 +6,6 @@ import axios from 'axios'
 function UpdateInfoDisease() {
     const [doencas_lista, setDoencasLista] = useState([]);
 
-
-
     async function buscarDoencas() {
         try {
             axios.get('http://localhost:8080/element/')
