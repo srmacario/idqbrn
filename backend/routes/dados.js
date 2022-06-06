@@ -9,6 +9,32 @@ const upload = multer({ dest: 'uploads/' })
 require('dotenv').config();
 
 
+
+
+router.route('/update').post((req,res) => {
+    console.log(req.body);
+    const uri = process.env.ATLAS_URI;
+    mongoose.connect(uri, {
+        useNewUrlParser: true,
+        //useCreateIndex: true
+    });
+    const connection = mongoose.connection;
+    connection.once('open',async()  => {
+        console.log("MongoDB connection estabilished successfully");
+        //await connection.collection("dados").find({Municipio:req.body.Municipio}).update({$set:{}})
+        const dado = await connection.collection("dados").findOne({Municipio : req.body.Municipio});
+        dado[req.body.Doenca] = req.body.Casos;
+        await connection.collection("dados").deleteOne({Municipio:req.body.Municipio});
+        await connection.collection("dados").insertOne(dado);
+        console.log(dado);
+        await connection.close();
+        console.log('Connection Closes');
+
+        
+    });
+});
+
+
 router.route('/').post(upload.single('myFile'), (req, res) => {
     console.log(req.file);
     //console.log(req);
@@ -29,9 +55,9 @@ router.route('/').post(upload.single('myFile'), (req, res) => {
                 await connection.collection("dados").insertMany(csvData, (err, res) => {
                     if (err) throw err
                     console.log(`Inserted: ${res.insertedCount} rows`);
-                    connection.close();
-                    console.log("Connection closes");
                 })
+                await connection.close();
+                console.log("Connection closes");
             });
         });
 });
@@ -49,7 +75,7 @@ router.route('/').get((req, res) => {
         const dados = await connection.collection("dados").find().toArray();
         //console.log(dados);
         await res.json(dados);
-        connection.close();
+        await connection.close();
         console.log('Connection Closes');
 
 
