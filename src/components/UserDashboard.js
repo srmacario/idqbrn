@@ -1,27 +1,23 @@
 import stylesUser from "./css/stylesUser.module.css"
 import React, { useEffect, useState } from 'react'
 import { Link , useNavigate } from "react-router-dom";
+import axios from 'axios'
 import jwt from 'jsonwebtoken'
 
 function UserDashboard() {
 
     let navigate = useNavigate();
-    // const doencas_lista;
+    const [usersLista, setUsersLista] = useState([]);
 
     function loadUser() {
-        axios.get('http://localhost:8080/users/')
+        axios.get('http://localhost:8080/users')
           .then(response => {
-            this.setState({ dados: response.data, dados_filtrados: response.data });
-            if (this.state.cidades_opt.length === 0) {
-              response.data.forEach(element => {
-                this.state.cidades_opt.push({ label: element['Municipio'], value: element['Municipio'] })
-                if (this.state.doencas_lista.length === 0) {
-                  for (let i = 11; i < Object.keys(element).length; i++) {
-                    this.state.doencas_lista.push(Object.keys(element)[i]);
-                  }
-                }
-                // this.state.name_to_doc.set(element['Municipio'],element).catch(e => console.log(e));
-              });
+            if (usersLista.length === 0) {
+                let tempLista = []
+                response.data.forEach(element => {
+                    tempLista.push(element['email'])
+                });
+                setUsersLista(tempLista)
             }
     
           })
@@ -41,7 +37,7 @@ function UserDashboard() {
 				navigate('/login')
 			} else {
                 //login sucessful: render user list
-                console.log(token)
+                loadUser()
 			}
 		}
         //no token: forbidden to enter!!!
@@ -125,8 +121,7 @@ function UserDashboard() {
 
                     <div className={stylesUser.containerList}>
                         <ul className={stylesUser['list-items']}>
-                            <li><button className={stylesUser.email}>example@gmail.com</button></li>
-                            <li><button className={stylesUser.email}>example2@gmail.com</button></li>
+                        {usersLista.map(user => <li key={user}><button className={stylesUser.email}>{user}</button></li>)}
                         </ul>
                     </div>
                 </div>

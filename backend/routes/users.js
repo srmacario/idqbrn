@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 router.route('/').get((req, res) => {
-    console.log('a***');
+    console.log('users***');
     const uri = process.env.ATLAS_URI;
     mongoose.connect(uri, {
         useNewUrlParser: true,
