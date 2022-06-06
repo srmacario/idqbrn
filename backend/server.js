@@ -16,9 +16,9 @@ const UserSchema = new mongoose.Schema(
         email:{type: String, required: true, unique: true},
         password:{type:String, required:true},
     },
-    {collection:'usuarios'}
+    { collection: 'usuarios' }
 );
-const User = mongoose.model('UserData',UserSchema);
+const User = mongoose.model('UserData', UserSchema);
 
 
 //popular o db com doencas
@@ -60,7 +60,7 @@ app.post('/api/register', (req, res) => {
         //useCreateIndex: true
     });
     const connection = mongoose.connection;
-    connection.once('open',async()  => {
+    connection.once('open', async () => {
         console.log("MongoDB connection estabilished successfully");
         try{
             
@@ -77,8 +77,8 @@ app.post('/api/register', (req, res) => {
             console.log(user)
             res.json({status: 'ok'})
         }
-        catch(err){
-            res.json({status: 'error'})
+        catch (err) {
+            res.json({ status: 'error' })
             console.log(err.stack)
         }
         connection.close();
@@ -95,26 +95,26 @@ app.post('/api/login', (req, res) => {
         //useCreateIndex: true
     });
     const connection = mongoose.connection;
-    connection.once('open',async()  => {
+    connection.once('open', async () => {
         console.log("MongoDB connection estabilished successfully");
         console.log(req.body)
-        
+
         const user = await User.findOne({
             email: req.body.email,
             password: req.body.password,
         })
-        if (user)    {
+        if (user) {
             const token = jwt.sign(
                 {
                     email: user.email,
                 },
                 'segredo123'
             )
-            res.json({status: 'ok', user: token})
+            res.json({ status: 'ok', user: token })
         }
-        else{
-            res.json({status: 'error', user: false})
-        } 
+        else {
+            res.json({ status: 'error', user: false })
+        }
         connection.close();
         console.log('Connection Closes');
     });
@@ -123,9 +123,11 @@ app.post('/api/login', (req, res) => {
 const dadosRouter = require('./routes/dados');
 const infoRouter  = require('./routes/info');
 const usersRouter  = require('./routes/users');
+const elementRouter = require('./routes/element');
 app.use('/dados', dadosRouter);
 app.use('/info', infoRouter);
 app.use('/users', usersRouter);
+app.use('/element', elementRouter);
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port} `);
