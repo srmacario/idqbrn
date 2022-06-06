@@ -16,7 +16,11 @@ export function LocationMarkers({ markersArray }) {
         <React.Fragment>
             {markersArray.map(marker => <Marker position={marker.getPos()} key={marker.getId()}>
                 <Popup>
-                    <span>Casos de {marker.getDoenca()}: <br /> {marker.getCasos()}</span>
+                    <div className={stylesMapa.popupContent}>
+                        <div className={stylesMapa.nomeCidade}>{marker.getNome()}</div><br />
+                        <div className={stylesMapa.textoCidade}>Casos registrados:</div><br />
+                        <span>{marker.getTotalCasos()}</span>
+                    </div>
                 </Popup>
             </Marker>)}
         </React.Fragment>

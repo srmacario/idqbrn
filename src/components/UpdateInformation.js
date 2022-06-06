@@ -31,7 +31,7 @@ function UpdateInformations() {
     return (
         <>
             <div className={stylesCorpo.cabecalho}>
-                <div className={stylesCorpo.pagina}>Alterar Informações</div>
+                <div className={stylesCorpo.pagina}>{doencaNome}</div>
             </div>
             <div className={stylesCorpo.corpo}>
                 <form onSubmit={UpdateInfo}>
