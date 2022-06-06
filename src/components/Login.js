@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from 'axios'
 
 import Lock from './img/lock.svg'
 //import BrasilAzul from './img/brasilAzul.png'
@@ -11,29 +12,25 @@ function Login() {
 
     async function logar(event) {
         event.preventDefault()
-
-        const response = await fetch('http://localhost:8080/api/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email,
-                password,
-            }),
+        localStorage.removeItem('token')
+        axios.post('http://localhost:8080/login',{
+            email,
+            password,
         })
-
-        const data = await response.json()
-
-        if(data.user){
-            localStorage.setItem('token', data.user)
-            alert('Logado com sucesso!')
-            window.location.href = '/user'
-        }
-        else{
-            alert('Cheque suas credenciais!')
-        }
-        console.log(data)
+        .then(response =>{
+            if(response.data.user){
+                localStorage.setItem('token', response.data.user)
+                alert('Logado com sucesso!')
+                window.location.href = '/user'
+            }
+            else{
+                alert('Cheque suas credenciais!')
+            }
+            console.log(response.data)
+        })
+        .catch(err => {
+            console.log(err);
+        })
     }
 
     return (

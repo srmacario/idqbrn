@@ -9,7 +9,7 @@ function UserDashboard() {
     let navigate = useNavigate();
     const [usersLista, setUsersLista] = useState([]);
 
-    function loadUser() {
+    async function loadUser() {
         axios.get('http://localhost:8080/users')
           .then(response => {
             if (usersLista.length === 0) {
@@ -19,7 +19,6 @@ function UserDashboard() {
                 });
                 setUsersLista(tempLista)
             }
-    
           })
           .catch(err => {
             console.log(err);
@@ -51,32 +50,28 @@ function UserDashboard() {
     const [password, setPassword] = useState("");
     const [repPassword, setRepPassword] = useState("");
 
-    async function registrarUsuario(event) {
+    async function registrar(event){
         event.preventDefault()
         if(repPassword !== password){
             alert('Senhas não são iguais')
         }
         else{
-            const response = await fetch('http://localhost:8080/api/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    email,
-                    password,
-                }),
+            axios.post('http://localhost:8080/register',{
+                email,
+                password,
             })
-
-            const data = await response.json()
-
-            if(data.status === 'ok'){
-                alert('Criado com sucesso!')
-            }
-            else{
-                alert('Falha na criacao, cheque se o usuario ja existe!')
-            }
-            console.log(data)
+            .then(response =>{
+                if(response.data.status === 'ok'){
+                    alert('Criado com sucesso!')
+                }
+                else{
+                    alert('Falha na criacao, cheque se o usuario ja existe!')
+                }
+                console.log(response.data)
+            })
+            .catch(err => {
+                console.log(err);
+            })
         }
     }
 
@@ -115,7 +110,7 @@ function UserDashboard() {
                                 value={repPassword}
                                 onChange={(e) => setRepPassword(e.target.value)}
                                 type="password" className="searchTerm" placeholder="Confirmar Senha" />
-                            <button type="submit" className={stylesUser.outline} onClick={registrarUsuario}>Cadastrar</button>
+                            <button type="submit" className={stylesUser.outline} onClick={registrar}>Cadastrar</button>
                         </div>
                     </form>
 

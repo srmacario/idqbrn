@@ -14,12 +14,9 @@ router.route('/').get((req, res) => {
     connection.once('open',async()  => {
         console.log("MongoDB connection estabilished successfully");
         const dados = await connection.collection("usuarios").find().toArray();
-        //console.log(dados);
         await res.json(dados);
         connection.close();
-        console.log('Connection Closes');
-
-        
+        console.log('Connection Closes');        
     });
 });
 
