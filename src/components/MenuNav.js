@@ -52,7 +52,7 @@ export default function MenuNav(props) {
                 filtered = dados.filter(item => {
                     return parseInt(item[props.city_filter[i]]) > 0;
                 })
-                union_filtered = [... new Set([...union_filtered,...filtered])];
+                union_filtered = [... new Set([...union_filtered, ...filtered])];
             }
             console.log("dados filtrados");
             console.log(union_filtered);

@@ -5,20 +5,20 @@ import axios from "axios";
 
 function UpdateInformations() {
     const [values, setValues] = useState({});
-    let {doencaNome} = useParams();
+    let { doencaNome } = useParams();
 
     const UpdateInfo = (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
         const info = Object.fromEntries(formData);
-        info.doenca = Object.values(doencaNome).toString().replaceAll(',','');
+        info.doenca = Object.values(doencaNome).toString().replaceAll(',', '');
         console.log(info);
-        axios.post('http://localhost:8080/info/',info)
-        .then(res => console.log(res.data));
-       
-       
+        axios.post('http://localhost:8080/info/', info)
+            .then(res => console.log(res.data));
 
-        
+
+
+
     }
     const handleEntry = (event) => {
         //event.preventDefault();
@@ -31,7 +31,7 @@ function UpdateInformations() {
     return (
         <>
             <div className={stylesCorpo.cabecalho}>
-                <div className={stylesCorpo.pagina}>{doencaNome}</div>
+                <div className={stylesCorpo.pagina}>Alterar Informações</div>
             </div>
             <div className={stylesCorpo.corpo}>
                 <form onSubmit={UpdateInfo}>
