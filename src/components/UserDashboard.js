@@ -34,9 +34,9 @@ function UserDashboard() {
             <div className={stylesUser.corpo}>
                 <div className={stylesUser.conteudo}>
                     <ul className={stylesUser['list-items']}>
-                        <li><Link to="/update_info">Alterar Informações sobre uma Doença</Link></li>
-                        <li><Link to="/update_cases">Alterar número de casos em uma cidade</Link></li>
-                        <li><Link to="/upload">Carregar planilha no Banco de Dados</Link></li>
+                        <li><Link className={stylesUser.link} to="/update_info">Alterar Informações sobre uma Doença</Link></li>
+                        <li><Link className={stylesUser.link} to="/update_cases">Alterar número de casos em uma cidade</Link></li>
+                        <li><Link className={stylesUser.link} to="/upload">Carregar planilha no Banco de Dados</Link></li>
                     </ul>
                 </div>
             </div>
