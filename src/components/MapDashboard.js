@@ -11,6 +11,7 @@ class MapDashboard extends React.Component {
       dados: [],
       cidades_opt: [],
       city_filter: [],
+      doencas_lista: []
 
     }
   }
@@ -21,6 +22,11 @@ class MapDashboard extends React.Component {
         if (this.state.cidades_opt.length === 0) {
           response.data.forEach(element => {
             this.state.cidades_opt.push({ label: element['Municipio'], value: element['Municipio'] })
+            if (this.state.doencas_lista.length === 0) {
+              for (let i = 11; i < Object.keys(element).length; i++) {
+                this.state.doencas_lista.push(Object.keys(element)[i]);
+              }
+            }
             // this.state.name_to_doc.set(element['Municipio'],element).catch(e => console.log(e));
           });
         }
@@ -35,14 +41,13 @@ class MapDashboard extends React.Component {
     const cidades_opt = this.state.cidades_opt;
     const city_filter = this.state.city_filter;
     const dados_filtrados = this.state.dados_filtrados;
+    const doencas_lista = this.state.doencas_lista;
     console.log("mapds");
-    //console.log("dados" + dados);
-    //console.log("cidade_opt" + cidades_opt);
     return (
       <>
         <MenuNav markersArray={this.props.markersArray} setMarkers={this.props.setMarkers}
           navigate={this.props.navigate} dados={dados} cidades_opt={cidades_opt}
-          city_filter={city_filter} dados_filtrados={dados_filtrados} />
+          city_filter={city_filter} dados_filtrados={dados_filtrados} doencas_lista={doencas_lista} />
         <Mapa markersArray={this.props.markersArray} />
       </>
     );
