@@ -13,37 +13,25 @@ class UploadFile extends React.Component {
         }
     }
 
-    onFileChange = async event =>{
-        await this.setState({selectedFile : event.target.files[0]});
+    onFileChange = async event => {
+        await this.setState({ selectedFile: event.target.files[0] });
         console.log(this.state.selectedFile);
     };
 
-    onFileUpload =  async() =>{
-        const formData =  new FormData();
+    onFileUpload = async () => {
+        const formData = new FormData();
         console.log("bad*-")
         await formData.append(
             "myFile",
-            //fs.createReadStream(this.state.selectedFile),
             this.state.selectedFile
         );
         console.log(formData);
-        axios.post('http://localhost:8080/dados/',formData,{
-            headers:{
+        axios.post('http://localhost:8080/dados/', formData, {
+            headers: {
                 'Content-Type': 'multipart/form-data'
             }
         });
     };
-    // onFileUpload = () =>{
-    //     console.log(this.state.selectedFile);
-    //     csvtojson.
-    //     csvtojson().fromFile(this.state.selectedFile.name)
-    //     .then(csvData => {
-    //         console.log(csvData);
-    //         axios.post('http://localhost:8080/dados/',csvData);
-    //     })
-    //     .catch(err => console.log(err));
-    // };
-    
 
     render() {
 
@@ -56,20 +44,18 @@ class UploadFile extends React.Component {
                 </div>
 
                 <div className={stylesCorpo.corpo}>
-                    <div >
-                        <div >
-                            <div  >
-                                <div ><b>Fazer upload de novo CSV com dados</b></div>
-                                <div >
-
-                                    <input type="file"  name="myFile" onChange={this.onFileChange} enctype="multipart/form-data"/>
-                                    <button onClick={this.onFileUpload}>
-                                        Upload
-                                    </button>
-
-                                </div>
-                            </div>
-                            {/* <div id="excel_data"  style="overflow-x: scroll; overflow-y: scroll; max-height:800px;"></div> */}
+                    <div className={stylesCorpo.containerUpload}>
+                        <div className={stylesCorpo['card-header']} ><b>Selecione um novo .CSV com dados para reescrever o Banco de Dados Atual:</b></div>
+                        <div className={stylesCorpo['card-body']}>
+                            <p />
+                            <input className={stylesCorpo.upload} type="file" name="myFile" onChange={this.onFileChange} enctype="multipart/form-data" />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <button className={stylesCorpo.input} onClick={this.onFileUpload}>
+                                Upload
+                            </button>
                         </div>
                     </div>
                 </div>
