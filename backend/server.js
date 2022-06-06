@@ -42,16 +42,18 @@ app.use(express.json());
 
 const dadosRouter = require('./routes/dados');
 const infoRouter  = require('./routes/info');
-const usersRouter  = require('./routes/users');
 const elementRouter = require('./routes/element');
-const registerRouter = require('./routes/register');
 const loginRouter = require('./routes/login');
+const registerUserRouter = require('./routes/registerUser');
+const deleteUserRouter = require('./routes/deleteUser');
+const listUsersRouter  = require('./routes/listUsers');
 
 app.use('/dados', dadosRouter);
 app.use('/info', infoRouter);
-app.use('/users', usersRouter);
 app.use('/element', elementRouter);
-app.use('/register', registerRouter);
+app.use('/registerUser', registerUserRouter);
+app.use('/deleteUser', deleteUserRouter);
+app.use('/listUsers', listUsersRouter);
 app.use('/login', loginRouter);
 
 app.listen(port, () => {

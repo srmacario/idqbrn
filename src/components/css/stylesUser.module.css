@@ -273,7 +273,7 @@ button.email a {
 
 button.email:hover {
 	color: white;
-	background: #56A3A6;
+	background: #b72626/*#56A3A6*/;
 	border-color: white;
 	transition: all 0.2s linear;
 }

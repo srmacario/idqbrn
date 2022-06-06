@@ -10,7 +10,7 @@ function UserDashboard() {
     const [usersLista, setUsersLista] = useState([]);
 
     async function loadUser() {
-        axios.get('http://localhost:8080/users')
+        axios.get('http://localhost:8080/listUsers')
           .then(response => {
             if (usersLista.length === 0) {
                 let tempLista = []
@@ -56,7 +56,7 @@ function UserDashboard() {
             alert('Senhas não são iguais')
         }
         else{
-            axios.post('http://localhost:8080/register',{
+            axios.post('http://localhost:8080/registerUser',{
                 email,
                 password,
             })
@@ -66,6 +66,30 @@ function UserDashboard() {
                 }
                 else{
                     alert('Falha na criacao, cheque se o usuario ja existe!')
+                }
+                console.log(response.data)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+        }
+    }
+
+    async function deletar(event){
+        event.preventDefault()
+        var temp = event.target.value
+        setEmail(temp)
+        let dialog = window.confirm("DESEJA DELETAR O USUARIO?");
+        if(dialog){
+            axios.post('http://localhost:8080/deleteUser',{
+                email,
+            })
+            .then(response =>{
+                if(response.data.status === 'ok'){
+                    alert('Deletado com sucesso!')
+                }
+                else{
+                    alert('Falha na delecao!')
                 }
                 console.log(response.data)
             })
@@ -116,7 +140,7 @@ function UserDashboard() {
 
                     <div className={stylesUser.containerList}>
                         <ul className={stylesUser['list-items']}>
-                        {usersLista.map(user => <li key={user}><button className={stylesUser.email}>{user}</button></li>)}
+                        {usersLista.map(user => <li key={user}><button className={stylesUser.email} value={user} onClick={deletar}>{user}</button></li>)}
                         </ul>
                     </div>
                 </div>
