@@ -16,11 +16,11 @@ function UpdateCases() {
         newValue = event.target.value;
     }
 
-    const updateDatabase = () => {
-        
+    const updateDatabase = (e) => {
+        e.preventDefault();
         console.log(selectCidade);
         newValue = newValue.toString();
-        axios.post('http://localhost:8080/dados/update',{Municipio:selectCidade, Doenca:selectDoenca, Casos:newValue});
+        axios.post('http://localhost:8080/dados/update', { Municipio: selectCidade, Doenca: selectDoenca, Casos: newValue });
     }
 
     const [doencas_lista, setDoencasLista] = useState([]);
@@ -64,7 +64,7 @@ function UpdateCases() {
 
             <div className={stylesCorpo.corpo} onSubmit={updateDatabase}>
                 <form className={stylesMapa.wrap} >
-                <p></p>
+                    <p></p>
                     <div className={stylesMapa.searchTerm}>
                         <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true}
                             onChange={e => {

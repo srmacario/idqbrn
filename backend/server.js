@@ -10,16 +10,21 @@ const { wait } = require('@testing-library/user-event/dist/utils');
 
 require('dotenv').config();
 
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, {
+    useNewUrlParser: true,
+    //useCreateIndex: true
+});
+const connection = mongoose.connection;
+connection.once('open', () => {
+    console.log("MongoDB database connection established successfully");
+})
+
 //popular o db com doencas
 function populate_db(path) {
     csvtojson().fromFile(path)
         .then(csvData => {
-            const uri = process.env.ATLAS_URI;
-            mongoose.connect(uri, {
-                useNewUrlParser: true,
-                //useCreateIndex: true
-            });
-            const connection = mongoose.connection;
+
             connection.once('open', () => {
                 console.log("MongoDB connection estabilished successfully");
                 console.log(connection.collections);
@@ -41,12 +46,12 @@ app.use(cors());
 app.use(express.json());
 
 const dadosRouter = require('./routes/dados');
-const infoRouter  = require('./routes/info');
+const infoRouter = require('./routes/info');
 const elementRouter = require('./routes/element');
 const loginRouter = require('./routes/login');
 const registerUserRouter = require('./routes/registerUser');
 const deleteUserRouter = require('./routes/deleteUser');
-const listUsersRouter  = require('./routes/listUsers');
+const listUsersRouter = require('./routes/listUsers');
 
 app.use('/dados', dadosRouter);
 app.use('/info', infoRouter);

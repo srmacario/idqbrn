@@ -1,36 +1,40 @@
 const router = require('express').Router();
+let Dados = require('../models/Dados');
+
 const { json } = require('express');
 const mongoose = require('mongoose');
 const csvtojson = require('csvtojson');
 const { flushSync } = require('react-dom');
 const fs = require('fs');
-const multer = require('multer')
+const multer = require('multer');
+const { receiveMessageOnPort } = require('worker_threads');
 const upload = multer({ dest: 'uploads/' })
 require('dotenv').config();
 
 
 
 
-router.route('/update').post((req,res) => {
+router.route('/update').post((req, res) => {
     console.log(req.body);
-    const uri = process.env.ATLAS_URI;
-    mongoose.connect(uri, {
-        useNewUrlParser: true,
-        //useCreateIndex: true
-    });
-    const connection = mongoose.connection;
-    connection.once('open',async()  => {
-        console.log("MongoDB connection estabilished successfully");
-        //await connection.collection("dados").find({Municipio:req.body.Municipio}).update({$set:{}})
-        const dado = await connection.collection("dados").findOne({Municipio : req.body.Municipio});
-        dado[req.body.Doenca] = req.body.Casos;
-        await connection.collection("dados").deleteOne({Municipio:req.body.Municipio});
-        await connection.collection("dados").insertOne(dado);
-        console.log(dado);
-        await connection.close();
-        console.log('Connection Closes');
 
-        
+    Dados.findOne({ Municipio: req.body.Municipio }, function (err, element) {
+        if (err) {
+            console.log(err)
+        }
+        else {
+            console.log("Deleted Dado : ", element);
+            console.log(Object.keys(element))
+            var newElement = JSON.parse(JSON.stringify(element))
+            newElement[req.body.Doenca] = req.body.Casos
+            console.log(newElement)
+            const newDado = new Dados(newElement);
+            /*console.log(newDado);
+            newDado.save();*/
+            /*for (key in element) {
+
+                console.log(element[key])
+            }*/
+        }
     });
 });
 
@@ -63,7 +67,7 @@ router.route('/').post(upload.single('myFile'), (req, res) => {
 });
 
 router.route('/').get((req, res) => {
-    console.log('a***');
+    /*console.log('a***');
     const uri = process.env.ATLAS_URI;
     mongoose.connect(uri, {
         useNewUrlParser: true,
@@ -77,9 +81,10 @@ router.route('/').get((req, res) => {
         await res.json(dados);
         await connection.close();
         console.log('Connection Closes');
-
-
-    });
+    });*/
+    Dados.find()
+        .then(dados => res.json(dados))
+        .catch(err => res.status(400).json('Error: ' + err));
 });
 
 module.exports = router;
