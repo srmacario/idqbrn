@@ -1,6 +1,5 @@
 import stylesCorpo from "./css/stylesCorpo.module.css"
 import React, { useEffect, useState } from 'react'
-import { Navigate, Link } from "react-router-dom";
 import axios from 'axios'
 
 function UpdateInfoDisease() {
@@ -42,14 +41,10 @@ function UpdateInfoDisease() {
     const handleChange = (event) => {
         const doencaSelecionada = event.target.value;
 
-        setDisease(doencaSelecionada);
-        //console.log({disease});        
+        setDisease(doencaSelecionada);    
     }
     function openPage(link) {
         var Link = '/update_info/' + link;
-        //console.log(link);
-        //navigate(Link);
-        //return (Link);
         window.location.replace(Link);
     }
     return (
