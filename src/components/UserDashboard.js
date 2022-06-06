@@ -9,8 +9,8 @@ function UserDashboard() {
     let navigate = useNavigate();
     const [usersLista, setUsersLista] = useState([]);
 
-    function loadUser() {
-        axios.get('http://localhost:8080/users')
+    async function loadUser() {
+        axios.get('http://localhost:8080/listUsers')
           .then(response => {
             if (usersLista.length === 0) {
                 let tempLista = []
@@ -19,7 +19,6 @@ function UserDashboard() {
                 });
                 setUsersLista(tempLista)
             }
-    
           })
           .catch(err => {
             console.log(err);
@@ -51,32 +50,53 @@ function UserDashboard() {
     const [password, setPassword] = useState("");
     const [repPassword, setRepPassword] = useState("");
 
-    async function registrarUsuario(event) {
+    async function registrar(event){
         event.preventDefault()
         if(repPassword !== password){
             alert('Senhas não são iguais')
         }
         else{
-            const response = await fetch('http://localhost:8080/api/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    email,
-                    password,
-                }),
+            axios.post('http://localhost:8080/registerUser',{
+                email,
+                password,
             })
+            .then(response =>{
+                if(response.data.status === 'ok'){
+                    alert('Criado com sucesso!')
+                }
+                else{
+                    alert('Falha na criacao, cheque se o usuario ja existe!')
+                }
+                console.log(response.data)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+        }
+    }
 
-            const data = await response.json()
-
-            if(data.status === 'ok'){
-                alert('Criado com sucesso!')
-            }
-            else{
-                alert('Falha na criacao, cheque se o usuario ja existe!')
-            }
-            console.log(data)
+    async function deletar(event){
+        event.preventDefault()
+        const temp = event.target.value
+        console.log(temp);
+        let dialog = window.confirm("DESEJA DELETAR O USUARIO?");
+        if(dialog){
+            console.log(temp);
+            axios.post('http://localhost:8080/deleteUser',{
+                email: temp,
+            })
+            .then(response =>{
+                if(response.data.status === 'ok'){
+                    alert('Deletado com sucesso!')
+                }
+                else{
+                    alert('Falha na delecao!')
+                }
+                console.log(response.data)
+            })
+            .catch(err => {
+                console.log(err);
+            })
         }
     }
 
@@ -115,13 +135,13 @@ function UserDashboard() {
                                 value={repPassword}
                                 onChange={(e) => setRepPassword(e.target.value)}
                                 type="password" className="searchTerm" placeholder="Confirmar Senha" />
-                            <button type="submit" className={stylesUser.outline} onClick={registrarUsuario}>Cadastrar</button>
+                            <button type="submit" className={stylesUser.outline} onClick={registrar}>Cadastrar</button>
                         </div>
                     </form>
 
                     <div className={stylesUser.containerList}>
                         <ul className={stylesUser['list-items']}>
-                        {usersLista.map(user => <li key={user}><button className={stylesUser.email}>{user}</button></li>)}
+                        {usersLista.map(user => <li key={user}><button className={stylesUser.email} value={user} onClick={deletar}>{user}</button></li>)}
                         </ul>
                     </div>
                 </div>
