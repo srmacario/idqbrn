@@ -1,53 +1,39 @@
 const router = require('express').Router();
+let Info = require('../models/Info');
+
 const { json } = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
 
-router.route('/doenca').post((req,res)=>{
+router.route('/doenca').post((req, res) => {
     console.log("doencaPost")
     console.log(req.body);
-    const uri = process.env.ATLAS_URI;
-    mongoose.connect(uri, {
-        useNewUrlParser: true,
-        //useCreateIndex: true
-    });
-    const connection = mongoose.connection;
-    connection.once('open',async()  => {
-        console.log("MongoDB connection estabilished successfully");
-        const dado  = await connection.collection("info").findOne({doenca:req.body.doenca});
-        //const dado = await connection.collection("info").up;
-        console.log(dado);
-        await res.json(dado);
-        connection.close();
-        console.log('Connection Closes');
-
-        
-    });
+    Info.findOne({ doenca: req.body.doenca })
+        .then(dados => res.json(dados))
+        .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/').post((req, res) => {
     console.log('info***');
-    const uri = process.env.ATLAS_URI;
-    mongoose.connect(uri, {
-        useNewUrlParser: true,
-        //useCreateIndex: true
-    });
-    const connection = mongoose.connection;
-    connection.once('open',async()  => {
-        console.log("MongoDB connection estabilished successfully");
-        if(await (await connection.collection("info").find({doenca:req.body.doenca}).toArray()).length > 0){
-            await connection.collection("info").deleteMany({doenca:req.body.doenca});
-            
-        }
-        await connection.collection("info").insertOne(req.body);
-        //const dado = await connection.collection("info").up;
-        console.log(req.body);
-        //await res.json(dado);
-        connection.close();
-        console.log('Connection Closes');
-
-        
-    });
+    const formasdecontagio = req.body.formasdecontagio;
+    const sintomas = req.body.sintomas;
+    const recomendacoes = req.body.recomendacoes;
+    const doenca = req.body.doenca;
+    const newInfo = {
+        doenca: doenca,
+        recomendacoes: recomendacoes,
+        sintomas: sintomas,
+        formasdecontagio: formasdecontagio,
+    }
+    Info.findOneAndReplace({ doenca: req.body.doenca },
+        newInfo, null, function (err, docs) {
+            if (err) {
+                console.log(err)
+            }
+            else {
+                console.log("Original Doc : ", docs);
+            }
+        });
 });
 module.exports = router;
