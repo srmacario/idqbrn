@@ -47,7 +47,7 @@
 	position: absolute;
 	transform: translate(-50%, 0);
 	left: 50%;
-	width: 700px;
+	width: 900px;
 	height: 210px;
 	margin: 5px;
 }
@@ -77,7 +77,7 @@
 }
 
 .nome {
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: bold;
 }
 
