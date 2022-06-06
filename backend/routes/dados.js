@@ -4,12 +4,12 @@ const mongoose = require('mongoose');
 const csvtojson = require('csvtojson');
 const { flushSync } = require('react-dom');
 const fs = require('fs');
-const multer  = require('multer')
+const multer = require('multer')
 const upload = multer({ dest: 'uploads/' })
 require('dotenv').config();
 
 
-router.route('/').post(upload.single('myFile'),(req, res) => {
+router.route('/').post(upload.single('myFile'), (req, res) => {
     console.log(req.file);
     //console.log(req);
     //fs.writeFileSync('server_dados.csv', req.file);
