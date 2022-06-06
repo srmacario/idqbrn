@@ -2,12 +2,13 @@ import stylesMapa from "./css/stylesMapa.module.css"
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import * as L from 'leaflet'
+import { iconMarker } from "./img/Icon";
 
 export function LocationMarkers({ markersArray }) {
 
     return (
         <React.Fragment>
-            {markersArray.map(marker => <Marker position={marker.getPos()} key={marker.getId()}>
+            {markersArray.map(marker => <Marker icon={ iconMarker } position={marker.getPos()} key={marker.getId()}>
                 <Popup>
                     <div className={stylesMapa.popupContent}>
                         <div className={stylesMapa.nomeCidade}>{marker.getNome()}</div><br />
