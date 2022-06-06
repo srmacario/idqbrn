@@ -92,11 +92,12 @@
 	text-align: center;
 	z-index: 3;
 
-	
 
-	
+
+
 }
-.link{
+
+.link {
 	background: transparent;
 	color: #56A3A6;
 	font-size: 15px;
@@ -104,7 +105,7 @@
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 22px;
-	padding: 2px 20px;
+	padding: 5px 10px;
 	transition: all 0.2s linear;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 20px;
@@ -112,8 +113,35 @@
 	text-decoration: none;
 	text-align: center;
 }
-.link:hover{
-	background:solid;
+
+.link:hover {
+	background: solid;
+	color: white;
+	background: #56A3A6;
+	border-color: white;
+	transition: all 0.2s linear;
+
+}
+
+.buttonDownload {
+	background: transparent;
+	color: #56A3A6;
+	font-size: 15px;
+	border-color: #56A3A6;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 22px;
+	padding: 0px 20px;
+	transition: all 0.2s linear;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	line-height: 3em;
+	text-decoration: none;
+	text-align: center;
+}
+
+.buttonDownload:hover {
+	background: solid;
 	color: white;
 	background: #56A3A6;
 	border-color: white;
@@ -207,7 +235,7 @@ ul.list-items {
 
 ul.list-items li {
 	display: list-item;
-	
+
 }
 
 /*CSS do botão de Cadastrar---------------------------------------*/
@@ -273,9 +301,16 @@ button.email a {
 
 button.email:hover {
 	color: white;
-	background: #b72626/*#56A3A6*/;
+	background: #ec5b5b
+		/*#56A3A6*/
+	;
 	border-color: white;
 	transition: all 0.2s linear;
+	font-weight: bold;
+}
+
+button.email:hover:before {
+	content: "Remover "
 }
 
 button.email:active {
