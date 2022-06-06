@@ -6,6 +6,7 @@ import UserDashboard from './components/UserDashboard'
 import UpdateCasesNumber from './components/UpdateCasesNumber'
 import UpdateCases from './components/UpdateCases'
 import UpdateInfoDisease from './components/UpdateInfoDisease'
+import UploadFile from './components/UploadFile'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewLogin from './components/Login.js';
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/update_info/:doencaNome" element={<UpdateInformation />} />
           <Route path="/update_cases" element={<UpdateCases />} />
           <Route path="/update_info" element={<UpdateInfoDisease />} />
-          <Route path="/upload" element={<UpdateCasesNumber />} />
+          <Route path="/upload" element={<UploadFile />} />
         </Routes>
       </BrowserRouter>
     </>
