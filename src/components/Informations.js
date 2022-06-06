@@ -1,27 +1,28 @@
 import stylesCorpo from "./css/stylesCorpo.module.css"
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import icone from './img/microscopioFlat.svg'
 import { withRouter } from "react-router";
 import axios from 'axios'
 
 export default function Informations() {
     let { doencaNome } = useParams();
-    const[formaDeContagio, setFormasDeContagio] = useState("");
-    const[sintomas, setSintomas] = useState("");
-    const[recomendacoes, setRecomendacoes] = useState("");
-    function capitalize_first_letter(string){
+    const [formaDeContagio, setFormasDeContagio] = useState("");
+    const [sintomas, setSintomas] = useState("");
+    const [recomendacoes, setRecomendacoes] = useState("");
+    function capitalize_first_letter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
     useEffect(() => {
         doencaNome = doencaNome.toLowerCase();
         doencaNome = capitalize_first_letter(doencaNome);
-        axios.post('http://localhost:8080/info/doenca',{doenca:doencaNome})
-        .then(res =>{
-            setFormasDeContagio(res.data.formasdecontagio);
-            setRecomendacoes(res.data.recomendacoes);
-            setSintomas(res.data.sintomas);
-        })
+        axios.post('http://localhost:8080/info/doenca', { doenca: doencaNome })
+            .then(res => {
+                setFormasDeContagio(res.data.formasdecontagio);
+                setRecomendacoes(res.data.recomendacoes);
+                setSintomas(res.data.sintomas);
+            })
     });
     return (
         <>
@@ -31,6 +32,7 @@ export default function Informations() {
             <div className={stylesCorpo.corpo}>
                 <div className={stylesCorpo.doenca}>
                     <div className={stylesCorpo.caixa}>
+                        <img alt="Icone" className={stylesCorpo.logo} src={icone} width="200px" />
                     </div>
                     <div className={stylesCorpo.identificacao}>
                         <p className={stylesCorpo.nome}>{doencaNome}</p>

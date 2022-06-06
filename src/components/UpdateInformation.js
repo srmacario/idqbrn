@@ -1,26 +1,26 @@
 import stylesCorpo from "./css/stylesCorpo.module.css"
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
 function UpdateInformations() {
     let { doencaNome } = useParams();
-    const[formaDeContagio, setFormasDeContagio] = useState("");
-    const[sintomas, setSintomas] = useState("");
-    const[recomendacoes, setRecomendacoes] = useState("");
-    function capitalize_first_letter(string){
+    const [formaDeContagio, setFormasDeContagio] = useState("");
+    const [sintomas, setSintomas] = useState("");
+    const [recomendacoes, setRecomendacoes] = useState("");
+    function capitalize_first_letter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
     useEffect(() => {
         doencaNome = doencaNome.toLowerCase();
         doencaNome = capitalize_first_letter(doencaNome);
-        axios.post('http://localhost:8080/info/doenca',{doenca:doencaNome})
-        .then(res =>{
-            setFormasDeContagio(res.data.formasdecontagio);
-            setRecomendacoes(res.data.recomendacoes);
-            setSintomas(res.data.sintomas);
-        })
+        axios.post('http://localhost:8080/info/doenca', { doenca: doencaNome })
+            .then(res => {
+                setFormasDeContagio(res.data.formasdecontagio);
+                setRecomendacoes(res.data.recomendacoes);
+                setSintomas(res.data.sintomas);
+            })
     });
     const UpdateInfo = (event) => {
         event.preventDefault();
@@ -29,10 +29,15 @@ function UpdateInformations() {
         info.doenca = Object.values(doencaNome).toString().replaceAll(',', '');
         console.log(info);
         axios.post('http://localhost:8080/info/', info)
-            .then(res => console.log(res.data));
-
-
-
+            .then(response => {
+                if (response.data.status === 'ok') {
+                    alert('Atualizado com sucesso!')
+                }
+                else {
+                    alert('Falha na atualização!')
+                }
+                console.log(response.data)
+            });
 
     }
     const handleEntry = (event) => {

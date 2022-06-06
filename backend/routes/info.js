@@ -30,9 +30,11 @@ router.route('/').post((req, res) => {
         newInfo, null, function (err, docs) {
             if (err) {
                 console.log(err)
+                res.json({ status: "error" })
             }
             else {
                 console.log("Original Doc : ", docs);
+                res.json({ status: "ok" })
             }
         });
 });
