@@ -6,38 +6,9 @@ const mongoose = require('mongoose');
 const csvtojson = require('csvtojson');
 const { flushSync } = require('react-dom');
 const fs = require('fs');
-const multer = require('multer');
-const { receiveMessageOnPort } = require('worker_threads');
+const multer = require('multer')
 const upload = multer({ dest: 'uploads/' })
 require('dotenv').config();
-
-
-
-
-router.route('/update').post((req, res) => {
-    console.log(req.body);
-
-    Dados.findOne({ Municipio: req.body.Municipio }, function (err, element) {
-        if (err) {
-            console.log(err)
-        }
-        else {
-            console.log("Deleted Dado : ", element);
-            console.log(Object.keys(element))
-            var newElement = JSON.parse(JSON.stringify(element))
-            newElement[req.body.Doenca] = req.body.Casos
-            console.log(newElement)
-            const newDado = new Dados(newElement);
-            /*console.log(newDado);
-            newDado.save();*/
-            /*for (key in element) {
-
-                console.log(element[key])
-            }*/
-        }
-    });
-});
-
 
 router.route('/').post(upload.single('myFile'), (req, res) => {
     console.log(req.file);
@@ -88,3 +59,29 @@ router.route('/').get((req, res) => {
 });
 
 module.exports = router;
+
+
+/*router.route('/update').post((req, res) => {
+    console.log(req.body);
+
+    Dados.findOne({ Municipio: req.body.Municipio }, function (err, element) {
+        if (err) {
+            console.log(err)
+        }
+        else {
+            console.log("Deleted Dado : ", element);
+            var newElement = JSON.parse(JSON.stringify(element))
+            //element.markModified(req.body.Doenca)
+            newElement[req.body.Doenca] = req.body.Casos
+            console.log(element)
+            const newDado = new Dados(newElement);
+            console.log(newDado)
+            console.log(newDado);
+            newDado.save();
+            for (key in element) {
+
+                console.log(element[key])
+            }
+        }
+    });
+});*/

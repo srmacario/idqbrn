@@ -45,6 +45,20 @@ const port = process.env.port || 8080;
 app.use(cors());
 app.use(express.json());
 
+app.post('/update', async (req, res) => {
+    console.log(req.body);
+
+    console.log("MongoDB connection estabilished successfully");
+    //await connection.collection("dados").find({Municipio:req.body.Municipio}).update({$set:{}})
+    const dado = await connection.collection("dados").findOne({ Municipio: req.body.Municipio });
+    dado[req.body.Doenca] = req.body.Casos;
+    await connection.collection("dados").deleteOne({ Municipio: req.body.Municipio });
+    await connection.collection("dados").insertOne(dado);
+    console.log(dado);
+
+
+});
+
 const dadosRouter = require('./routes/dados');
 const infoRouter = require('./routes/info');
 const elementRouter = require('./routes/element');
