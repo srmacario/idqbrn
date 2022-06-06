@@ -18,7 +18,7 @@ function App() {
           <Route path="/info/:doencaNome" element={<Informations />} />
           <Route path="/login" element={<NewLogin />} />
           <Route path="/user" element={<UserDashboard />} />
-          <Route path="/update_info" element={<UpdateInformation />} />
+          <Route path="/update_info/:doencaNome" element={<UpdateInformation />} />
           <Route path="/update_cases" element={<UpdateCases />} />
           <Route path="/update_info" element={<UpdateInfoDisease />} />
           <Route path="/upload" element={<UpdateCasesNumber />} />

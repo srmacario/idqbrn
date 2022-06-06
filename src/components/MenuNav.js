@@ -47,7 +47,7 @@ export default function MenuNav(props) {
             console.log(union_filtered);
             props.setMarkers((prevValue) => prevValue = [])
             var newMarkersArray = []
-            for (let i = 0; i < filtered.length; i++) {
+            for (let i = 0; i < union_filtered.length; i++) {
                 const aux = union_filtered[i]
                 newMarkersArray.push(new CityMarker(aux, doencas_lista));
 
