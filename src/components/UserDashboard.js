@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios'
 import jwt from 'jsonwebtoken'
+//import { blob } from "stream/consumers";
 
 function UserDashboard() {
 
@@ -103,6 +104,23 @@ function UserDashboard() {
         }
     }
 
+    async function downloadCsv(){
+        axios.get('http://localhost:8080/downloadcsv',{
+            responseType:"blob"
+        }).then(async blob =>{
+            console.log(blob);
+            const url = await window.URL.createObjectURL(blob.data);
+            const a = await document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'database.csv';
+            await document.body.appendChild(a);
+            a.click();
+            await window.URL.revokeObjectURL(url);
+            console.log("download");
+        })
+    }
+
     return (
         <>
             <div className={stylesUser.cabecalho}>
@@ -115,7 +133,7 @@ function UserDashboard() {
                         <li><Link className={stylesUser.link} to="/update_cases">Alterar número de casos em uma cidade</Link></li>
                         <li><Link className={stylesUser.link} to="/upload">Carregar planilha no Banco de Dados</Link></li>
                     </ul>
-                    <button className={stylesUser.buttonDownload} >Baixar .CSV com dados</button>
+                    <button className={stylesUser.buttonDownload} onClick={downloadCsv} >Baixar .CSV com dados</button>
                 </div>
             </div>
 
