@@ -2,7 +2,6 @@
 import stylesCorpo from "./css/stylesCorpo.module.css"
 import stylesMapa from "./css/stylesMapa.module.css"
 import React, { useState, useEffect } from 'react'
-import { useParams } from "react-router-dom";
 import axios from 'axios'
 import Select from 'react-select'
 
