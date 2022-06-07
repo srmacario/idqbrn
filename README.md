@@ -32,6 +32,7 @@ O único login já existente é:
 
 >Usuário: admin
 >Senha: idqbrnadmin
+
 ![image](https://user-images.githubusercontent.com/74505147/172268910-cfe72da7-bb8f-4002-b1c1-004a3575a89c.png)
 
 Uma vez iniciada a sessão, é possível realizar diversas outras interações que irão afetar diretamente os dados armazenados no banco de dados.
