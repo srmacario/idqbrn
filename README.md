@@ -1,15 +1,19 @@
-Monitoring Health System for IDQBRN.
-OBS: Para executar, deve-se ter instalado o "node" e o "npm".
+
+# Monitoring Health System for IDQBRN.
+
+## Configurações
+Para executar, deve-se ter instalado o "node" e o "npm".
 
 Primeiramente, deve ser utilizado o seguinte comando:
-npm install react
+> npm install react
 
+## Funcionamento
 Uma vez terminado o download, para iniciar a execução do código, utilize:
-npm start
+> npm start
 
 Após isso, abra um novo terminal na pasta "idqbrn" e execute os seguintes comandos:
-cd backend
-node server.js
+> cd backend
+> node server.js
 
 Este comando irá iniciar a conexão com o Banco de Dados no Atlas MongoDB.
 Feito isso, será iniciada a sessão na tela com o Mapa, a partir da qual existem diversas interações.
