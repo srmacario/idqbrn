@@ -22,15 +22,16 @@ Feito isso, será iniciada a sessão na tela com o Mapa, a partir da qual existe
 ![image](https://user-images.githubusercontent.com/74505147/172268819-ca692de3-35b8-4164-8566-667564f15c70.png)
 
 
-Entretanto, existe uma sessão dedicada ao uso exclusivo de administradores.
+## Área Privada
+Existe uma sessão dedicada ao uso exclusivo de administradores.
 Para acessar a área de login, adicione "/login" ao final do URL de origem.
 
 ![image](https://user-images.githubusercontent.com/74505147/172268871-f1b6d041-67f0-450f-aa16-ba119e929f47.png)
 
 O único login já existente é:
 
-Usuário: admin
-Senha: idqbrnadmin
+>Usuário: admin
+>Senha: idqbrnadmin
 ![image](https://user-images.githubusercontent.com/74505147/172268910-cfe72da7-bb8f-4002-b1c1-004a3575a89c.png)
 
 Uma vez iniciada a sessão, é possível realizar diversas outras interações que irão afetar diretamente os dados armazenados no banco de dados.
