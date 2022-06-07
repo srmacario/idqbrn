@@ -13,12 +13,14 @@ node server.js
 
 Este comando irá iniciar a conexão com o Banco de Dados no Atlas MongoDB.
 Feito isso, será iniciada a sessão na tela com o Mapa, a partir da qual existem diversas interações.
+
 ![image](https://user-images.githubusercontent.com/74505147/172268799-6deba692-472b-467e-8f96-fbf7e350b93a.png)
 ![image](https://user-images.githubusercontent.com/74505147/172268819-ca692de3-35b8-4164-8566-667564f15c70.png)
 
 
 Entretanto, existe uma sessão dedicada ao uso exclusivo de administradores.
 Para acessar a área de login, adicione "/login" ao final do URL de origem.
+
 ![image](https://user-images.githubusercontent.com/74505147/172268871-f1b6d041-67f0-450f-aa16-ba119e929f47.png)
 
 O único login já existente é:
@@ -38,4 +40,3 @@ Assim, após quaisquer alterações, basta realizar o upload deste arquivo, util
 ![image](https://user-images.githubusercontent.com/74505147/172269215-a77ec6b9-b10a-47ba-8fdd-7ba8bedff30f.png)
 ![image](https://user-images.githubusercontent.com/74505147/172269245-5764448a-de5f-4ebd-932f-2cd97abae2ff.png)
 ![image](https://user-images.githubusercontent.com/74505147/172269273-acd5c639-2388-4ce2-b620-d5766071a87f.png)
-![Uploading image.png…]()
