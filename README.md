@@ -46,5 +46,5 @@ Assim, após quaisquer alterações, basta realizar o upload deste arquivo, util
 ![image](https://user-images.githubusercontent.com/74505147/172269134-bdfdf33b-8439-4a4e-b519-9285673fb22b.png)
 <img src="https://user-images.githubusercontent.com/53433382/172416138-48ddd4a4-4277-46ce-b9b4-0f9039db4cf2.png">
 <img src="https://user-images.githubusercontent.com/53433382/172416420-d0bebba8-e82f-42b0-9ba4-605b84b2e1e2.png">
-<img src="https://user-images.githubusercontent.com/74505147/172269273-acd5c639-2388-4ce2-b620-d5766071a87f.png" width="275" height="350">
+<img src="https://user-images.githubusercontent.com/53433382/172416812-f33b1bfc-5f5b-48bc-b6b7-7928bc0e5cba.png">
 
