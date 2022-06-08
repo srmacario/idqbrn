@@ -46,10 +46,10 @@ class MapDashboard extends React.Component {
     console.log("mapds");
     return (
       <>
-        <MenuNav markersArray={this.props.markersArray} setMarkers={this.props.setMarkers}
+        <MenuNav markersArray={this.props.markersArray} setMarkers={this.props.setMarkers} mapCenter={this.props.mapCenter} setCenter={this.props.setCenter}
           navigate={this.props.navigate} dados={dados} cidades_opt={cidades_opt}
           city_filter={city_filter} dados_filtrados={dados_filtrados} doencas_lista={doencas_lista} />
-        <Mapa markersArray={this.props.markersArray} />
+        <Mapa markersArray={this.props.markersArray} mapCenter={this.props.mapCenter} />
       </>
     );
   }
@@ -58,7 +58,8 @@ class MapDashboard extends React.Component {
 export default function MapDashboardFunc(props) {
   const initialMarkers = [];
   const [markersArray, setMarkers] = useState(initialMarkers);
+  const [mapCenter, setCenter] = useState([-14.613282, -48.484189]);
   const navigate = useNavigate();
 
-  return <MapDashboard {...props} navigate={navigate} markersArray={markersArray} setMarkers={setMarkers} />;
+  return <MapDashboard {...props} navigate={navigate} markersArray={markersArray} setMarkers={setMarkers} mapCenter={mapCenter} setCenter={setCenter} />;
 }
