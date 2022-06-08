@@ -72,8 +72,9 @@ export default function MenuNav(props) {
                             filterConfig={filterConfig}
                             onChange={e => {
                                 selectValue = e.value;
+                                console.log(selectValue);
                                 console.log("sv" + selectValue);
-                                const find_cidade = dados.find(dado => dado['Municipio'] === selectValue);
+                                const find_cidade = dados.find(dado => dado['IBGE7'] === selectValue);
                                 console.log("filtro");
                                 console.log(find_cidade);
                                 props.setMarkers([]);
