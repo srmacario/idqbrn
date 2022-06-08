@@ -50,10 +50,10 @@ app.use(express.json());
 
 app.post('/update', async (req, res) => {
     console.log(req.body);
-    const dado = await connection.collection("dados").findOne({ Municipio: req.body.Municipio });
+    const dado = await connection.collection("dados").findOne({ IBGE7: req.body.IBGE7 });
     dado[req.body.Doenca] = req.body.Casos;
     try {
-        await connection.collection("dados").deleteOne({ Municipio: req.body.Municipio });
+        await connection.collection("dados").deleteOne({ IBGE7: req.body.IBGE7 });
         await connection.collection("dados").insertOne(dado);
         res.json({ status: "ok" })
     }

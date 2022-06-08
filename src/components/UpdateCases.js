@@ -19,7 +19,7 @@ function UpdateCases() {
         e.preventDefault();
         console.log(selectCidade);
         newValue = newValue.toString();
-        axios.post('http://localhost:8080/update', { Municipio: selectCidade, Doenca: selectDoenca, Casos: newValue })
+        axios.post('http://localhost:8080/update', { IBGE7: selectCidade, Doenca: selectDoenca, Casos: newValue })
             .then(response => {
                 if (response.data.status === 'ok') {
                     alert('Atualizado com sucesso!')
@@ -42,7 +42,8 @@ function UpdateCases() {
                     let lista = []
                     let cidade = []
                     response.data.forEach(element => {
-                        cidade.push({ label: element['Municipio'], value: element['Municipio'] })
+                        var curr_label = element['Municipio'] + ' (' + element['UF'] + ')';
+                        cidade.push({ label: curr_label, value: element['IBGE7'] })
                         if (lista.length === 0) {
                             for (let i = 11; i < Object.keys(element).length; i++) {
                                 lista.push({ label: Object.keys(element)[i], value: Object.keys(element)[i] })
@@ -77,7 +78,7 @@ function UpdateCases() {
                         <Select options={cidades_opt} placeholder="Buscar por uma cidade..." openMenuOnClick={true}
                             onChange={e => {
                                 selectCidade = e.value;
-                                const find_cidade = dados.find(dado => dado['Municipio'] === selectCidade);
+                                const find_cidade = dados.find(dado => dado['IBGE7'] === selectCidade);
                                 console.log(find_cidade);
                             }}
                             onInputChange={e => {

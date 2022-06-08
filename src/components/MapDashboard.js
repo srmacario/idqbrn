@@ -21,7 +21,8 @@ class MapDashboard extends React.Component {
         this.setState({ dados: response.data, dados_filtrados: response.data });
         if (this.state.cidades_opt.length === 0) {
           response.data.forEach(element => {
-            this.state.cidades_opt.push({ label: element['Municipio'], value: element['Municipio'] })
+            var curr_label = element['Municipio'] + ' (' + element['UF'] + ')';
+            this.state.cidades_opt.push({ label: curr_label, value: element['IBGE7'] })
             if (this.state.doencas_lista.length === 0) {
               for (let i = 11; i < Object.keys(element).length; i++) {
                 this.state.doencas_lista.push(Object.keys(element)[i]);
