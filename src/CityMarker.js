@@ -5,6 +5,7 @@ export default class CityMarker {
         this.json = json;
         this.id = json['IBGE7'];
         this.nome = json['Municipio'];
+        this.uf = json['UF'];
         this.lat = parseFloat(json["latitude"].replace(',', '.'));
         this.long = parseFloat(json["longitude"].replace(',', '.'));
         this.listaDoencas = listaDoencas;
@@ -23,6 +24,9 @@ export default class CityMarker {
     }
     getPopulation() {
         return this.pop
+    }
+    getUF() {
+        return this.uf;
     }
     getTotalCasosNumber() {
         let valor = 0.0;

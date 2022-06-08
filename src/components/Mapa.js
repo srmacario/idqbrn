@@ -10,7 +10,7 @@ export function LocationMarkers({ markersArray }) {
             {markersArray.map(marker => <CircleMarker radius={marker.getTotalCasosNumber()} weight={0} center={marker.getPos()} key={marker.getId()} color={'#e74c3c'} fillOpacity={0.6} >
                 <Popup>
                     <div className={stylesMapa.popupContent}>
-                        <div className={stylesMapa.nomeCidade}>{marker.getNome()}</div><br />
+                        <div className={stylesMapa.nomeCidade}>{marker.getNome()} ({marker.getUF()}) </div><br />
                         <div className={stylesMapa.textoCidade}>População em 2010: {marker.getPopulation()}</div><br />
                         <div className={stylesMapa.textoCidade}>Casos registrados:</div><br />
                         <span>{marker.getTotalCasos()}</span>
