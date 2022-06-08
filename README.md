@@ -18,7 +18,7 @@ Após isso, abra um novo terminal na pasta "idqbrn" e execute os seguintes coman
 Este comando irá iniciar a conexão com o Banco de Dados no Atlas MongoDB.
 Feito isso, será iniciada a sessão na tela com o Mapa, a partir da qual existem diversas interações.
 
-![image](https://user-images.githubusercontent.com/74505147/172268799-6deba692-472b-467e-8f96-fbf7e350b93a.png)
+![image](https://user-images.githubusercontent.com/74505147/172682639-e6f651e0-7e34-4faf-a9fa-63ecdf5925fc.png)
 ![image](https://user-images.githubusercontent.com/74505147/172268819-ca692de3-35b8-4164-8566-667564f15c70.png)
 
 
