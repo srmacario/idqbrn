@@ -19,7 +19,7 @@ Este comando irá iniciar a conexão com o Banco de Dados no Atlas MongoDB.
 Feito isso, será iniciada a sessão na tela com o Mapa, a partir da qual existem diversas interações.
 
 ![image](https://user-images.githubusercontent.com/74505147/172682639-e6f651e0-7e34-4faf-a9fa-63ecdf5925fc.png)
-![image](https://user-images.githubusercontent.com/74505147/172683744-bab0157e-9c95-40bb-8215-774c02321298.png)
+![image](https://user-images.githubusercontent.com/74505147/172685281-45100f09-a7fe-4c46-beaf-7936b9e29480.png)
 ![image](https://user-images.githubusercontent.com/74505147/172268819-ca692de3-35b8-4164-8566-667564f15c70.png)
 
 
