@@ -5,9 +5,11 @@ export default class CityMarker {
         this.json = json;
         this.id = json['IBGE7'];
         this.nome = json['Municipio'];
+        this.uf = json['UF'];
         this.lat = parseFloat(json["latitude"].replace(',', '.'));
         this.long = parseFloat(json["longitude"].replace(',', '.'));
         this.listaDoencas = listaDoencas;
+        this.pop = json['População 2010']
         this.pos = new LatLng(this.lat, this.long);
     }
 
@@ -19,6 +21,26 @@ export default class CityMarker {
     }
     getPos() {
         return this.pos;
+    }
+    getPopulation() {
+        return this.pop
+    }
+    getUF() {
+        return this.uf;
+    }
+    getTotalCasosNumber() {
+        let valor = 0.0;
+        for (let i = 0; i < this.listaDoencas.length; i++) {
+            valor = valor + parseInt(this.json[this.listaDoencas[i]])
+        }
+        if (valor > 10000)
+            valor = 10000
+        valor = valor / 10000
+        valor = valor * 15
+        if (valor < 7)
+            valor = 7
+
+        return valor
     }
     getTotalCasos() {
         let texto = "";
