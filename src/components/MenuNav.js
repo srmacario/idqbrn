@@ -41,7 +41,7 @@ export default function MenuNav(props) {
                 filtered = dados.filter(item => {
                     return parseInt(item[props.city_filter[i]]) > 0;
                 })
-                union_filtered = [... new Set([...union_filtered, ...filtered])];
+                union_filtered = [...new Set([...union_filtered, ...filtered])];
             }
             console.log("dados filtrados");
             console.log(union_filtered);
@@ -78,6 +78,7 @@ export default function MenuNav(props) {
                                 console.log(find_cidade);
                                 props.setMarkers([]);
                                 props.setMarkers((prevValue) => [...prevValue, new CityMarker(find_cidade, doencas_lista)]);
+                                props.setCenter([parseFloat(find_cidade['latitude'].replace(',', '.')), parseFloat(find_cidade['longitude'].replace(',', '.'))])
                                 console.log(parseFloat(find_cidade['latitude'].replace(',', '.')));
                             }}
                             onInputChange={e => {
