@@ -41,7 +41,7 @@ Uma vez iniciada a sessão, é possível realizar diversas outras interações q
 Vale ressaltar que dentro da pasta "backend" existe a planilha dados.csv que serve de modelo para arquivos utilizados no upload para o banco de dados.
 Assim, após quaisquer alterações, basta realizar o upload deste arquivo, utilizando a área dedicada no projeto, para resetar o estado do banco de dados.
 
-ATENÇÃO: Como base para arquivos de upload, foi utilizado o arquivo "Int Saude 27-10-22.xlsx", o qual teve a aba "Lista de Municípios IBGE" convertida para um arquivo .CSV separado por vírgula. Caso o arquivo utilizado paraupload não esteja nesse formato, poderá haver armazenamento de dados errados.
+ATENÇÃO: Como base para arquivos de upload, foi utilizado o arquivo "Int Saude 27-10-22.xlsx", o qual teve a aba "Lista de Municípios IBGE" convertida para um arquivo .CSV separado por vírgula. Caso o arquivo utilizado para upload não esteja nesse formato, poderá haver armazenamento de dados errados.
 ![image](https://user-images.githubusercontent.com/74505147/172268946-004461e1-3db1-45aa-8e06-077d5e013ac7.png)
 ![image](https://user-images.githubusercontent.com/74505147/172269016-75b7856e-dcf4-4e68-8089-79181a7688c2.png)
 ![image](https://user-images.githubusercontent.com/74505147/172269047-fc45a4eb-b568-47ee-a8aa-0f31ba3ff4a2.png)
