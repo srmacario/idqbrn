@@ -5,6 +5,11 @@ const { json } = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+router.route('/doenca').get((req,res) =>{
+    Info.find()
+    .then(dados => res.json(dados))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
 
 router.route('/doenca').post((req, res) => {
     console.log("doencaPost")
